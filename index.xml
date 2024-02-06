@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>masarajames</title>
+    <title>masara</title>
     <link>https://masarajames.github.io/</link>
-    <description>Recent content on masarajames</description>
+    <description>Recent content on masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
@@ -14,9 +14,8 @@
       <pubDate>Tue, 06 Feb 2024 14:07:19 +0300</pubDate>
       
       <guid>https://masarajames.github.io/posts/ctf/</guid>
-      <description>Hey you and welcome to my blog. Today i&amp;rsquo;ll be solving a challenge from BTLO called Meta. It&amp;rsquo;s under the Digital forensics category but i found it more of OSINT. The challenge was relatively easy.
-Here is the brief given for the challenge:
-The attached images were posted by a criminal on the run, with the caption &amp;ldquo;I&amp;rsquo;m roaming free. You will never catch me&amp;rdquo;. We believe you can assist us in proving him wrong.</description>
+      <description>About Me: John Doe - Computer Science Student in Cybersecurity Introduction Hello! I&amp;rsquo;m John Doe, a passionate computer science student with a keen interest in cybersecurity. With a strong foundation in programming, networking, and information security principles, I aspire to contribute to the field of cybersecurity and tackle emerging cyber threats.
+Education Bachelor&amp;rsquo;s Degree in Computer Science University Name, Year of Graduation Relevant coursework: Introduction to Cybersecurity, Network Security, Cryptography, etc.</description>
     </item>
     
     <item>

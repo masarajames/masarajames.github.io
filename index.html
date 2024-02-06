@@ -9,17 +9,14 @@
     <link rel="stylesheet" href=https://masarajames.github.io/css/syntax.css>
     <link rel="stylesheet" href=https://masarajames.github.io/css/style.css>
     <script src="https://kit.fontawesome.com/1b7478c139.js" crossorigin="anonymous"></script>
-    <title>masarajames</title>
+    <title>masara</title>
   </head><body><aside id="sidenav">
     <header>
-    
-        <a href=https://masarajames.github.io><img src="https://masarajames.github.io/avatar.png" alt="avatar"></a>
-        
     
 
     <a id="branding" href=https://masarajames.github.io>
         
-            masarajames
+            masara
         
     </a>
     </header>
@@ -31,14 +28,14 @@
                 
             >
                 <i class="fas fa-home fa-sm"></i>
-                <span>home</span>
+                <span>Home</span>
             </a>
         
             		
             <a href="/about/"
                 
             >
-                <i class="fas fa- fa-ms"></i>
+                <i class="fas fa-user fa-ms"></i>
                 <span>About Me</span>
             </a>
         
@@ -51,11 +48,19 @@
             </a>
         
             		
+            <a href="posts/ctf"
+                
+            >
+                <i class="fas fa-flag-checkered fa-ms"></i>
+                <span>CTF</span>
+            </a>
+        
+            		
             <a href="/notes"
                 
             >
                 <i class="fas fa-tags fa-ms"></i>
-                <span>my notes</span>
+                <span>My notes</span>
             </a>
         
             		
@@ -66,14 +71,6 @@
             >
                 <i class="fab fa-github fa-ms"></i>
                 <span>github</span>
-            </a>
-        
-            		
-            <a href="/index.xml"
-                
-            >
-                <i class="fas fa-rss fa-ms"></i>
-                <span>RSS</span>
             </a>
         
             		
@@ -91,12 +88,6 @@
             <div class="content">
     
     
-    <div class="section"> 
-        <div class="section-title">recent</div> 
-        
-        
-        </div>
-    
 
     
     <div class="section"> 
@@ -107,331 +98,90 @@
                 <div class="post">
                     
                     <div class="post-content">
-                        <p>Hey you and welcome to my blog. Today i&rsquo;ll be solving a challenge from BTLO called <code>Meta</code>. It&rsquo;s under the Digital forensics category but i found it more of OSINT. The challenge was relatively easy.</p>
-<p>Here is the brief given for the challenge:</p>
-<blockquote>
-<p><em>The attached images were posted by a criminal on the run, with the caption &ldquo;I&rsquo;m roaming free. You will never catch me&rdquo;. We believe you can assist us in proving him wrong.</em></p>
-</blockquote>
-<p>Some of the tools recommended to use for this challenge include:</p>
+                        <h2 id="about-me-john-doe---computer-science-student-in-cybersecurity">About Me: John Doe - Computer Science Student in Cybersecurity</h2>
+<h2 id="introduction">Introduction</h2>
+<p>Hello! I&rsquo;m John Doe, a passionate computer science student with a keen interest in cybersecurity. With a strong foundation in programming, networking, and information security principles, I aspire to contribute to the field of cybersecurity and tackle emerging cyber threats.</p>
+<h2 id="education">Education</h2>
 <ul>
-<li>Exiftool - <em>a free and open-source software program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent, available as both a Perl library and command-line application.</em> You can read more about how it works, features, Supported File Types, etc on <a href="https://exiftool.org/">Phil Harvey&rsquo;s site</a></li>
-<li>Reverse Image Search - <em>a content-based image retrieval (CBIR) query technique that involves providing the CBIR system with a sample image that it will then base its search upon; in terms of information retrieval, the sample image is what formulates a search query. In particular, reverse image search is characterized by a lack of search terms. This effectively removes the need for a user to guess at keywords or terms that may or may not return a correct result. Reverse image search also allows users to discover content that is related to a specific sample image, popularity of an image, and discover manipulated versions and derivative works. Source: <a href="https://en.wikipedia.org/wiki/Reverse_image_search">Wikipedia</a></em></li>
+<li><strong>Bachelor&rsquo;s Degree in Computer Science</strong>
+<ul>
+<li><em>University Name, Year of Graduation</em></li>
+<li>Relevant coursework: Introduction to Cybersecurity, Network Security, Cryptography, etc.</li>
 </ul>
-<p>With that in mind, lets get started</p>
-<h2 id="what-is-the-camera-model-2-points">What is the camera model? (2 points)</h2>
-<p>Upon downloading and extracting the provided zip file, we get two images. Running exiftool on the first image gives us a ton of information needed to answer question 1-3</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">➜  ./exiftool uploaded_1.JPG 
-</span></span><span class="line"><span class="cl">ExifTool Version Number         : 12.21
-</span></span><span class="line"><span class="cl">File Name                       : uploaded_1.JPG
-</span></span><span class="line"><span class="cl">Directory                       : .
-</span></span><span class="line"><span class="cl">File Size                       : 3.4 MiB
-</span></span><span class="line"><span class="cl">File Modification Date/Time     : 2022:02:23 13:14:41-05:00
-</span></span><span class="line"><span class="cl">File Access Date/Time           : 2022:02:23 13:14:41-05:00
-</span></span><span class="line"><span class="cl">File Inode Change Date/Time     : 2022:02:23 13:14:41-05:00
-</span></span><span class="line"><span class="cl">File Permissions                : -rw-r--r--
-</span></span><span class="line"><span class="cl">File Type                       : JPEG
-</span></span><span class="line"><span class="cl">File Type Extension             : jpg
-</span></span><span class="line"><span class="cl">MIME Type                       : image/jpeg
-</span></span><span class="line"><span class="cl">Exif Byte Order                 : Little-endian <span class="o">(</span>Intel, II<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Compression                     : JPEG <span class="o">(</span>old-style<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Make                            : Canon
-</span></span><span class="line"><span class="cl">Camera Model Name               : Canon EOS 550D
-</span></span><span class="line"><span class="cl">Orientation                     : Rotate <span class="m">90</span> CW
-</span></span><span class="line"><span class="cl">X Resolution                    : <span class="m">72</span>
-</span></span><span class="line"><span class="cl">Y Resolution                    : <span class="m">72</span>
-</span></span><span class="line"><span class="cl">Resolution Unit                 : inches
-</span></span><span class="line"><span class="cl">Modify Date                     : 2021:11:02 13:20:23
-</span></span><span class="line"><span class="cl">Y Cb Cr Positioning             : Co-sited
-</span></span><span class="line"><span class="cl">Exposure Time                   : 1/1000
-</span></span><span class="line"><span class="cl">F Number                        : 18.0
-</span></span><span class="line"><span class="cl">Exposure Program                : Manual
-</span></span><span class="line"><span class="cl">ISO                             : <span class="m">100</span>
-</span></span><span class="line"><span class="cl">Exif Version                    : <span class="m">0221</span>
-</span></span><span class="line"><span class="cl">Date/Time Original              : 2021:11:02 13:20:23
-</span></span><span class="line"><span class="cl">Create Date                     : 2021:11:02 13:20:23
-</span></span><span class="line"><span class="cl">Components Configuration        : Y, Cb, Cr, -
-</span></span><span class="line"><span class="cl">Shutter Speed Value             : 1/1024
-</span></span><span class="line"><span class="cl">Aperture Value                  : 18.2
-</span></span><span class="line"><span class="cl">Flash                           : Off, Did not fire
-</span></span><span class="line"><span class="cl">Focal Length                    : 55.0 mm
-</span></span><span class="line"><span class="cl">Macro Mode                      : Normal
-</span></span><span class="line"><span class="cl">Self Timer                      : Off
-</span></span><span class="line"><span class="cl">Quality                         : Fine
-</span></span><span class="line"><span class="cl">Canon Flash Mode                : Off
-</span></span><span class="line"><span class="cl">Continuous Drive                : Single
-</span></span><span class="line"><span class="cl">Focus Mode                      : One-shot AF
-</span></span><span class="line"><span class="cl">Record Mode                     : JPEG
-</span></span><span class="line"><span class="cl">Canon Image Size                : Large
-</span></span><span class="line"><span class="cl">Easy Mode                       : Manual
-</span></span><span class="line"><span class="cl">Digital Zoom                    : None
-</span></span><span class="line"><span class="cl">Contrast                        : Normal
-</span></span><span class="line"><span class="cl">Saturation                      : Normal
-</span></span><span class="line"><span class="cl">Metering Mode                   : Evaluative
-</span></span><span class="line"><span class="cl">Focus Range                     : Not Known
-</span></span><span class="line"><span class="cl">Canon Exposure Mode             : Manual
-</span></span><span class="line"><span class="cl">Lens Type                       : Canon EF-S 55-250mm f/4-5.6 IS
-</span></span><span class="line"><span class="cl">Max Focal Length                : <span class="m">250</span> mm
-</span></span><span class="line"><span class="cl">Min Focal Length                : <span class="m">55</span> mm
-</span></span><span class="line"><span class="cl">Focal Units                     : 1/mm
-</span></span><span class="line"><span class="cl">Max Aperture                    : <span class="m">4</span>
-</span></span><span class="line"><span class="cl">Min Aperture                    : <span class="m">23</span>
-</span></span><span class="line"><span class="cl">Flash Activity                  : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Flash Bits                      : <span class="o">(</span>none<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Zoom Source Width               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Zoom Target Width               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Manual Flash Output             : n/a
-</span></span><span class="line"><span class="cl">Color Tone                      : Normal
-</span></span><span class="line"><span class="cl">Auto ISO                        : <span class="m">100</span>
-</span></span><span class="line"><span class="cl">Base ISO                        : <span class="m">100</span>
-</span></span><span class="line"><span class="cl">Measured EV                     : 14.88
-</span></span><span class="line"><span class="cl">Target Aperture                 : <span class="m">18</span>
-</span></span><span class="line"><span class="cl">Target Exposure Time            : 1/1024
-</span></span><span class="line"><span class="cl">Exposure Compensation           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">White Balance                   : Auto
-</span></span><span class="line"><span class="cl">Slow Shutter                    : None
-</span></span><span class="line"><span class="cl">Shot Number In Continuous Burst : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Optical Zoom Code               : n/a
-</span></span><span class="line"><span class="cl">Camera Temperature              : <span class="m">50</span> C
-</span></span><span class="line"><span class="cl">Flash Guide Number              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Flash Exposure Compensation     : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Auto Exposure Bracketing        : Off
-</span></span><span class="line"><span class="cl">AEB Bracket Value               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Control Mode                    : Camera Local Control
-</span></span><span class="line"><span class="cl">Measured EV <span class="m">2</span>                   : 17.375
-</span></span><span class="line"><span class="cl">Bulb Duration                   : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Camera Type                     : EOS High-end
-</span></span><span class="line"><span class="cl">ND Filter                       : n/a
-</span></span><span class="line"><span class="cl">Canon Image Type                : Canon EOS 550D
-</span></span><span class="line"><span class="cl">Canon Firmware Version          : Firmware Version 1.0.9
-</span></span><span class="line"><span class="cl">Owner Name                      : 
-</span></span><span class="line"><span class="cl">Serial Number                   : <span class="m">1932126681</span>
-</span></span><span class="line"><span class="cl">Flash Metering Mode             : Off
-</span></span><span class="line"><span class="cl">Camera Orientation              : Rotate <span class="m">90</span> CW
-</span></span><span class="line"><span class="cl">Firmware Version                : 1.0.9
-</span></span><span class="line"><span class="cl">File Index                      : <span class="m">3845</span>
-</span></span><span class="line"><span class="cl">Directory Index                 : <span class="m">102</span>
-</span></span><span class="line"><span class="cl">Contrast Standard               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Standard              : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Saturation Standard             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone Standard             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Contrast Portrait               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Portrait              : <span class="m">2</span>
-</span></span><span class="line"><span class="cl">Saturation Portrait             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone Portrait             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Contrast Landscape              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Landscape             : <span class="m">4</span>
-</span></span><span class="line"><span class="cl">Saturation Landscape            : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone Landscape            : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Contrast Neutral                : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Neutral               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Saturation Neutral              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone Neutral              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Contrast Faithful               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Faithful              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Saturation Faithful             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone Faithful             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Contrast Monochrome             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness Monochrome            : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Filter Effect Monochrome        : None
-</span></span><span class="line"><span class="cl">Toning Effect Monochrome        : None
-</span></span><span class="line"><span class="cl">Contrast User Def <span class="m">1</span>             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness User Def <span class="m">1</span>            : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Saturation User Def <span class="m">1</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone User Def <span class="m">1</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Filter Effect User Def <span class="m">1</span>        : None
-</span></span><span class="line"><span class="cl">Toning Effect User Def <span class="m">1</span>        : None
-</span></span><span class="line"><span class="cl">Contrast User Def <span class="m">2</span>             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness User Def <span class="m">2</span>            : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Saturation User Def <span class="m">2</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone User Def <span class="m">2</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Filter Effect User Def <span class="m">2</span>        : None
-</span></span><span class="line"><span class="cl">Toning Effect User Def <span class="m">2</span>        : None
-</span></span><span class="line"><span class="cl">Contrast User Def <span class="m">3</span>             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sharpness User Def <span class="m">3</span>            : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Saturation User Def <span class="m">3</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Tone User Def <span class="m">3</span>           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Filter Effect User Def <span class="m">3</span>        : None
-</span></span><span class="line"><span class="cl">Toning Effect User Def <span class="m">3</span>        : None
-</span></span><span class="line"><span class="cl">User Def <span class="m">1</span> Picture Style        : Standard
-</span></span><span class="line"><span class="cl">User Def <span class="m">2</span> Picture Style        : Standard
-</span></span><span class="line"><span class="cl">User Def <span class="m">3</span> Picture Style        : Standard
-</span></span><span class="line"><span class="cl">Canon Model ID                  : EOS Rebel T2i / 550D / Kiss X4
-</span></span><span class="line"><span class="cl">Thumbnail Image Valid Area      : <span class="m">0</span> <span class="m">159</span> <span class="m">7</span> <span class="m">112</span>
-</span></span><span class="line"><span class="cl">Serial Number Format            : Format <span class="m">2</span>
-</span></span><span class="line"><span class="cl">AF Area Mode                    : Single-point AF
-</span></span><span class="line"><span class="cl">Num AF Points                   : <span class="m">9</span>
-</span></span><span class="line"><span class="cl">Valid AF Points                 : <span class="m">1</span>
-</span></span><span class="line"><span class="cl">Canon Image Width               : <span class="m">5184</span>
-</span></span><span class="line"><span class="cl">Canon Image Height              : <span class="m">3456</span>
-</span></span><span class="line"><span class="cl">AF Image Width                  : <span class="m">5184</span>
-</span></span><span class="line"><span class="cl">AF Image Height                 : <span class="m">3456</span>
-</span></span><span class="line"><span class="cl">AF Area Widths                  : <span class="m">518</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">AF Area Heights                 : <span class="m">691</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">AF Area X Positions             : <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">AF Area Y Positions             : <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">AF Points In Focus              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">AF Points Selected              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Original Decision Data Offset   : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Bracket Mode                    : Off
-</span></span><span class="line"><span class="cl">Bracket Value                   : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Bracket Shot Number             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Raw Jpg Size                    : Large
-</span></span><span class="line"><span class="cl">Long Exposure Noise Reduction <span class="m">2</span> : Off
-</span></span><span class="line"><span class="cl">WB Bracket Mode                 : Off
-</span></span><span class="line"><span class="cl">WB Bracket Value AB             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">WB Bracket Value GM             : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Live View Shooting              : On
-</span></span><span class="line"><span class="cl">Focus Distance Upper            : 26.1 m
-</span></span><span class="line"><span class="cl">Focus Distance Lower            : 19.12 m
-</span></span><span class="line"><span class="cl">Flash Exposure Lock             : Off
-</span></span><span class="line"><span class="cl">Lens Model                      : EF-S55-250mm f/4-5.6 IS
-</span></span><span class="line"><span class="cl">Internal Serial Number          : VC1245303
-</span></span><span class="line"><span class="cl">Dust Removal Data               : <span class="o">(</span>Binary data <span class="m">1024</span> bytes, use -b option to extract<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Crop Left Margin                : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Crop Right Margin               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Crop Top Margin                 : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Crop Bottom Margin              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Exposure Level Increments       : 1/3 Stop
-</span></span><span class="line"><span class="cl">ISO Expansion                   : Off
-</span></span><span class="line"><span class="cl">Flash Sync Speed Av             : Auto
-</span></span><span class="line"><span class="cl">Long Exposure Noise Reduction   : Off
-</span></span><span class="line"><span class="cl">High ISO Noise Reduction        : Standard
-</span></span><span class="line"><span class="cl">Highlight Tone Priority         : Disable
-</span></span><span class="line"><span class="cl">AF Assist Beam                  : Emits
-</span></span><span class="line"><span class="cl">Mirror Lockup                   : Disable
-</span></span><span class="line"><span class="cl">Shutter-AE Lock                 : AF/AE lock
-</span></span><span class="line"><span class="cl">Set Button When Shooting        : Normal <span class="o">(</span>disabled<span class="o">)</span>
-</span></span><span class="line"><span class="cl">LCD Display At Power On         : Display
-</span></span><span class="line"><span class="cl">Add Original Decision Data      : Off
-</span></span><span class="line"><span class="cl">Tone Curve                      : Standard
-</span></span><span class="line"><span class="cl">Sharpness                       : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Sharpness Frequency             : n/a
-</span></span><span class="line"><span class="cl">Sensor Red Level                : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sensor Blue Level               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">White Balance Red               : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">White Balance Blue              : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Temperature               : <span class="m">5200</span>
-</span></span><span class="line"><span class="cl">Picture Style                   : Standard
-</span></span><span class="line"><span class="cl">Digital Gain                    : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">WB Shift AB                     : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">WB Shift GM                     : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Measured RGGB                   : <span class="m">1056</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1058</span>
-</span></span><span class="line"><span class="cl">VRD Offset                      : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Sensor Width                    : <span class="m">5344</span>
-</span></span><span class="line"><span class="cl">Sensor Height                   : <span class="m">3516</span>
-</span></span><span class="line"><span class="cl">Sensor Left Border              : <span class="m">152</span>
-</span></span><span class="line"><span class="cl">Sensor Top Border               : <span class="m">56</span>
-</span></span><span class="line"><span class="cl">Sensor Right Border             : <span class="m">5335</span>
-</span></span><span class="line"><span class="cl">Sensor Bottom Border            : <span class="m">3511</span>
-</span></span><span class="line"><span class="cl">Black Mask Left Border          : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Black Mask Top Border           : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Black Mask Right Border         : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Black Mask Bottom Border        : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Color Data Version              : <span class="m">7</span> <span class="o">(</span>500D/550D/7D/1DmkIV<span class="o">)</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels As Shot          : <span class="m">2389</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1553</span>
-</span></span><span class="line"><span class="cl">Color Temp As Shot              : <span class="m">5586</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Auto             : <span class="m">2389</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1553</span>
-</span></span><span class="line"><span class="cl">Color Temp Auto                 : <span class="m">5586</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Measured         : <span class="m">2386</span> <span class="m">1024</span> <span class="m">1023</span> <span class="m">1552</span>
-</span></span><span class="line"><span class="cl">Color Temp Measured             : <span class="m">5586</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Daylight         : <span class="m">2250</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1589</span>
-</span></span><span class="line"><span class="cl">Color Temp Daylight             : <span class="m">5200</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Shade            : <span class="m">2583</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1364</span>
-</span></span><span class="line"><span class="cl">Color Temp Shade                : <span class="m">7000</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Cloudy           : <span class="m">2422</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1469</span>
-</span></span><span class="line"><span class="cl">Color Temp Cloudy               : <span class="m">6000</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Tungsten         : <span class="m">1621</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">2346</span>
-</span></span><span class="line"><span class="cl">Color Temp Tungsten             : <span class="m">3200</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Fluorescent      : <span class="m">2005</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">2208</span>
-</span></span><span class="line"><span class="cl">Color Temp Fluorescent          : <span class="m">3763</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Kelvin           : <span class="m">2250</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1589</span>
-</span></span><span class="line"><span class="cl">Color Temp Kelvin               : <span class="m">5200</span>
-</span></span><span class="line"><span class="cl">WB RGGB Levels Flash            : <span class="m">2485</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1456</span>
-</span></span><span class="line"><span class="cl">Color Temp Flash                : <span class="m">6215</span>
-</span></span><span class="line"><span class="cl">Average Black Level             : <span class="m">2048</span> <span class="m">2048</span> <span class="m">2048</span> <span class="m">2048</span>
-</span></span><span class="line"><span class="cl">Raw Measured RGGB               : <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Per Channel Black Level         : <span class="m">2047</span> <span class="m">2047</span> <span class="m">2048</span> <span class="m">2048</span>
-</span></span><span class="line"><span class="cl">Specular White Level            : <span class="m">12279</span>
-</span></span><span class="line"><span class="cl">Linearity Upper Margin          : <span class="m">10000</span>
-</span></span><span class="line"><span class="cl">Picture Style User Def          : Standard<span class="p">;</span> Standard<span class="p">;</span> Standard
-</span></span><span class="line"><span class="cl">Picture Style PC                : None<span class="p">;</span> None<span class="p">;</span> None
-</span></span><span class="line"><span class="cl">Custom Picture Style File Name  : 
-</span></span><span class="line"><span class="cl">Vignetting Corr Version         : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Peripheral Lighting             : On
-</span></span><span class="line"><span class="cl">Distortion Correction           : Off
-</span></span><span class="line"><span class="cl">Chromatic Aberration Corr       : Off
-</span></span><span class="line"><span class="cl">Peripheral Lighting Value       : <span class="m">35</span>
-</span></span><span class="line"><span class="cl">Distortion Correction Value     : <span class="m">0</span>
-</span></span><span class="line"><span class="cl">Original Image Width            : <span class="m">5184</span>
-</span></span><span class="line"><span class="cl">Original Image Height           : <span class="m">3456</span>
-</span></span><span class="line"><span class="cl">Peripheral Lighting Setting     : On
-</span></span><span class="line"><span class="cl">Peripheral Illumination Corr    : Off
-</span></span><span class="line"><span class="cl">Auto Lighting Optimizer         : Strong
-</span></span><span class="line"><span class="cl">Sub Sec Time                    : <span class="m">32</span>
-</span></span><span class="line"><span class="cl">Sub Sec Time Original           : <span class="m">32</span>
-</span></span><span class="line"><span class="cl">Sub Sec Time Digitized          : <span class="m">32</span>
-</span></span><span class="line"><span class="cl">Flashpix Version                : <span class="m">0100</span>
-</span></span><span class="line"><span class="cl">Color Space                     : sRGB
-</span></span><span class="line"><span class="cl">Exif Image Width                : <span class="m">5184</span>
-</span></span><span class="line"><span class="cl">Exif Image Height               : <span class="m">3456</span>
-</span></span><span class="line"><span class="cl">Interoperability Index          : R98 - DCF basic file <span class="o">(</span>sRGB<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Interoperability Version        : <span class="m">0100</span>
-</span></span><span class="line"><span class="cl">Focal Plane X Resolution        : 5728.176796
-</span></span><span class="line"><span class="cl">Focal Plane Y Resolution        : 5808.403361
-</span></span><span class="line"><span class="cl">Focal Plane Resolution Unit     : inches
-</span></span><span class="line"><span class="cl">Custom Rendered                 : Normal
-</span></span><span class="line"><span class="cl">Exposure Mode                   : Manual
-</span></span><span class="line"><span class="cl">Scene Capture Type              : Standard
-</span></span><span class="line"><span class="cl">GPS Latitude Ref                : South
-</span></span><span class="line"><span class="cl">GPS Longitude Ref               : West
-</span></span><span class="line"><span class="cl">Thumbnail Offset                : <span class="m">7902</span>
-</span></span><span class="line"><span class="cl">Thumbnail Length                : <span class="m">6101</span>
-</span></span><span class="line"><span class="cl">Comment                         : relying on altered metadata to catch me?
-</span></span><span class="line"><span class="cl">Image Width                     : <span class="m">5184</span>
-</span></span><span class="line"><span class="cl">Image Height                    : <span class="m">3456</span>
-</span></span><span class="line"><span class="cl">Encoding Process                : Baseline DCT, Huffman coding
-</span></span><span class="line"><span class="cl">Bits Per Sample                 : <span class="m">8</span>
-</span></span><span class="line"><span class="cl">Color Components                : <span class="m">3</span>
-</span></span><span class="line"><span class="cl">Y Cb Cr Sub Sampling            : YCbCr4:2:2 <span class="o">(</span><span class="m">2</span> 1<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Drive Mode                      : Single-frame Shooting
-</span></span><span class="line"><span class="cl">File Number                     : 102-3845
-</span></span><span class="line"><span class="cl">Lens                            : 55.0 - 250.0 mm
-</span></span><span class="line"><span class="cl">Shooting Mode                   : Manual
-</span></span><span class="line"><span class="cl">WB RGGB Levels                  : <span class="m">2389</span> <span class="m">1024</span> <span class="m">1024</span> <span class="m">1553</span>
-</span></span><span class="line"><span class="cl">Aperture                        : 18.0
-</span></span><span class="line"><span class="cl">Blue Balance                    : 1.516602
-</span></span><span class="line"><span class="cl">Image Size                      : 5184x3456
-</span></span><span class="line"><span class="cl">Lens ID                         : Canon EF-S 55-250mm f/4-5.6 IS
-</span></span><span class="line"><span class="cl">Megapixels                      : 17.9
-</span></span><span class="line"><span class="cl">Red Balance                     : 2.333008
-</span></span><span class="line"><span class="cl">Scale Factor To <span class="m">35</span> mm Equivalent: 1.6
-</span></span><span class="line"><span class="cl">Shutter Speed                   : 1/1000
-</span></span><span class="line"><span class="cl">Create Date                     : 2021:11:02 13:20:23.32
-</span></span><span class="line"><span class="cl">Date/Time Original              : 2021:11:02 13:20:23.32
-</span></span><span class="line"><span class="cl">Modify Date                     : 2021:11:02 13:20:23.32
-</span></span><span class="line"><span class="cl">Thumbnail Image                 : <span class="o">(</span>Binary data <span class="m">6101</span> bytes, use -b option to extract<span class="o">)</span>
-</span></span><span class="line"><span class="cl">GPS Latitude                    : <span class="m">32</span> deg 40<span class="s1">&#39; 3.87&#34; S
-</span></span></span><span class="line"><span class="cl"><span class="s1">GPS Longitude                   : 279 deg 29&#39;</span> 31.87<span class="s2">&#34; W
-</span></span></span><span class="line"><span class="cl"><span class="s2">Lens                            : 55.0 - 250.0 mm (35 mm equivalent: 86.5 - 393.2 mm)
-</span></span></span><span class="line"><span class="cl"><span class="s2">Circle Of Confusion             : 0.019 mm
-</span></span></span><span class="line"><span class="cl"><span class="s2">Depth Of Field                  : inf (6.34 m - inf)
-</span></span></span><span class="line"><span class="cl"><span class="s2">Field Of View                   : 23.5 deg
-</span></span></span><span class="line"><span class="cl"><span class="s2">Focal Length                    : 55.0 mm (35 mm equivalent: 86.5 mm)
-</span></span></span><span class="line"><span class="cl"><span class="s2">GPS Position                    : 32 deg 40&#39; 3.87&#34;</span> S, <span class="m">279</span> deg 29<span class="err">&#39;</span> 31.87<span class="s2">&#34; W
-</span></span></span><span class="line"><span class="cl"><span class="s2">Hyperfocal Distance             : 8.80 m
-</span></span></span><span class="line"><span class="cl"><span class="s2">Light Value                     : 18.3
-</span></span></span></code></pre></div><p><code>Canon EOS 550D</code></p>
-<h2 id="when-was-the-picture-taken-2-points">When was the picture taken? (2 points)</h2>
-<p><code>2021:11:02 13:20:23</code></p>
-<h2 id="what-does-the-comment-on-the-first-image-says-3-points">What does the comment on the first image says? (3 points)</h2>
-<p><code>relying on altered metadata to catch me?</code></p>
-<h2 id="where-could-the-criminal-be-3-points">Where could the criminal be? (3 points)</h2>
-<p>Doing a reverse image search, we get results which shows us that this could be <strong>Kathmandu Durbar Square</strong>.</p>
-<blockquote>
-<p><strong>Kathmandu Durbar Square</strong> (<em>Basantapur Durbar Kshetra</em>) in front of the old royal palace of the former Kathmandu Kingdom is one of three Durbar (royal palace) Squares in the Kathmandu Valley in Nepal, all of which are UNESCO World Heritage Sites. Source: <a href="https://en.wikipedia.org/wiki/Kathmandu_Durbar_Square">Wikipedia</a></p>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/58165365/155383259-cee568c5-995f-4dfb-a63f-0eee25c007dc.png" alt="image"></p>
-<p><code>Kathmandu</code></p>
+</li>
+</ul>
+<h2 id="skills">Skills</h2>
+<h3 id="technical-skills">Technical Skills</h3>
+<ul>
+<li>Programming Languages: Python, Java, C/C++</li>
+<li>Network Protocols: TCP/IP, UDP, HTTP, HTTPS</li>
+<li>Tools &amp; Technologies: Wireshark, Metasploit, Nmap, Burp Suite</li>
+<li>Operating Systems: Windows, Linux (Ubuntu, Kali)</li>
+<li>Security Concepts: Encryption, Penetration Testing, Threat Analysis</li>
+</ul>
+<h3 id="soft-skills">Soft Skills</h3>
+<ul>
+<li>Problem-solving</li>
+<li>Critical thinking</li>
+<li>Communication</li>
+<li>Teamwork</li>
+</ul>
+<h2 id="experience">Experience</h2>
+<ul>
+<li>
+<p><strong>Cybersecurity Intern</strong></p>
+<ul>
+<li><em>Company Name, Duration</em></li>
+<li>Assisted in conducting vulnerability assessments and penetration tests.</li>
+<li>Analyzed security logs and investigated potential security incidents.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cybersecurity Club President</strong></p>
+<ul>
+<li><em>University Name, Duration</em></li>
+<li>Organized workshops and events to raise awareness about cybersecurity.</li>
+<li>Facilitated discussions on recent cyber threats and best practices for protection.</li>
+</ul>
+</li>
+</ul>
+<h2 id="projects">Projects</h2>
+<ul>
+<li>
+<p><strong>Secure Messaging Application</strong></p>
+<ul>
+<li>Developed a secure messaging application using end-to-end encryption techniques to ensure confidentiality.</li>
+<li>Implemented secure authentication mechanisms to prevent unauthorized access.</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Traffic Analysis Tool</strong></p>
+<ul>
+<li>Created a tool to analyze network traffic and detect suspicious activities using Python and Wireshark.</li>
+<li>Integrated machine learning algorithms for anomaly detection.</li>
+</ul>
+</li>
+</ul>
+<h2 id="certifications">Certifications</h2>
+<ul>
+<li><strong>Certified Ethical Hacker (CEH)</strong></li>
+<li><strong>CompTIA Security+</strong></li>
+<li><strong>Cisco Certified CyberOps Associate</strong></li>
+</ul>
+<h2 id="interests">Interests</h2>
+<ul>
+<li>Ethical Hacking</li>
+<li>Cyber Defense</li>
+<li>Digital Forensics</li>
+<li>Cryptography</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<ul>
+<li>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">John Doe</a></li>
+<li>GitHub: <a href="https://github.com/johndoe">johndoe</a></li>
+</ul>
+<p>Feel free to reach out if you have any questions or opportunities for collaboration!</p>
 
                     </div>
                     <div class="meta post-footer"> <span>Feb 6 2024 02:07 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ctf/"><i class="fas fa-link"></i> link</a></div> 
