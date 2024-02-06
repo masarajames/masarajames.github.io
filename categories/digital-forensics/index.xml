@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Forensics on masarajames</title>
+    <link>https://masarajames.github.io/categories/digital-forensics/</link>
+    <description>Recent content in Digital Forensics on masarajames</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 06 Feb 2024 14:07:19 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/categories/digital-forensics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTF</title>
+      <link>https://masarajames.github.io/posts/ctf/</link>
+      <pubDate>Tue, 06 Feb 2024 14:07:19 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/posts/ctf/</guid>
+      <description>Hey you and welcome to my blog. Today i&amp;rsquo;ll be solving a challenge from BTLO called Meta. It&amp;rsquo;s under the Digital forensics category but i found it more of OSINT. The challenge was relatively easy.
+Here is the brief given for the challenge:
+The attached images were posted by a criminal on the run, with the caption &amp;ldquo;I&amp;rsquo;m roaming free. You will never catch me&amp;rdquo;. We believe you can assist us in proving him wrong.</description>
+    </item>
+    
+  </channel>
+</rss>
