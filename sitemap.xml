@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://masarajames.github.io/about/</loc>
+    <lastmod>2024-02-06T23:31:14+03:00</lastmod>
+  </url><url>
     <loc>https://masarajames.github.io/categories/btlo/</loc>
     <lastmod>2024-02-06T14:07:19+03:00</lastmod>
   </url><url>
@@ -30,5 +33,11 @@
     <lastmod>2024-02-06T14:07:19+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/contact/</loc>
+  </url><url>
+    <loc>https://masarajames.github.io/ctf/</loc>
+  </url><url>
+    <loc>https://masarajames.github.io/notes/</loc>
+  </url><url>
+    <loc>https://masarajames.github.io/blog/</loc>
   </url>
 </urlset>

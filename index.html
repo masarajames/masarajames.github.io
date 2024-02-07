@@ -48,7 +48,7 @@
             </a>
         
             		
-            <a href="posts/ctf"
+            <a href="/ctf"
                 
             >
                 <i class="fas fa-flag-checkered fa-ms"></i>
@@ -88,6 +88,12 @@
             <div class="content">
     
     
+    <div class="section"> 
+        <div class="section-title">recent</div> 
+        
+        
+        </div>
+    
 
     
     <div class="section"> 
@@ -97,7 +103,72 @@
                 <div class="post">
                     <div class="meta pinned"> <i class="fas fa-thumbtack"></i> pinned </div>
                     <div class="post-content">
-                        
+                        <p>Deploy the machine ( no answer needed)
+2. Reconnaissance
+First, let’s get information about the target.</p>
+<ul>
+<li>Scan the machine, how many ports are open?
+Answer: 2</li>
+</ul>
+<p>I prefer to scan with nmap -sV &lt;ip_addr&gt;. This gives you the visibility of the service version and open ports, all in once.
+We can see that open ports are:
+ssh — service that enables secure connection between devices
+http — a web server running Apache httpd 2.4.29</p>
+<p>nmap -sV &lt;ipp_addr&gt;
+From the scan we can proceed to answer next question:
+What version of Apache is running?
+Answer: 2.4.29</p>
+<p>What service is running on port 22?
+Answer: ssh</p>
+<p>Find directories on the web server using the GoBuster tool.
+Answer: No answer needed</p>
+<p>Let’s open GoBuster!
+gobuster dir -u 10.10.121.221 -w WORDLIST_PATH
+Wordlist path can be found in /root/Desktop/Tools/wordlists/dirbuster</p>
+<p>Command that you need to run will be gobuster dir -u &lt;ip_addr&gt; -w /root/Dekstop/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt</p>
+<p>Outcome of our gobuster scan
+We can see two directories that can potentially be of some use for us.</p>
+<p>What is the hidden directory?
+Answer: /panel/</p>
+<ol start="3">
+<li>Getting a shell — how to get a shell in this case?</li>
+</ol>
+<p>Open web browser, type &lt;ip_addr&gt;/panel/
+Find a form to upload and get a reverse shell, and find the flag. In this case we need to go to the ip addres through web browser. The hidden directory named panel will take you to the upload form.</p>
+<p>We can go here <a href="https://github.com/pentestmonkey/php-reverse-shell">https://github.com/pentestmonkey/php-reverse-shell</a>
+What we need to do is to create a shell.php file that we can upload onto the vulnerable server.
+nano shell.php will open the nano editor where you can copy-paste the payload from the git repository, then we need to change the ip_addr and port that we want to be open for our communication.
+However in this case I leave the port as default 1234. Where to get your ip addres? Either type “ifconfig” in the terminal or in thm box it is always visible in the top right corner. Replace the ip_addr with your AttackBoxIP address</p>
+<p>PHP Shell edit
+Once it is done, it’s time to upload it /panel/ folder which we found earlier. But what is that? It looks like server is not taking .php file. What to do it that case? We know that we have .php file and .php file can go in different extensions, quick look into Google and you will see that other extensions are : .php3, .php4, .php5, .php7, .pthml, .pht.</p>
+<p>No go with .php file!
+This is trial and error now, we need to see which one will be accepted. We need to simply edit the extension. I have changed the extension to .php5 and it was accepted by the server.</p>
+<p>Now we need to go to ip_addr/uploads/ and also start our netcat listener in the terminal.</p>
+<p>/uploads/ folder
+How to start a netcat listener? open terminal and type nc -lvnp 1234 (the port number that was edited in your php reverse shell file).</p>
+<p>netcat is ready
+Now click on the shell in /upload/ directory and switch to netcat terminal window.</p>
+<p>We are in! :)</p>
+<p>user.txt — how to find it? use find command. Type find / -type f -name user.txt 2&gt; /dev/null</p>
+<p>-type f — you are telling find to look exclusively for files
+-name user.txt — instructing the find command to search for a file with the name “user.txt”
+2&gt; /dev/null — so error messages do not show up as part of the search result
+We can see where the file is located, to open the file type cat /var/www/user.txt</p>
+<p>user.txt — Answer: THM{y0u_g0t_a_sh3ll}</p>
+<ol start="4">
+<li>Privilege Escalation</li>
+</ol>
+<p>Now that we have a shell, let&rsquo;s escalate our privileges to root.</p>
+<p>Search for files with SUID permission, which file is weird? We need to run command find / -user root -perm /4000. What it means? It is looking for a file with SUID permission that can be run as root. We need to look carefully into the output of the command to find which file can be exploited to gain root access.</p>
+<p>Search for files with SUID permission, which file is weird? Answer: /usr/bin/python</p>
+<p>How to exploit it? Go to GTFOBins <a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a> and look for Python GTFO. We need this one :</p>
+<p>This is super simple now, we just need to copy this command into our user shell and watch magic happen.
+python -c &lsquo;import os; os.execl(&quot;/bin/sh&quot;, &ldquo;sh&rdquo;, &ldquo;-p&rdquo;)&rsquo;</p>
+<p>We need to run the second part of the command here. Type whoami to get confirmation that we indeed are a root user now.</p>
+<p>To find the root.txt run this command in the terminal find / -type f -name root.txt</p>
+<p>root.txt Answer: THM{pr1v1l3g3_3sc4l4t10n}</p>
+<p>And we are done! Hope you enjoyed my writeup and get to know some new tricks. Onto the next one my friends!</p>
+
                     </div>
                     <div class="meta post-footer"> <span>Feb 6 2024 02:07 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ctf/"><i class="fas fa-link"></i> link</a></div> 
                 </div>
