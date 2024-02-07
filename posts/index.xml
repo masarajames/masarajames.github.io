@@ -18,5 +18,14 @@
 Scan the machine, how many ports are open? Answer: 2 I prefer to scan with nmap -sV &amp;lt;ip_addr&amp;gt;. This gives you the visibility of the service version and open ports, all in once. We can see that open ports are: ssh — service that enables secure connection between devices http — a web server running Apache httpd 2.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://masarajames.github.io/posts/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://masarajames.github.io/posts/blog/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
