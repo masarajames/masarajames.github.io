@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BTLO on masara</title>
+    <title>BTLO on Masara</title>
     <link>https://masarajames.github.io/categories/btlo/</link>
-    <description>Recent content in BTLO on masara</description>
+    <description>Recent content in BTLO on Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
@@ -14,8 +14,7 @@
       <pubDate>Tue, 06 Feb 2024 14:07:19 +0300</pubDate>
       
       <guid>https://masarajames.github.io/posts/ctf/</guid>
-      <description>About Me: John Doe - Computer Science Student in Cybersecurity Introduction Hello! I&amp;rsquo;m John Doe, a passionate computer science student with a keen interest in cybersecurity. With a strong foundation in programming, networking, and information security principles, I aspire to contribute to the field of cybersecurity and tackle emerging cyber threats.
-Education Bachelor&amp;rsquo;s Degree in Computer Science University Name, Year of Graduation Relevant coursework: Introduction to Cybersecurity, Network Security, Cryptography, etc.</description>
+      <description></description>
     </item>
     
   </channel>
