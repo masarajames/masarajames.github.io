@@ -7,24 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>.</copyright>
-    <lastBuildDate>Tue, 06 Feb 2024 14:07:19 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Feb 2024 22:53:56 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CTF</title>
-      <link>https://masarajames.github.io/posts/ctf/</link>
-      <pubDate>Tue, 06 Feb 2024 14:07:19 +0300</pubDate>
+      <title>PicoCTF_Cookies</title>
+      <link>https://masarajames.github.io/posts/picoctf_cookies/</link>
+      <pubDate>Thu, 15 Feb 2024 22:53:56 +0300</pubDate>
       
-      <guid>https://masarajames.github.io/posts/ctf/</guid>
-      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
-*Home page gonna be looking better soon* 📝 Prolly next time you visit my page So please dont judge 😄 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://masarajames.github.io/posts/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://masarajames.github.io/posts/blog/</guid>
-      <description></description>
+      <guid>https://masarajames.github.io/posts/picoctf_cookies/</guid>
+      <description>Pico Web CTF : Cookies Hey there, Welcome to my page 😄.This is my first public CTF write-up. I chose to start with this challenge specifically because of how I find it to be a super beginner friendly challenge and I thought will find it to explain easily. I hope I don&amp;rsquo;t disappoint you 😏.
+This is a web CTF from PicoCTF called Cookies. This is what you get once you open it .</description>
     </item>
     
   </channel>

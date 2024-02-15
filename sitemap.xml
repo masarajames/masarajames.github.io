@@ -2,44 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://masarajames.github.io/</loc>
+    <lastmod>2024-02-15T22:53:56+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/posts/picoctf_cookies/</loc>
+    <lastmod>2024-02-15T22:53:56+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/posts/</loc>
+    <lastmod>2024-02-15T22:53:56+03:00</lastmod>
+  </url><url>
     <loc>https://masarajames.github.io/about/</loc>
     <lastmod>2024-02-06T23:31:14+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/categories/btlo/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/categories/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/posts/ctf/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/categories/digital-forensics/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/tags/exiftool/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/posts/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/tags/reverse-image-search/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/tags/</loc>
-    <lastmod>2024-02-06T14:07:19+03:00</lastmod>
-  </url><url>
     <loc>https://masarajames.github.io/blog/</loc>
   </url><url>
-    <loc>https://masarajames.github.io/posts/blog/</loc>
+    <loc>https://masarajames.github.io/categories/</loc>
   </url><url>
     <loc>https://masarajames.github.io/contact/</loc>
   </url><url>
     <loc>https://masarajames.github.io/ctf/</loc>
   </url><url>
     <loc>https://masarajames.github.io/notes/</loc>
+  </url><url>
+    <loc>https://masarajames.github.io/tags/</loc>
   </url>
 </urlset>
