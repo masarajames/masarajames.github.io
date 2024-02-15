@@ -23,8 +23,8 @@
       <pubDate>Tue, 06 Feb 2024 14:07:19 +0300</pubDate>
       
       <guid>https://masarajames.github.io/posts/ctf/</guid>
-      <description>Deploy the machine ( no answer needed) 2. Reconnaissance First, let’s get information about the target.
-Scan the machine, how many ports are open? Answer: 2 I prefer to scan with nmap -sV &amp;lt;ip_addr&amp;gt;. This gives you the visibility of the service version and open ports, all in once. We can see that open ports are: ssh — service that enables secure connection between devices http — a web server running Apache httpd 2.</description>
+      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
+*Home page gonna be looking better soon* 📝 Prolly next time you visit my page So please dont judge 😄 </description>
     </item>
     
     <item>
