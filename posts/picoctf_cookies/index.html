@@ -141,7 +141,42 @@ preferences, keeping you logged in, and analyzing how you use the site. Cookies 
 <blockquote>
 <p><img src="/assets/images/picoCTF_cookies/cookieExt.png" alt="landing page"></p>
 </blockquote>
-<p>Now visit the pico website  and click on the cookies editor extension and you will find all your cookies there and their value</p>
+<p>Now visit the pico website  and click on the cookies editor extension and you will find all your cookies there and their value.</p>
+<p>I found a cookie called  <strong>name</strong> with the value <strong>-1</strong> . I changed the value of the cookie to <strong>0</strong> and saved it and refreshed the page and this is what I got</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/3.png" alt="landing page"></p>
+</blockquote>
+<p>Changing the value  severally, to 1,2,3,4 &hellip;.and kept getting different  information from the website.</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/4.png" alt="landing page"></p>
+</blockquote>
+<p>This was tiresome . And so I decided to use burp-suite tool to do this.</p>
+<p>First, I intercepted  the request  and there I could see my cookie there</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/5.png" alt="landing page"></p>
+</blockquote>
+<p>Using the  feature in burp suite - <em>Intruder</em> , I sent the request to the Intruder</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/6.png" alt="landing page"></p>
+</blockquote>
+<p>Once in the <em>Intruder</em> section,</p>
+<ol>
+<li>Make sure the value at the cookie is in between a $ sign</li>
+<li>Visit the payload tab , to add our payload</li>
+</ol>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/7.png" alt="landing page"></p>
+</blockquote>
+<p>Once at the payload tab, change the <strong>payload type</strong> to <strong>Numbers</strong> and a range of your choice. For me I choose <em>from 1 to 50</em> and step of 1</p>
+<p>And then <strong>Start attack</strong></p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/8.png" alt="landing page"></p>
+</blockquote>
+<p>Once the attack is done,I checked all the successfull attack with code 200 and viewed the reponse of attack  and there was my flag 👏</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/9.png" alt="landing page"></p>
+</blockquote>
+<p>Hurray 🤗!!!!! My first public write up 😄. Hope you enjoyed</p>
 
     
     <div class="nav-next-prev">
