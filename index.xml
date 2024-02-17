@@ -6,8 +6,27 @@
     <description>Recent content on Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>.</copyright>
-    <lastBuildDate>Thu, 15 Feb 2024 22:53:56 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>I want to learn</copyright>
+    <lastBuildDate>Fri, 16 Feb 2024 14:58:16 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kamilimu</title>
+      <link>https://masarajames.github.io/list-item/kamilimu/</link>
+      <pubDate>Fri, 16 Feb 2024 14:58:16 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/list-item/kamilimu/</guid>
+      <description>jefkjfjdjksfdkfs
+jgjhgjgjgjgjgjhgjhgjhj </description>
+    </item>
+    
+    <item>
+      <title>My Public CTF write-ups</title>
+      <link>https://masarajames.github.io/ctf/</link>
+      <pubDate>Fri, 16 Feb 2024 14:48:11 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/ctf/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>PicoCTF_Cookies</title>
       <link>https://masarajames.github.io/posts/picoctf_cookies/</link>
@@ -28,31 +47,12 @@ This is a web CTF from PicoCTF called Cookies. This is what you get once you ope
     </item>
     
     <item>
-      <title></title>
-      <link>https://masarajames.github.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://masarajames.github.io/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>get in touch</title>
       <link>https://masarajames.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://masarajames.github.io/contact/</guid>
       <description> Send </description>
-    </item>
-    
-    <item>
-      <title>Here are my ctf writeup</title>
-      <link>https://masarajames.github.io/ctf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://masarajames.github.io/ctf/</guid>
-      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
-**CTF writeup Coming Soon 📝** </description>
     </item>
     
     <item>
@@ -63,6 +63,16 @@ This is a web CTF from PicoCTF called Cookies. This is what you get once you ope
       <guid>https://masarajames.github.io/notes/</guid>
       <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
 **Notes Coming Soon 📝** </description>
+    </item>
+    
+    <item>
+      <title>Some of my blogs</title>
+      <link>https://masarajames.github.io/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://masarajames.github.io/blog/</guid>
+      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
+**Blogs writeup Coming Soon 📝** --- </description>
     </item>
     
   </channel>
