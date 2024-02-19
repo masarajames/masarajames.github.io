@@ -11,10 +11,16 @@
     <loc>https://masarajames.github.io/posts/</loc>
     <lastmod>2024-02-18T23:39:40+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/lists/kamilimu/</loc>
+    <loc>https://masarajames.github.io/tags/cybersecurity/</loc>
     <lastmod>2024-02-16T14:58:16+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/lists/</loc>
+    <loc>https://masarajames.github.io/list-item/kamilimu/</loc>
+    <lastmod>2024-02-16T14:58:16+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/list-item/</loc>
+    <lastmod>2024-02-16T14:58:16+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/tags/</loc>
     <lastmod>2024-02-16T14:58:16+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/ctf/</loc>
@@ -33,7 +39,5 @@
     <loc>https://masarajames.github.io/notes/</loc>
   </url><url>
     <loc>https://masarajames.github.io/blog/</loc>
-  </url><url>
-    <loc>https://masarajames.github.io/tags/</loc>
   </url>
 </urlset>
