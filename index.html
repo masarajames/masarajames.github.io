@@ -14,7 +14,7 @@
   </head><body><aside id="sidenav">
     <header>
     
-       <a href="https://masarajames.github.io/"> <img src="https://lh3.googleusercontent.com/proxy/DHFj0_vCFvHGKePwLUO1a4TNjsTlMZMbtzjC-G1kOrxOvu27tisPCYgMGxOoDjoRfn76pjUuy0Y6qkZ8eB07sKNS_K9eWukvJsRW3izPng3YPVGFhaZuIIZ4kQCgJ1GtNvi6" alt="avatar"></a>
+       <a href="https://masarajames.github.io/"> <img src="https://lh3.googleusercontent.com/proxy/c4aFgNEeys7-_zGrMknJjzquetWq6gnN-IbOguVlr_E7yLrnQ1mnnl0YUYhnVheYapef3EhKlc2JXKHSdVq-jyuZzRYCwyqG_kPNRRfJAl4lXXs7VP-e03Mm7KZrRJ4rP-q1" alt="avatar"></a>
         
     
 
@@ -109,7 +109,6 @@
                     
                     <div class="post-content">
                         
-                        Ping_pong
 
                     </div>
                     <div class="meta post-footer"> <span>Feb 18 2024 11:39 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ping_pong/"><i class="fas fa-link"></i> link</a></div> 
@@ -118,8 +117,86 @@
                 <div class="post">
                     
                     <div class="post-content">
-                        
-                        PicoCTF_Cookies
+                        <h3 id="pico-web-ctf--cookies">Pico Web CTF : Cookies</h3>
+<p>Hey there, Welcome to my page 😄.This is my first public CTF write-up. I chose to start with this challenge specifically because of how I find it to be a super beginner friendly challenge and  I thought will find it to explain easily.
+I hope I don&rsquo;t disappoint you 😏.</p>
+<p>This is a web CTF from <a href="https://play.picoctf.org/practice/challenge/173?category=1&amp;page=1">PicoCTF</a> called Cookies. This is what you get once you open it .</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/0.png" alt="landing page"></p>
+</blockquote>
+<p>I then visited the given website. and found this.</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/1.png" alt="landing page"></p>
+</blockquote>
+<p>Just like how I would solve any another  CTF challenge ,  I  first look out  all possible given hint and keep them in mind as I solve the challenge.</p>
+<p>From this challenge, my first hint was from the name of the challenges . <em>&ldquo;Cookies&rdquo;</em></p>
+<blockquote>
+<h5 id="what-are-cookies"><em>What are cookies</em></h5>
+<p><em>Cookies are small text files that websites place on your device when you visit them. They serve various purposes, like remembering your
+preferences, keeping you logged in, and analyzing how you use the site. Cookies enable websites to provide personalized experiences, such as tailored content and targeted advertisements. While they enhance functionality and usability, some cookies also raise privacy concerns due to their tracking capabilities. It&rsquo;s essential to understand how cookies work and their implications for your online privacy.</em></p>
+</blockquote>
+<p>There are two main ways I view cookies in website:</p>
+<ol>
+<li>Browser Developer Tools:
+<ul>
+<li>Once  you visit the developer tools on your browser</li>
+<li>Navigate to the &ldquo;Application&rdquo; or &ldquo;Storage&rdquo; tab, where you&rsquo;ll find a section for cookies.</li>
+<li>From there, you can view details such as cookie names, values, expiration dates, and associated domains.</li>
+</ul>
+</li>
+<li>Browser Extensions:
+<ul>
+<li>This is one i prefer to use more.</li>
+<li>The extension additional functionality for managing cookies</li>
+<li>Are  more user-friendly interfaces compared to built-in browser tools.</li>
+</ul>
+</li>
+</ol>
+<p>For this challenge, I used <a href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm">this cookie editor editor availaible in chrome store</a></p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/2.png" alt="landing page"></p>
+</blockquote>
+<p>Once installed ,  you will it at the top right of your browser  where extension are mostly</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/cookieExt.png" alt="landing page"></p>
+</blockquote>
+<p>Now visit the pico website  and click on the cookies editor extension and you will find all your cookies there and their value.</p>
+<p>I found a cookie called  <strong>name</strong> with the value <strong>-1</strong> . I changed the value of the cookie to <strong>0</strong> and saved it and refreshed the page and this is what I got</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/3.png" alt="landing page"></p>
+</blockquote>
+<p>Changing the value  severally, to 1,2,3,4 &hellip;.and kept getting different  information from the website.</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/4.png" alt="landing page"></p>
+</blockquote>
+<p>This was tiresome . And so I decided to use burp-suite tool to do this.</p>
+<p>First, I intercepted  the request  and there I could see my cookie there</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/5.png" alt="landing page"></p>
+</blockquote>
+<p>Using the  feature in burp suite - <em>Intruder</em> , I sent the request to the Intruder</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/6.png" alt="landing page"></p>
+</blockquote>
+<p>Once in the <em>Intruder</em> section,</p>
+<ol>
+<li>Make sure the value at the cookie is in between a $ sign</li>
+<li>Visit the payload tab , to add our payload</li>
+</ol>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/7.png" alt="landing page"></p>
+</blockquote>
+<p>Once at the payload tab, change the <strong>payload type</strong> to <strong>Numbers</strong> and a range of your choice. For me I choose <em>from 1 to 50</em> and step of 1</p>
+<p>And then <strong>Start attack</strong></p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/8.png" alt="landing page"></p>
+</blockquote>
+<p>Once the attack is done,I checked all the successfull attack with code 200 and viewed the reponse of attack  and there was my flag 👏</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/9.png" alt="landing page"></p>
+</blockquote>
+<p>Hurray 🤗!!!!! My first public write up 😄. Hope you enjoyed</p>
+
 
                     </div>
                     <div class="meta post-footer"> <span>Feb 15 2024 10:53 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/picoctf_cookies/"><i class="fas fa-link"></i> link</a></div> 
