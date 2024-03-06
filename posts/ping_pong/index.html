@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The only thing I know is that I know nothing. - Socrates">
     <meta name="Author" content="James Masara">
-    <meta name="keywords" content="try">
+    <meta name="keywords" content="I am masara">
     <link rel="stylesheet" href=https://masarajames.github.io/css/syntax.css>
     <link rel="stylesheet" href=https://masarajames.github.io/css/style.css>
     <script src="https://kit.fontawesome.com/1b7478c139.js" crossorigin="anonymous"></script>
@@ -94,7 +94,90 @@
     
       
     
-    
+    <h3 id="ping-pong-challenge--ctfroom-intervarsity-competition">Ping Pong challenge : CTFROOM INTERVARSITY COMPETITION</h3>
+<p>I got to learn a lot of new tools from this  recent  forensics chalaange  I did. As part of my note-taking, I have documentated the challenge from which was part of  <a href="https://ctfroom.com/">CTFRoom</a> Intervarsity  Competition .</p>
+<p>The challenge has already been done in a walkthrough <a href="https://youtu.be/3j8WD6V-Cfg?feature=shared">video</a> by the <a href="https://05t3.github.io/">creator</a> of the challenge  and is basically what I used to solve the beter part of the challenge.</p>
+<p>This was the landing page of the challenge  with its descrpition, hints and one  file.</p>
+<blockquote>
+<p><img src="/assets/images/pingPong/1.png" alt="landing page"></p>
+</blockquote>
+<p>I downloaded the <strong><a href="https://file.io/mbEe51fV7yJB">file</a></strong> and it was a <a href="https://file.io/mbEe51fV7yJB">pcap file</a>. I then opened the file using wireshark and got number of captured packets.</p>
+<blockquote>
+<p><img src="/assets/images/pingPong/2.png" alt="landing page">
+I then used the statistics tab to get more info about the packets . The packets consisted only of one protcol which is ICMP(Internet Control Message Protocol) and a total of 420 captured packets
+<img src="/assets/images/pingPong/3.png" alt="landing page">
+I also checked the number of endpoints also using the statistics tapb
+<img src="/assets/images/pingPong/4.png" alt="landing page"></p>
+</blockquote>
+<p>Just like how I would solve any another  CTF challenge ,  I  first look out  all possible given hint and keep them in mind as I solve the challenge.</p>
+<p>From this challenge, my first hint was from the name of the challenges . <em>&ldquo;Cookies&rdquo;</em></p>
+<blockquote>
+<h5 id="what-are-cookies"><em>What are cookies</em></h5>
+<p><em>Cookies are small text files that websites place on your device when you visit them. They serve various purposes, like remembering your
+preferences, keeping you logged in, and analyzing how you use the site. Cookies enable websites to provide personalized experiences, such as tailored content and targeted advertisements. While they enhance functionality and usability, some cookies also raise privacy concerns due to their tracking capabilities. It&rsquo;s essential to understand how cookies work and their implications for your online privacy.</em></p>
+</blockquote>
+<p>There are two main ways I view cookies in website:</p>
+<ol>
+<li>Browser Developer Tools:
+<ul>
+<li>Once  you visit the developer tools on your browser</li>
+<li>Navigate to the &ldquo;Application&rdquo; or &ldquo;Storage&rdquo; tab, where you&rsquo;ll find a section for cookies.</li>
+<li>From there, you can view details such as cookie names, values, expiration dates, and associated domains.</li>
+</ul>
+</li>
+<li>Browser Extensions:
+<ul>
+<li>This is one i prefer to use more.</li>
+<li>The extension additional functionality for managing cookies</li>
+<li>Are  more user-friendly interfaces compared to built-in browser tools.</li>
+</ul>
+</li>
+</ol>
+<p>For this challenge, I used <a href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm">this cookie editor editor availaible in chrome store</a></p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/2.png" alt="landing page"></p>
+</blockquote>
+<p>Once installed ,  you will it at the top right of your browser  where extension are mostly</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/cookieExt.png" alt="landing page"></p>
+</blockquote>
+<p>Now visit the pico website  and click on the cookies editor extension and you will find all your cookies there and their value.</p>
+<p>I found a cookie called  <strong>name</strong> with the value <strong>-1</strong> . I changed the value of the cookie to <strong>0</strong> and saved it and refreshed the page and this is what I got</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/3.png" alt="landing page"></p>
+</blockquote>
+<p>Changing the value  severally, to 1,2,3,4 &hellip;.and kept getting different  information from the website.</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/4.png" alt="landing page"></p>
+</blockquote>
+<p>This was tiresome . And so I decided to use burp-suite tool to do this.</p>
+<p>First, I intercepted  the request  and there I could see my cookie there</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/5.png" alt="landing page"></p>
+</blockquote>
+<p>Using the  feature in burp suite - <em>Intruder</em> , I sent the request to the Intruder</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/6.png" alt="landing page"></p>
+</blockquote>
+<p>Once in the <em>Intruder</em> section,</p>
+<ol>
+<li>Make sure the value at the cookie is in between a $ sign</li>
+<li>Visit the payload tab , to add our payload</li>
+</ol>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/7.png" alt="landing page"></p>
+</blockquote>
+<p>Once at the payload tab, change the <strong>payload type</strong> to <strong>Numbers</strong> and a range of your choice. For me I choose <em>from 1 to 50</em> and step of 1</p>
+<p>And then <strong>Start attack</strong></p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/8.png" alt="landing page"></p>
+</blockquote>
+<p>Once the attack is done,I checked all the successfull attack with code 200 and viewed the reponse of attack  and there was my flag 👏</p>
+<blockquote>
+<p><img src="/assets/images/picoCTF_cookies/9.png" alt="landing page"></p>
+</blockquote>
+<p>Hurray 🤗!!!!! My first public write up 😄. Hope you enjoyed</p>
+
     
     <div class="nav-next-prev">
         <div class="nav-prev">
