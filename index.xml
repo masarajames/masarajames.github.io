@@ -7,7 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>I think, therefore I am. - René Descartes</copyright>
-    <lastBuildDate>Sun, 18 Feb 2024 23:39:40 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 23:51:33 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Here are my notes and resources</title>
+      <link>https://masarajames.github.io/notes/</link>
+      <pubDate>Wed, 27 Mar 2024 00:21:07 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/notes/</guid>
+      <description>Free TryHackMe Rooms</description>
+    </item>
+    
+    <item>
+      <title>Crypotography</title>
+      <link>https://masarajames.github.io/room/crypotography/</link>
+      <pubDate>Tue, 26 Mar 2024 23:51:33 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/crypotography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forensics</title>
+      <link>https://masarajames.github.io/room/forensics/</link>
+      <pubDate>Tue, 26 Mar 2024 23:51:18 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse</title>
+      <link>https://masarajames.github.io/room/reverse/</link>
+      <pubDate>Tue, 26 Mar 2024 23:51:09 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/reverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://masarajames.github.io/room/web/</link>
+      <pubDate>Tue, 26 Mar 2024 23:50:58 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/web/</guid>
+      <description> Cookies </description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>https://masarajames.github.io/room/general/</link>
+      <pubDate>Tue, 26 Mar 2024 23:50:50 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PicoCTF challenges </title>
+      <link>https://masarajames.github.io/room/pico/</link>
+      <pubDate>Tue, 26 Mar 2024 23:42:08 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/pico/</guid>
+      <description> Web Challenges General skills Forensics Challenges Cryptography challenges Reverese Engineering </description>
+    </item>
+    
+    <item>
+      <title>TryHackMe CTF Rooms</title>
+      <link>https://masarajames.github.io/room/tryhackme/</link>
+      <pubDate>Tue, 26 Mar 2024 23:41:51 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/tryhackme/</guid>
+      <description> RootMe atlas blueteam Mr robot c4ptur3th3fl4g CatPictures corridor cowboyhacker Dav first_task_hashes Fowsniff gamingserver h4cked gaming server lazy admin madness ovlcap PeakHill pickle pythonPlayground startup vulnversity wireshark </description>
+    </item>
+    
     <item>
       <title>Ping_pong</title>
       <link>https://masarajames.github.io/posts/ping_pong/</link>
@@ -36,8 +108,8 @@ One of the most remarkable accomplishments during this period was conquering my 
       
       <guid>https://masarajames.github.io/ctf/</guid>
       <description> TryHackMe CTF Rooms
-RootMe PicoCTF Rooms
-Cookies Hack The Box Labs
+PicoCTF Rooms
+Hack The Box Labs
 Surveillance CTFROOM
 Ping Pong OTHERS
 SheHacks </description>
@@ -63,22 +135,12 @@ This is a web CTF from PicoCTF called Cookies. This is what you get once you ope
     </item>
     
     <item>
-      <title>get in touch</title>
+      <title>Get in touch with me</title>
       <link>https://masarajames.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://masarajames.github.io/contact/</guid>
-      <description> Send </description>
-    </item>
-    
-    <item>
-      <title>Here are some of my notes</title>
-      <link>https://masarajames.github.io/notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://masarajames.github.io/notes/</guid>
-      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
-**Notes Coming Soon 📝** </description>
+      <description> Linkedin Twitter Email Send </description>
     </item>
     
     <item>
@@ -87,12 +149,10 @@ This is a web CTF from PicoCTF called Cookies. This is what you get once you ope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://masarajames.github.io/blog/</guid>
-      <description> TryHackMe CTF Rooms
-RootMe PicoCTF Rooms
-Cookies Hack The Box Labs
-Surveillance CTFROOM
-Ping Pong OTHERS
-SheHacks Compentetion ctf </description>
+      <description>My Kamilimu Experince
+Growing my Self-Confidence
+Creating hugo static website
+Imposter Syndrome</description>
     </item>
     
   </channel>

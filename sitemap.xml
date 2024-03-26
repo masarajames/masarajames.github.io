@@ -2,8 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://masarajames.github.io/notes/</loc>
+    <lastmod>2024-03-27T00:21:07+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/crypotography/</loc>
+    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
+  </url><url>
     <loc>https://masarajames.github.io/</loc>
-    <lastmod>2024-02-18T23:39:40+03:00</lastmod>
+    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/</loc>
+    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/forensics/</loc>
+    <lastmod>2024-03-26T23:51:18+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/reverse/</loc>
+    <lastmod>2024-03-26T23:51:09+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/web/</loc>
+    <lastmod>2024-03-26T23:50:58+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/general/</loc>
+    <lastmod>2024-03-26T23:50:50+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/pico/</loc>
+    <lastmod>2024-03-26T23:42:08+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/tryhackme/</loc>
+    <lastmod>2024-03-26T23:41:51+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/posts/ping_pong/</loc>
     <lastmod>2024-02-18T23:39:40+03:00</lastmod>
@@ -35,8 +62,6 @@
     <loc>https://masarajames.github.io/categories/</loc>
   </url><url>
     <loc>https://masarajames.github.io/contact/</loc>
-  </url><url>
-    <loc>https://masarajames.github.io/notes/</loc>
   </url><url>
     <loc>https://masarajames.github.io/blog/</loc>
   </url>
