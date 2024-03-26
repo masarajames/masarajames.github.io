@@ -39,7 +39,8 @@ One of the most remarkable accomplishments during this period was conquering my 
 RootMe PicoCTF Rooms
 Cookies Hack The Box Labs
 Surveillance CTFROOM
-Ping Pong </description>
+Ping Pong OTHERS
+SheHacks </description>
     </item>
     
     <item>
@@ -81,13 +82,17 @@ This is a web CTF from PicoCTF called Cookies. This is what you get once you ope
     </item>
     
     <item>
-      <title>Some of my blogs</title>
+      <title>My  Blogs</title>
       <link>https://masarajames.github.io/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://masarajames.github.io/blog/</guid>
-      <description>Caution 🚧 Attention: Work in Progress&amp;hellip;
-**Blogs writeup Coming Soon 📝** --- </description>
+      <description> TryHackMe CTF Rooms
+RootMe PicoCTF Rooms
+Cookies Hack The Box Labs
+Surveillance CTFROOM
+Ping Pong OTHERS
+SheHacks Compentetion ctf </description>
     </item>
     
   </channel>
