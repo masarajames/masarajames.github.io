@@ -97,7 +97,7 @@
         
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/crypotography/">Crypotography</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/pico/crypotography/">Crypotography</a>
                 
                 
                 <div class="meta">
@@ -110,7 +110,7 @@
             </div>
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/forensics/">Forensics</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/pico/forensics/">Forensics</a>
                 
                 
                 <div class="meta">
@@ -123,7 +123,7 @@
             </div>
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/reverse/">Reverse</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/pico/reverse/">Reverse</a>
                 
                 
                 <div class="meta">
@@ -136,7 +136,7 @@
             </div>
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/web/">Web</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/pico/web/">Web</a>
                 
                 
                 <div class="meta">
@@ -149,7 +149,7 @@
             </div>
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/general/">General</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/pico/general/">General</a>
                 
                 
                 <div class="meta">
@@ -192,7 +192,7 @@
 
     
     <div class="section"> 
-        <div class="section-title">CTF</div> 
+        <div class="section-title">CTFs</div> 
         <div class="posts">
              
             
@@ -200,51 +200,7 @@
                 <div class="post">
                     
                     <div class="post-content">
-                        <h3 id="ping-pong-challenge--ctfroom-intervarsity-competition">Ping Pong challenge : CTFROOM INTERVARSITY COMPETITION</h3>
-<p>I got to learn a lot of new tools from this  recent  forensics challange  I did. As part of my note-taking, I have documentated the challenge  which was part of  <a href="https://ctfroom.com/">CTFROOM</a> Intervarsity  Competition .</p>
-<p>The challenge has already been done in a walkthrough <a href="https://youtu.be/3j8WD6V-Cfg?feature=shared">video</a> by the <a href="https://05t3.github.io/">creator</a> of the challenge  and is basically what I used to solve and learn the better part of the challenge.</p>
-<p>This was the landing page of the challenge  with its descrpition, hints and one  file.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/1.png" alt="landing page"></p>
-</blockquote>
-<p>I downloaded the <strong><a href="https://file.io/mbEe51fV7yJB">file</a></strong> and it was a <a href="https://file.io/mbEe51fV7yJB">pcap file</a>. I then opened the file using wireshark and got number of captured packets.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/2.png" alt="landing page"></p>
-</blockquote>
-<p>I then used the statistics tab to get more info about the packets . The packets consisted only of one protcol which is ICMP(Internet Control Message Protocol) and a total of 420 captured packets</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/3.png" alt="landing page"></p>
-</blockquote>
-<p>I also checked the number of endpoints also using the statistics/endpoints tab. and I had only 2 endpoints involved in all the captured packets.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/4.png" alt="landing page"></p>
-</blockquote>
-<p>With that summary information, my first assignment was to understand more about ICMP protocol</p>
-<blockquote>
-<h5 id="what-is-icmp-protocol"><em>What is ICMP protocol</em></h5>
-<p><em>ICMP stands for Internet Control Message Protocol. It&rsquo;s a protocol within the Internet Protocol Suite, used primarily for diagnostic and error    messages in IP networks. ICMP messages are typically used by network devices, like routers and switches, to communicate with each other and with hosts.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>Here are two simple examples of how ICMP is used:</strong></p>
-</blockquote>
-<blockquote>
-<p><em><strong>Ping</strong></em>:<em>One of the most common uses of ICMP is the &ldquo;ping&rdquo; command. When you ping a device, your computer sends an ICMP Echo Request message to that device&rsquo;s IP address. If the device is reachable and operational, it will respond with an ICMP Echo Reply message. This helps in determining whether a host is reachable and how long it takes for packets to travel to and from that host. For example, you might use the ping command to check if a website is up and how quickly it responds</em></p>
-</blockquote>
-<blockquote>
-<p><em><strong>Traceroute</strong></em>:<em>Traceroute is another tool that uses ICMP. When you run a traceroute command, your computer sends a series of ICMP Echo Request messages with varying Time-to-Live (TTL) values. Each router along the path to the destination decrements the TTL value, and if it reaches zero, the router discards the packet and sends back an ICMP Time Exceeded message to the source. By analyzing the ICMP Time Exceeded messages received from each router, traceroute can map the path packets take from your computer to the destination, helping to diagnose network routing issues.</em></p>
-</blockquote>
-<ul>
-<li>
-<blockquote>
-<p><img src="/assets/images/pingPong/5.png" alt="landing page">
-<img src="/assets/images/pingPong/6.png" alt="landing page">
-<img src="/assets/images/pingPong/7.png" alt="landing page">
-<img src="/assets/images/pingPong/8.png" alt="landing page">
-<img src="/assets/images/pingPong/9.png" alt="landing page">
-<img src="/assets/images/pingPong/10.png" alt="landing page"></p>
-</blockquote>
-</li>
-</ul>
+                        <a class="entry-title" href="https://masarajames.github.io/posts/ping_pong/">Ping pong</a>
 
                     </div>
                     <div class="meta post-footer"> <span>Feb 18 2024 11:39 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ping_pong/"><i class="fas fa-link"></i> link</a></div> 
@@ -253,91 +209,14 @@
                 <div class="post">
                     
                     <div class="post-content">
-                        <h3 id="pico-web-ctf--cookies">Pico Web CTF : Cookies</h3>
-<p>Hey there, Welcome to my page 😄.This is my first public CTF write-up. I chose to start with this challenge specifically because of how I find it to be a super beginner friendly challenge and  I thought will find it to explain easily.
-I hope I don&rsquo;t disappoint you 😏.</p>
-<p>This is a web CTF from <a href="https://play.picoctf.org/practice/challenge/173?category=1&amp;page=1">PicoCTF</a> called Cookies. This is what you get once you open it .</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/0.png" alt="landing page"></p>
-</blockquote>
-<p>I then visited the given website. and found this.</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/1.png" alt="landing page"></p>
-</blockquote>
-<p>Just like how I would solve any another  CTF challenge ,  I  first look out  all possible given hint and keep them in mind as I solve the challenge.</p>
-<p>From this challenge, my first hint was from the name of the challenges . <em>&ldquo;Cookies&rdquo;</em></p>
-<blockquote>
-<h5 id="what-are-cookies"><em>What are cookies</em></h5>
-<p><em>Cookies are small text files that websites place on your device when you visit them. They serve various purposes, like remembering your
-preferences, keeping you logged in, and analyzing how you use the site. Cookies enable websites to provide personalized experiences, such as tailored content and targeted advertisements. While they enhance functionality and usability, some cookies also raise privacy concerns due to their tracking capabilities. It&rsquo;s essential to understand how cookies work and their implications for your online privacy.</em></p>
-</blockquote>
-<p>There are two main ways I view cookies in website:</p>
-<ol>
-<li>Browser Developer Tools:
-<ul>
-<li>Once  you visit the developer tools on your browser</li>
-<li>Navigate to the &ldquo;Application&rdquo; or &ldquo;Storage&rdquo; tab, where you&rsquo;ll find a section for cookies.</li>
-<li>From there, you can view details such as cookie names, values, expiration dates, and associated domains.</li>
-</ul>
-</li>
-<li>Browser Extensions:
-<ul>
-<li>This is one i prefer to use more.</li>
-<li>The extension additional functionality for managing cookies</li>
-<li>Are  more user-friendly interfaces compared to built-in browser tools.</li>
-</ul>
-</li>
-</ol>
-<p>For this challenge, I used <a href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm">this cookie editor editor availaible in chrome store</a></p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/2.png" alt="landing page"></p>
-</blockquote>
-<p>Once installed ,  you will it at the top right of your browser  where extension are mostly</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/cookieExt.png" alt="landing page"></p>
-</blockquote>
-<p>Now visit the pico website  and click on the cookies editor extension and you will find all your cookies there and their value.</p>
-<p>I found a cookie called  <strong>name</strong> with the value <strong>-1</strong> . I changed the value of the cookie to <strong>0</strong> and saved it and refreshed the page and this is what I got</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/3.png" alt="landing page"></p>
-</blockquote>
-<p>Changing the value  severally, to 1,2,3,4 &hellip;.and kept getting different  information from the website.</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/4.png" alt="landing page"></p>
-</blockquote>
-<p>This was tiresome . And so I decided to use burp-suite tool to do this.</p>
-<p>First, I intercepted  the request  and there I could see my cookie there</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/5.png" alt="landing page"></p>
-</blockquote>
-<p>Using the  feature in burp suite - <em>Intruder</em> , I sent the request to the Intruder</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/6.png" alt="landing page"></p>
-</blockquote>
-<p>Once in the <em>Intruder</em> section,</p>
-<ol>
-<li>Make sure the value at the cookie is in between a $ sign</li>
-<li>Visit the payload tab , to add our payload</li>
-</ol>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/7.png" alt="landing page"></p>
-</blockquote>
-<p>Once at the payload tab, change the <strong>payload type</strong> to <strong>Numbers</strong> and a range of your choice. For me I choose <em>from 1 to 50</em> and step of 1</p>
-<p>And then <strong>Start attack</strong></p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/8.png" alt="landing page"></p>
-</blockquote>
-<p>Once the attack is done,I checked all the successfull attack with code 200 and viewed the reponse of attack  and there was my flag 👏</p>
-<blockquote>
-<p><img src="/assets/images/picoCTF_cookies/9.png" alt="landing page"></p>
-</blockquote>
-<p>Hurray 🤗!!!!! My first public write up 😄. Hope you enjoyed</p>
+                        <a class="entry-title" href="https://masarajames.github.io/posts/picoctf_cookies/">PicoCTF Cookies</a>
 
                     </div>
                     <div class="meta post-footer"> <span>Feb 15 2024 10:53 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/picoctf_cookies/"><i class="fas fa-link"></i> link</a></div> 
                 </div>
              
         </div>
+        <a class="entry-title" href="https://masarajames.github.io/">Masara</a>
     </div>
     
    
