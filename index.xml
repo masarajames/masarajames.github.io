@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>I think, therefore I am. - René Descartes</copyright>
-    <lastBuildDate>Tue, 26 Mar 2024 23:51:33 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 09:26:57 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solvingctf</title>
+      <link>https://masarajames.github.io/room/solvingctf/</link>
+      <pubDate>Wed, 27 Mar 2024 09:26:57 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/solvingctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ImpostorSyndrome</title>
+      <link>https://masarajames.github.io/room/impostorsyndrome/</link>
+      <pubDate>Wed, 27 Mar 2024 09:24:19 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/impostorsyndrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joiningtech</title>
+      <link>https://masarajames.github.io/room/joiningtech/</link>
+      <pubDate>Wed, 27 Mar 2024 09:23:50 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/joiningtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selfconfidence</title>
+      <link>https://masarajames.github.io/blogs/selfconfidence/</link>
+      <pubDate>Wed, 27 Mar 2024 09:23:10 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/blogs/selfconfidence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selfconfidence</title>
+      <link>https://masarajames.github.io/room/selfconfidence/</link>
+      <pubDate>Wed, 27 Mar 2024 09:23:10 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/selfconfidence/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Here are my notes and resources</title>
       <link>https://masarajames.github.io/notes/</link>
@@ -15,51 +60,6 @@
       
       <guid>https://masarajames.github.io/notes/</guid>
       <description>Free TryHackMe Rooms</description>
-    </item>
-    
-    <item>
-      <title>Crypotography</title>
-      <link>https://masarajames.github.io/room/pico/crypotography/</link>
-      <pubDate>Tue, 26 Mar 2024 23:51:33 +0300</pubDate>
-      
-      <guid>https://masarajames.github.io/room/pico/crypotography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Forensics</title>
-      <link>https://masarajames.github.io/room/pico/forensics/</link>
-      <pubDate>Tue, 26 Mar 2024 23:51:18 +0300</pubDate>
-      
-      <guid>https://masarajames.github.io/room/pico/forensics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reverse</title>
-      <link>https://masarajames.github.io/room/pico/reverse/</link>
-      <pubDate>Tue, 26 Mar 2024 23:51:09 +0300</pubDate>
-      
-      <guid>https://masarajames.github.io/room/pico/reverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
-      <link>https://masarajames.github.io/room/pico/web/</link>
-      <pubDate>Tue, 26 Mar 2024 23:50:58 +0300</pubDate>
-      
-      <guid>https://masarajames.github.io/room/pico/web/</guid>
-      <description> Cookies </description>
-    </item>
-    
-    <item>
-      <title>General</title>
-      <link>https://masarajames.github.io/room/pico/general/</link>
-      <pubDate>Tue, 26 Mar 2024 23:50:50 +0300</pubDate>
-      
-      <guid>https://masarajames.github.io/room/pico/general/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -92,10 +92,21 @@ The challenge has already been done in a walkthrough video by the creator of the
     
     <item>
       <title>Kamilimu</title>
-      <link>https://masarajames.github.io/list-item/kamilimu/</link>
+      <link>https://masarajames.github.io/blogs/kamilimu/</link>
       <pubDate>Fri, 16 Feb 2024 14:58:16 +0300</pubDate>
       
-      <guid>https://masarajames.github.io/list-item/kamilimu/</guid>
+      <guid>https://masarajames.github.io/blogs/kamilimu/</guid>
+      <description>🎓 I have received my certificate after my graduation at KamiLimu !
+🏆 What an amazing journey it has been! The 8 months at KamiLimu , I&amp;rsquo;ve experienced a transformation like never before. From a timid version of myself, I&amp;rsquo;ve blossomed into a courageous individual ready to take on any challenge that comes my way! 🚀.
+One of the most remarkable accomplishments during this period was conquering my fear of public speaking.</description>
+    </item>
+    
+    <item>
+      <title>Kamilimu</title>
+      <link>https://masarajames.github.io/room/kamilimu/</link>
+      <pubDate>Fri, 16 Feb 2024 14:58:16 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/kamilimu/</guid>
       <description>🎓 I have received my certificate after my graduation at KamiLimu !
 🏆 What an amazing journey it has been! The 8 months at KamiLimu , I&amp;rsquo;ve experienced a transformation like never before. From a timid version of myself, I&amp;rsquo;ve blossomed into a courageous individual ready to take on any challenge that comes my way! 🚀.
 One of the most remarkable accomplishments during this period was conquering my fear of public speaking.</description>

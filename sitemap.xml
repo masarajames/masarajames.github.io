@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://masarajames.github.io/notes/</loc>
-    <lastmod>2024-03-27T00:21:07+03:00</lastmod>
-  </url><url>
-    <loc>https://masarajames.github.io/room/pico/crypotography/</loc>
-    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
-  </url><url>
     <loc>https://masarajames.github.io/</loc>
-    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
+    <lastmod>2024-03-27T09:26:57+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/room/</loc>
-    <lastmod>2024-03-26T23:51:33+03:00</lastmod>
+    <lastmod>2024-03-27T09:26:57+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/room/pico/forensics/</loc>
-    <lastmod>2024-03-26T23:51:18+03:00</lastmod>
+    <loc>https://masarajames.github.io/room/solvingctf/</loc>
+    <lastmod>2024-03-27T09:26:57+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/room/pico/reverse/</loc>
-    <lastmod>2024-03-26T23:51:09+03:00</lastmod>
+    <loc>https://masarajames.github.io/room/impostorsyndrome/</loc>
+    <lastmod>2024-03-27T09:24:19+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/room/pico/web/</loc>
-    <lastmod>2024-03-26T23:50:58+03:00</lastmod>
+    <loc>https://masarajames.github.io/room/joiningtech/</loc>
+    <lastmod>2024-03-27T09:23:50+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/room/pico/general/</loc>
-    <lastmod>2024-03-26T23:50:50+03:00</lastmod>
+    <loc>https://masarajames.github.io/blogs/</loc>
+    <lastmod>2024-03-27T09:23:10+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/blogs/selfconfidence/</loc>
+    <lastmod>2024-03-27T09:23:10+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/selfconfidence/</loc>
+    <lastmod>2024-03-27T09:23:10+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/notes/</loc>
+    <lastmod>2024-03-27T00:21:07+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/room/pico/</loc>
     <lastmod>2024-03-26T23:42:08+03:00</lastmod>
@@ -41,10 +44,10 @@
     <loc>https://masarajames.github.io/tags/cybersecurity/</loc>
     <lastmod>2024-02-16T14:58:16+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/list-item/kamilimu/</loc>
+    <loc>https://masarajames.github.io/blogs/kamilimu/</loc>
     <lastmod>2024-02-16T14:58:16+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/list-item/</loc>
+    <loc>https://masarajames.github.io/room/kamilimu/</loc>
     <lastmod>2024-02-16T14:58:16+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/tags/</loc>

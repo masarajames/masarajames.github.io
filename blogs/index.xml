@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cybersecurity on Masara</title>
-    <link>https://masarajames.github.io/tags/cybersecurity/</link>
-    <description>Recent content in cybersecurity on Masara</description>
+    <title>Blogs on Masara</title>
+    <link>https://masarajames.github.io/blogs/</link>
+    <description>Recent content in Blogs on Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>I think, therefore I am. - René Descartes</copyright>
-    <lastBuildDate>Fri, 16 Feb 2024 14:58:16 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 09:23:10 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selfconfidence</title>
+      <link>https://masarajames.github.io/blogs/selfconfidence/</link>
+      <pubDate>Wed, 27 Mar 2024 09:23:10 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/blogs/selfconfidence/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Kamilimu</title>
       <link>https://masarajames.github.io/blogs/kamilimu/</link>
