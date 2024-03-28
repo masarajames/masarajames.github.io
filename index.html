@@ -96,70 +96,25 @@
     <div class="section"> 
         <div class="section-title">CTFs</div> 
         <div class="posts">
-            
-                <div class="post">
-                    <div class="meta pinned"> <i class="fas fa-thumbtack"></i> pinned </div>
-                    <div class="post-content">
-                        <a class="entry-title" href="https://masarajames.github.io/posts/ping_pong/">Ping pong</a>
-                        <h3 id="ping-pong-challenge--ctfroom-intervarsity-competition">Ping Pong challenge : CTFROOM INTERVARSITY COMPETITION</h3>
-<p>I got to learn a lot of new tools from this  recent  forensics challange  I did. As part of my note-taking, I have documentated the challenge  which was part of  <a href="https://ctfroom.com/">CTFROOM</a> Intervarsity  Competition .</p>
-<p>The challenge has already been done in a walkthrough <a href="https://youtu.be/3j8WD6V-Cfg?feature=shared">video</a> by the <a href="https://05t3.github.io/">creator</a> of the challenge  and is basically what I used to solve and learn the better part of the challenge.</p>
-<p>This was the landing page of the challenge  with its descrpition, hints and one  file.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/1.png" alt="landing page"></p>
-</blockquote>
-<p>I downloaded the <strong><a href="https://file.io/mbEe51fV7yJB">file</a></strong> and it was a <a href="https://file.io/mbEe51fV7yJB">pcap file</a>. I then opened the file using wireshark and got number of captured packets.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/2.png" alt="landing page"></p>
-</blockquote>
-<p>I then used the statistics tab to get more info about the packets . The packets consisted only of one protcol which is ICMP(Internet Control Message Protocol) and a total of 420 captured packets</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/3.png" alt="landing page"></p>
-</blockquote>
-<p>I also checked the number of endpoints also using the statistics/endpoints tab. and I had only 2 endpoints involved in all the captured packets.</p>
-<blockquote>
-<p><img src="/assets/images/pingPong/4.png" alt="landing page"></p>
-</blockquote>
-<p>With that summary information, my first assignment was to understand more about ICMP protocol</p>
-<blockquote>
-<h5 id="what-is-icmp-protocol"><em>What is ICMP protocol</em></h5>
-<p><em>ICMP stands for Internet Control Message Protocol. It&rsquo;s a protocol within the Internet Protocol Suite, used primarily for diagnostic and error    messages in IP networks. ICMP messages are typically used by network devices, like routers and switches, to communicate with each other and with hosts.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>Here are two simple examples of how ICMP is used:</strong></p>
-</blockquote>
-<blockquote>
-<p><em><strong>Ping</strong></em>:<em>One of the most common uses of ICMP is the &ldquo;ping&rdquo; command. When you ping a device, your computer sends an ICMP Echo Request message to that device&rsquo;s IP address. If the device is reachable and operational, it will respond with an ICMP Echo Reply message. This helps in determining whether a host is reachable and how long it takes for packets to travel to and from that host. For example, you might use the ping command to check if a website is up and how quickly it responds</em></p>
-</blockquote>
-<blockquote>
-<p><em><strong>Traceroute</strong></em>:<em>Traceroute is another tool that uses ICMP. When you run a traceroute command, your computer sends a series of ICMP Echo Request messages with varying Time-to-Live (TTL) values. Each router along the path to the destination decrements the TTL value, and if it reaches zero, the router discards the packet and sends back an ICMP Time Exceeded message to the source. By analyzing the ICMP Time Exceeded messages received from each router, traceroute can map the path packets take from your computer to the destination, helping to diagnose network routing issues.</em></p>
-</blockquote>
-<ul>
-<li>
-<blockquote>
-<p><img src="/assets/images/pingPong/5.png" alt="landing page">
-<img src="/assets/images/pingPong/6.png" alt="landing page">
-<img src="/assets/images/pingPong/7.png" alt="landing page">
-<img src="/assets/images/pingPong/8.png" alt="landing page">
-<img src="/assets/images/pingPong/9.png" alt="landing page">
-<img src="/assets/images/pingPong/10.png" alt="landing page"></p>
-</blockquote>
-</li>
-</ul>
-
-
-                    </div>
-                    <div class="meta post-footer"> <span>Feb 18 2024 11:39 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ping_pong/"><i class="fas fa-link"></i> link</a></div> 
-                </div>
              
             
             
                 <div class="post">
                     
                     <div class="post-content">
+                        <a class="entry-title" href="https://masarajames.github.io/posts/ping_pong/">Ping pong</a>
+                    </div>
+                    I got to learn a lot of new tools from this  recent  forensics challange  I did. As part of my note-taking, I have documentated the challenge  which was part of  Intervarsity  Competition.
+                    <div class="meta post-footer"> <span>Feb 18 2024 11:39 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/ping_pong/"><i class="fas fa-link"></i> Read More</a></div> 
+                </div>
+            
+                <div class="post">
+                    
+                    <div class="post-content">
                         <a class="entry-title" href="https://masarajames.github.io/posts/picoctf_cookies/">PicoCTF Cookies</a>
                     </div>
-                    <div class="meta post-footer"> <span>Feb 15 2024 10:53 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/picoctf_cookies/"><i class="fas fa-link"></i> link</a></div> 
+                    This is my first public CTF write-up. I chose to start with this challenge specifically because of how I find it to be a super beginner friendly challenge  and  I thought will find it to explain easily. This is a web challenge from PicoCTF called cookies
+                    <div class="meta post-footer"> <span>Feb 15 2024 10:53 UTC&#43;03</span> <a href="https://masarajames.github.io/posts/picoctf_cookies/"><i class="fas fa-link"></i> Read More</a></div> 
                 </div>
              
         </div>
@@ -175,23 +130,25 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 27 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Mar 27 2024 09:26 UTC&#43;03</span> <a href="https://masarajames.github.io/room/solvingctf/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
         
             <div class="list-item">
-                <a class="entry-title" href="https://masarajames.github.io/room/impostorsyndrome/">ImpostorSyndrome</a>
+                <a class="entry-title" href="https://masarajames.github.io/room/impostorsyndrome/">The big Impostor Syndrome</a>
                 
+                
+                <p>jksdjskj</p>
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 27 2024
-                
+                    jksdjskj
                 <br>
+                <div class="meta post-footer"> <span>Mar 27 2024 09:24 UTC&#43;03</span> <a href="https://masarajames.github.io/room/impostorsyndrome/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
@@ -201,10 +158,10 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 27 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Mar 27 2024 09:23 UTC&#43;03</span> <a href="https://masarajames.github.io/room/joiningtech/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
@@ -214,10 +171,10 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 27 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Mar 27 2024 09:23 UTC&#43;03</span> <a href="https://masarajames.github.io/room/selfconfidence/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
@@ -227,10 +184,10 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 26 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Mar 26 2024 11:42 UTC&#43;03</span> <a href="https://masarajames.github.io/room/pico/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
@@ -240,10 +197,10 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Mar 26 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Mar 26 2024 11:41 UTC&#43;03</span> <a href="https://masarajames.github.io/room/tryhackme/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
@@ -253,10 +210,10 @@
                 
                 
                 <div class="meta">
-                
-                    <i class="far fa-calendar-alt"></i> Feb 16 2024
-                
+                    
                 <br>
+                <div class="meta post-footer"> <span>Feb 16 2024 02:58 UTC&#43;03</span> <a href="https://masarajames.github.io/room/kamilimu/"><i class="fas fa-link"></i> Read More</a></div> 
+
                 
                 </div>
             </div>
