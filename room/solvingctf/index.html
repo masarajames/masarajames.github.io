@@ -90,11 +90,184 @@
             <a href="javascript:void(0)" id="closebtn" onclick="navToggle()"><i class="fas fa-bars fa-lg"></i></a>
             <div class="content">
     
-    <h1 id="title">Solvingctf</h1>
+    <h1 id="title">How to solve CTFs</h1>
     
       
     
-    
+    <h3 id="your-guide-to-cybersecurity-capture-the-flag-competitions">Your Guide to Cybersecurity Capture the Flag Competitions</h3>
+<p>Capture The Flag (CTF) is one of the most interesting ways to learn cybersecurity. Learning through playing is an effective way to boost your skills and start in the cybersecurity field.</p>
+<p>We will discuss all that you need to know about capture the flag (CTF) competitions, challenges, tools, resources, and how they can help you boost your career.</p>
+<p>In this blog, we will help newcomers to these types of competitions and provide them with the skills required to get started in cybersecurity or seek a new career in information security.</p>
+<h3 id="what-is-a-ctf-competition">What is a CTF Competition?</h3>
+<p>CTF stands for Capture the Flag, this is a cybersecurity competition or a game where you are facing a vulnerable challenge, and usually, your main goal will be to exploit it.</p>
+<p>Capture the Flag competitions usually simulate real-world scenarios by demonstrating some famous vulnerabilities so you can practice and sharpen your skills. You can participate in a CTF competition either individually or in a team depending on the competition rules.</p>
+<p>And as proof of your success, you need to find a particular piece of text called a flag. It proves that you have done the mission successfully. This flag is what you are going to submit.</p>
+<h3 id="what-is-a-flag">What is a Flag?</h3>
+<p>A flag is some sort of text/MD5 hash that you submit to the CTF portal to get the challenge points.</p>
+<pre><code>Flag Format Examples:
+flag{Th1s_1s_c00l_fl1g}
+Flag{9e58967420ac5b2d87578e88b389e306}
+</code></pre>
+<h3 id="what-is-a-write-up">What is a Write-up?</h3>
+<p>A writeup is a full documentation on how to solve a certain challenge. Reading writeups will help you to gain more knowledge and enhance your CTF skills. However, make sure to read the write-up only when you are really stuck in solving the challenge.</p>
+<h3 id="types-of-ctf-competitions">Types of CTF Competitions</h3>
+<p>There are two common types of CTFs: Jeopardy and Attack-Defense:</p>
+<h4 id="1-jeopardy-ctf">1. Jeopardy CTF</h4>
+<p>This type includes problems (challenges) like web, machines, digital forensics, reverse engineering, OSINT, and others. Teams or individuals will gain points for any correct challenge they solve.</p>
+<p>Points are defined depending on the difficulty of the challenge, (i.e.: challenges labeled as hard will help you to gain more points).</p>
+<h4 id="challenge-types">Challenge Types</h4>
+<p>Jeopardy-style CTFs challenges are typically divided into different categories. You will find below the most common types:</p>
+<h4 id="cryptography">Cryptography</h4>
+<p>It includes understanding the different encryption algorithms (for example RSA, AES, DES ) or even some custom encryption algorithms that you need to understand to decrypt a message.
+Digital Forensics
+It includes file format analysis, steganography, memory dump analysis, or network packet capture analysis.</p>
+<h4 id="reverse-engineering">Reverse Engineering</h4>
+<p>It includes the process of taking compiled code like .exe files or .apk or others and trying to convert it back into a more human-readable format.</p>
+<h4 id="web-security">Web Security</h4>
+<p>It includes discovering vulnerabilities in web applications and exploiting them.</p>
+<h4 id="exploitation">Exploitation</h4>
+<p>Exploiting a service to find the flag, reverse engineering techniques are also applied here to analyze the structure and behaviors of the binaries.</p>
+<h4 id="network-security">Network Security</h4>
+<p>It includes analyzing traffic data like pcap files and others.</p>
+<h4 id="open-source-cyber-intelligence">Open Source Cyber Intelligence</h4>
+<p>Using different open-source intelligence techniques to gather information about some target.</p>
+<h4 id="machines">Machines</h4>
+<p>Where you need to scan a machine and find vulnerabilities to get in then you may need to get the highest privilege on the box to read the flag.</p>
+<h3 id="2-attack-defense">2. Attack-Defense</h3>
+<p>Here, each team has its network of insecure devices (or just one host). Your staff typically has time to repair the infrastructure and fix vulnerabilities.</p>
+<p>So you will defend your own services for defense points and attack opponents for getting attack points.</p>
+<p>CyberTalents offers organizations and universities to host their own CTFs either Jeopardy or Attack and Defense style. Check out more</p>
+<h2 id="skills-required-to-play-ctfs">Skills Required to Play CTFs</h2>
+<p>It depends on the category you will play, but in general, there are some common skills between almost all categories that will help like:</p>
+<ul>
+<li>Basic understanding of networking.</li>
+<li>Programming (python, maybe assembly and C/C++ for reverse category).</li>
+<li>Linux command line.</li>
+</ul>
+<p>There are skills related to each category that will help you:</p>
+<p>1 - Web Exploitation</p>
+<ul>
+<li>Basics of web programming languages</li>
+<li>OWASP Top 10</li>
+<li>For more check resources here</li>
+</ul>
+<p>2 - Machines</p>
+<ul>
+<li>
+<p>Basics of penetration testing</p>
+</li>
+<li>
+<p>Web exploitation knowledge</p>
+</li>
+</ul>
+<p>3 -  Cryptography</p>
+<ul>
+<li>
+<p>Mathematics background</p>
+</li>
+<li>
+<p>Basic ciphers knowledge</p>
+</li>
+<li>
+<p>Symmetric and asymmetric encryption methods</p>
+</li>
+<li>
+<p>Suggested books here and here</p>
+</li>
+</ul>
+<p>4 - Reverse Engineering</p>
+<ul>
+<li>
+<p>Understanding of low-level languages (assembly)</p>
+</li>
+<li>
+<p>Check the skills here</p>
+</li>
+</ul>
+<p>After getting these basic skills you can start focusing on a specific category to master it and note that the learning process is continuous. You will keep learning new stuff every time you study a course/read a blog/read a book/play a CTF.</p>
+<p>The most important skill you need to have is to be persistent, you won’t be able to solve challenges from the first day. You will need to practice days and nights to be able to solve your first group of challenges. So, don’t give up easily, and keep trying.</p>
+<h2 id="why-is-it-better-to-learn-cybersecurity-through-ctfs">Why is it Better to Learn Cybersecurity through CTFs?</h2>
+<p>Some recruiters keep their eyes on the top winners at the competitions which is a great opportunity to get an interview with big companies. Rather than that participating in competitions proves your skills and can be sometimes enough for applying for security jobs.</p>
+<p>Onsite CTFs could give you the chance to extend your network and this could help you to gain more opportunities/support from the community.</p>
+<p>Most cybersecurity field professionals recommend learning by participating in CTFs even if you are a complete beginner.</p>
+<p>When we had an interview with Eng. Ibrahim Mosaad, Product Security Engineer at Facebook, said “CTFs help you work in large companies. I am currently working at Facebook and the main reason that helped me work there was participating in CTFs. It helped me very much so if you would like to work for a large company and have ambition, focus on playing CTFs”.</p>
+<p>He continued “Track your performance for a year when you first start playing CTFs and see how your performance will develop.”</p>
+<p>Moreover, CTFs can help sharpen your technical skills and  get some other benefits like:</p>
+<ul>
+<li>Know your weak points and focus on developing them.</li>
+<li>Enhance your methodology/ approach for a real-world engagement.</li>
+<li>Learn basics for other categories you are not interested in.</li>
+<li>Build critical thinking skills.</li>
+<li>Participating with teams will enhance your technical/ communication skills.</li>
+<li>As it is a competition, it is motivating and thrilling.</li>
+<li>It will motivate you to learn more to get a higher rank in the next CTF.</li>
+<li>In some competitions, getting higher ranks will make recruiters contact you to offer jobs.</li>
+<li>Most of the competitions have valuable prizes for the top winners.</li>
+</ul>
+<h2 id="how-can-ctfs-improve-your-cybersecurity-career">How Can CTFs Improve Your Cybersecurity Career?</h2>
+<p>CTF challenges test participants&rsquo; skills in areas such as cryptography, network analysis, and reverse engineering. These challenges are designed to simulate real-world scenarios that cybersecurity professionals face daily. By participating in CTF challenges, you can gain valuable experience and hone your skills in a safe and controlled environment.</p>
+<p>One of the biggest benefits of participating in CTF challenges is that they can help you get noticed by potential employers. Many companies and organizations use CTF challenges as a way to recruit cybersecurity talent.</p>
+<p>By performing well in these challenges, you can demonstrate your skills and knowledge to potential employers. This can help you stand out from other candidates who may not have as much hands-on experience.</p>
+<p>In addition to helping you get noticed by potential employers, participating in CTF challenges can also help you become a better cybersecurity professional. These challenges require you to think creatively and develop innovative solutions to complex problems. By practicing these skills in a CTF environment, you can develop the critical thinking and problem-solving abilities that are essential for success in the cybersecurity field.</p>
+<h2 id="how-can-i-learn-more-about-ctfs">How Can I Learn More About CTFs?</h2>
+<p>Start practicing on the easy challenges of the category you are interested in if you get stuck, no worries you can check the writeups offered by the platform or the community and understand why you have been stuck. Surely you will learn new stuff.</p>
+<p>After having Hands-on experience, you can start participating in Capture the Flag events and it is fine if you can’t solve some challenges, checking writeups after the Event ends will Expand your knowledge eventually.</p>
+<p>Practicing regularly and participating in CTF events will make you eventually comfortable with the categories you are interested in.</p>
+<p>The best way to learn is to practice on platforms that offer challenges with the CTF style like:</p>
+<ul>
+<li>CyberTalents</li>
+<li>PicoCTF</li>
+<li>Portswigger (Web challenges)</li>
+<li>Rootme (Web challenges)</li>
+<li>Cryptohack (Cryptography challenges)</li>
+<li>Cyberdefenders (Digital Forensics)</li>
+<li>TryHackMe</li>
+<li>Hack The Box</li>
+</ul>
+<h2 id="ctf-tools-you-might-need">CTF Tools You Might Need</h2>
+<p>To start in Capture the Flag (CTF) competitions, we have listed some of the basic tools that you can use ordered by different challenges categories:</p>
+<h3 id="web">WEB</h3>
+<ul>
+<li>Burp Suite: A commonly used tool for testing web applications with several features one of them is a burp proxy for intercepting HTTP requests.</li>
+<li>Cookie Editor: A useful browser extension for editing cookies.</li>
+<li>SQLMap: SQL injection and Database Exploitation tool.</li>
+<li>DirBuster: Directory brute forcing tool.</li>
+<li>XSSer: Useful tool to detect, exploit and report XSS vulnerabilities.</li>
+</ul>
+<h3 id="crypto">Crypto</h3>
+<ul>
+<li>Rsatool:  A tool used to calculate RSA and RSA-CRT parameters.</li>
+<li>CyberChef: Web app for analyzing and decoding data.</li>
+<li>PkCrack: A tool for Breaking PkZip-encryption.</li>
+<li>QuipQuip: An online tool for breaking substitution ciphers or vigenere ciphers (without key).</li>
+<li>XORTool: A tool to analyze multi-byte xor ciphers.</li>
+</ul>
+<h3 id="digital-forensics">Digital Forensics</h3>
+<ul>
+<li>ExifTool: A tool used for reading, writing, and editing meta information in a wide variety of files (e.g. JPEG, JPG, JPE).</li>
+<li>Wireshark: A tool for analyzing Network traffic and PCAP files.</li>
+<li>Linux installation: apt-get install Wireshark.</li>
+<li>Audacity: A tool for analyzing audio files (e.g. .mp3,.wav, etc).</li>
+<li>Foremost: Extracting files based on their headers, footers, and internal data structures.</li>
+<li>Stegsolve: A tool used for applying different techniques to images.</li>
+<li>Volatility: To investigate memory dumps.</li>
+</ul>
+<h3 id="reverse-engineering-1">Reverse Engineering</h3>
+<ul>
+<li>IDA Pro: Most used Disassembler and Debugger.</li>
+<li>Exploitation</li>
+<li>DLLInjector: Inject dlls in processes.</li>
+<li>libformatstr: Simplify format string exploitation.</li>
+<li>Metasploit: Penetration testing software.</li>
+<li>One_Gadget: A tool to find the one gadget.</li>
+<li>Pwntools: CTF Framework for writing exploits.</li>
+<li>Qira: QEMU Interactive Runtime Analyser.</li>
+<li>ROP Gadget: Framework for ROP exploitation.</li>
+<li>V0lt: Security CTF Toolkit.</li>
+</ul>
+<h2 id="how-to-join-ctf-events">How to Join CTF Events?</h2>
+<p>Most public CTF competitions can be found at ctftime.org where you can find the upcoming competitions and then the CTF official link will be attached where you can register easily once the registration is open, also you can read the past competitions&rsquo; write-ups to gain more knowledge.</p>
+
     
     <div class="nav-next-prev">
         <div class="nav-prev">
