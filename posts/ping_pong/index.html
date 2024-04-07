@@ -117,18 +117,33 @@
 <blockquote>
 <p><em><strong>Traceroute</strong></em>:<em>Traceroute is another tool that uses ICMP. When you run a traceroute command, your computer sends a series of ICMP Echo Request messages with varying Time-to-Live (TTL) values. Each router along the path to the destination decrements the TTL value, and if it reaches zero, the router discards the packet and sends back an ICMP Time Exceeded message to the source. By analyzing the ICMP Time Exceeded messages received from each router, traceroute can map the path packets take from your computer to the destination, helping to diagnose network routing issues.</em></p>
 </blockquote>
-<ul>
-<li>
+<p>Looking athe packets, I found three main packets size , one was of 98 packets which was reply packets</p>
 <blockquote>
-<p><img src="/assets/images/pingPong/5.png" alt="landing page">
-<img src="/assets/images/pingPong/6.png" alt="landing page">
-<img src="/assets/images/pingPong/7.png" alt="landing page">
-<img src="/assets/images/pingPong/8.png" alt="landing page">
-<img src="/assets/images/pingPong/9.png" alt="landing page">
-<img src="/assets/images/pingPong/10.png" alt="landing page"></p>
+<p><img src="/assets/images/pingPong/5.png" alt="landing page"></p>
 </blockquote>
-</li>
-</ul>
+<p>And request packects for request whose size wa 1066 and ahad some interesting strings</p>
+<blockquote>
+<p><img src="/assets/images/pingPong/6.png" alt="landing page"></p>
+</blockquote>
+<p>There was about  2 packets  a request and reply of 574 size</p>
+<blockquote>
+<p><img src="/assets/images/pingPong/7.png" alt="landing page"></p>
+</blockquote>
+<p>I resolved to start with the 1066 request packets which had interesting strings text .
+<img src="/assets/images/pingPong/8.png" alt="landing page"></p>
+<p><img src="/assets/images/pingPong/9.png" alt="landing page">
+<img src="/assets/images/pingPong/10.png" alt="landing page">
+<img src="/assets/images/pingPong/11.png" alt="landing page">
+<img src="/assets/images/pingPong/12.png" alt="landing page">
+<img src="/assets/images/pingPong/13.png" alt="landing page">
+<img src="/assets/images/pingPong/14.png" alt="landing page">
+<img src="/assets/images/pingPong/15.png" alt="landing page">
+<img src="/assets/images/pingPong/16.png" alt="landing page">
+<img src="/assets/images/pingPong/17.png" alt="landing page">
+<img src="/assets/images/pingPong/18.png" alt="landing page">
+<img src="/assets/images/pingPong/19.png" alt="landing page">
+<img src="/assets/images/pingPong/20.png" alt="landing page">
+<img src="/assets/images/pingPong/21.png" alt="landing page"></p>
 
     
     <div class="nav-next-prev">
