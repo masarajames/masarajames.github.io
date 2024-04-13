@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://masarajames.github.io/room/solvingctf/</loc>
-    <lastmod>2024-03-27T09:26:57+03:00</lastmod>
-  </url><url>
     <loc>https://masarajames.github.io/</loc>
+    <lastmod>2024-04-10T14:26:37+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/posts/</loc>
+    <lastmod>2024-04-10T14:26:37+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/posts/simple/</loc>
+    <lastmod>2024-04-10T14:26:37+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/solvingctf/</loc>
     <lastmod>2024-03-27T09:26:57+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/room/</loc>
@@ -20,8 +26,11 @@
     <loc>https://masarajames.github.io/notes/</loc>
     <lastmod>2024-03-27T00:21:07+03:00</lastmod>
   </url><url>
-    <loc>https://masarajames.github.io/posts/</loc>
-    <lastmod>2024-03-26T19:02:48+03:00</lastmod>
+    <loc>https://masarajames.github.io/room/pico/</loc>
+    <lastmod>2024-03-26T23:42:08+03:00</lastmod>
+  </url><url>
+    <loc>https://masarajames.github.io/room/tryhackme/</loc>
+    <lastmod>2024-03-26T23:41:51+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/posts/rootme/</loc>
     <lastmod>2024-03-26T19:02:48+03:00</lastmod>
