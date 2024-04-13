@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>I think, therefore I am. - René Descartes</copyright>
-    <lastBuildDate>Wed, 10 Apr 2024 14:26:37 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 23:36:17 +0300</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCM Security Certification</title>
+      <link>https://masarajames.github.io/room/tcm/</link>
+      <pubDate>Sat, 13 Apr 2024 23:36:17 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/tcm/</guid>
+      <description>Working on it blog &amp;hellip;&amp;hellip;. LOADING 🔶 🐃 </description>
+    </item>
+    
     <item>
       <title>Simple CTF TryHackMe</title>
       <link>https://masarajames.github.io/posts/simple/</link>
@@ -55,6 +64,24 @@ In this blog, I will help newcomers to these types of competitions and provide t
       
       <guid>https://masarajames.github.io/notes/</guid>
       <description>CTFS TryHackme CTF Rooms A list of free TryHackMe CTF Rooms PicoCTF Hack The Box = CTF CTFRoom Cyber Talents CTFtime Over TheWire: Wargames Huntress CTF OFFSEC HTB Academy TryHackMe Hack The Box TCM Security Academy Cyber Ranges Port Swinger SEED Project Attack-Defense Online Lab Zero-Point Security Root-me.org Introduction DetectionLab Guide for Burp Suite Exploit.education Awesome Hacks: https://github.com/Hack-with-Github/Awesome-Hacking https://github.com/ashishb/android-security-awesome https://github.com/paragonie/awesome-appsec https://github.com/redhuntlabs/Awesome-Asset-Discovery https://github.com/djadmin/awesome-bug-bounty https://github.com/r3dy/capsulecorp-pentest https://github.com/apsdehal/awesome-ctf https://github.com/joe-shenouda/awesome-cyber-skills https://github.com/devsecops/awesome-devsecops https://github.com/fkie-cad/awesome-embedded-and-iot-security https://github.com/FabioBaroni/awesome-exploit-development https://github.com/secfigo/Awesome-Fuzzing https://github.com/carpedm20/awesome-hacking https://github.</description>
+    </item>
+    
+    <item>
+      <title>PicoCTF challenges </title>
+      <link>https://masarajames.github.io/room/pico/</link>
+      <pubDate>Tue, 26 Mar 2024 23:42:08 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/pico/</guid>
+      <description> Web Challenges General skills Forensics Challenges Cryptography challenges Reverese Engineering </description>
+    </item>
+    
+    <item>
+      <title>TryHackMe CTF Rooms</title>
+      <link>https://masarajames.github.io/room/tryhackme/</link>
+      <pubDate>Tue, 26 Mar 2024 23:41:51 +0300</pubDate>
+      
+      <guid>https://masarajames.github.io/room/tryhackme/</guid>
+      <description> Simple CTF RootMe atlas blueteam Mr robot c4ptur3th3fl4g CatPictures corridor cowboyhacker Dav first_task_hashes Fowsniff gamingserver h4cked gaming server lazy admin madness ovlcap PeakHill pickle pythonPlayground startup vulnversity wireshark </description>
     </item>
     
     <item>
