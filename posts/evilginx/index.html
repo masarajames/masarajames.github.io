@@ -80,45 +80,45 @@
             <a href="javascript:void(0)" id="closebtn" onclick="navToggle()"><i class="fas fa-bars fa-lg"></i></a>
             <div class="content">
     
-    <h1 id="title">Simple CTF TryHackMe</h1>
+    <h1 id="title">EVILGINX FOR CREDENTIAL HARVESTING</h1>
     
       
     
-    <p>The first was ofcourse to  visit the room from the  <a href="https://tryhackme.com/r/room/easyctf">link provided</a> and this is the landing page of the room indicating to be a beginner and easy leve CTF.</p>
+    <p>This blog takes you behind the scenes of the demo,</p>
 <blockquote>
-<p><img src="/assets/images/simple/1.png" alt="image"></p>
+<ul>
+<li>Walking you through the setup of Evilginx</li>
+<li>The creation of a controlled lab environment to capture credentials.</li>
+</ul>
 </blockquote>
-<p>The first</p>
+<p>By shedding light on the mechanics of such attacks, we empower individuals and organizations to better understand the threats they face and take actionable steps to protect themselves.</p>
+<h2 id="evilginx-what-it-is-and-how-it-works--in-my-words">Evilginx: What It Is and How It Works – <em>In My Words</em></h2>
+<p>Evilginx is a tool that acts like a sneaky middleman to harvest credentials through a man-in-the-middle attack.</p>
+<p>It creates a perfect clone of a legitimate login page, complete with a custom domain and SSL certificate, making it look authentic.</p>
+<p><em>Imagine you’re trying to log in to your email or social media account, and someone sets up a fake version of that site that looks exactly the same. When you enter your username and password, this fake site secretly grabs your details and forwards them to the real website in real-time, so you never realize anything is wrong</em>.</p>
+<p>What makes Evilginx particularly dangerous is its ability to copy the session token—like a &ldquo;key&rdquo; that keeps you logged in—allowing attackers to bypass two-factor authentication (2FA) and take over accounts without triggering security alerts. It’s a sophisticated yet deceptively simple trick designed to exploit trust and human behavior, stealing your information without you ever noticing.</p>
+<p>So techincally, evilginx is a tool that acts as a middleman to harvest credentials through a man-in-the-middle attack.</p>
+<h2 id="so-lets-dive-into-the-setup">So, Let’s Dive Into the Setup&hellip;</h2>
+<p>For my demonstration, I needed a few key components to make this credential harvesting setup work seamlessly.</p>
+<p>Here’s what I used to bring it all together:</p>
 <blockquote>
-<p><img src="/assets/images/simple/2.png" alt="image">
-<img src="/assets/images/simple/3.png" alt="image">
-<img src="/assets/images/simple/4.png" alt="image">
-<img src="/assets/images/simple/5.png" alt="image">
-<img src="/assets/images/simple/6.png" alt="image">
-<img src="/assets/images/simple/7.png" alt="image">
-<img src="/assets/images/simple/8.png" alt="image">
-<img src="/assets/images/simple/9.png" alt="image"></p>
-</blockquote>
-<p>python3 46635.py -u http://10.10.121.230/simple/ -w best.py</p>
-<blockquote>
-<p><img src="/assets/images/simple/10.png" alt="image">
-<img src="/assets/images/simple/11.png" alt="image">
-<img src="/assets/images/simple/12.png" alt="image">
-<img src="/assets/images/simple/13.png" alt="image">
-<img src="/assets/images/simple/14.png" alt="image"></p>
+<ul>
+<li><strong>Live Server</strong>- A server capable of hosting Evilginx was essential. I opted for a cloud-based VPS to ensure it was accessible and operational during the training session.</li>
+<li><strong>A Custom Domain</strong> -To make the phishing scenario realistic, I registered a custom domain. This was configured to mimic a legitimate website, further enhancing the plausibility of the attack. The domain allowed me to create subdomains and SSL certificates, both of which are crucial for fooling even the savviest users.</li>
+</ul>
 </blockquote>
 
     
     <div class="nav-next-prev">
         <div class="nav-prev">
             
-                <a href="https://masarajames.github.io/posts/rootme/"><i class="fas fa-chevron-left"></i></a>
+                <a href="https://masarajames.github.io/posts/simple/"><i class="fas fa-chevron-left"></i></a>
             
         </div>
         <a class="nav-top" href="#">top</i></a>
         <div class="nav-next">
             
-                <a href="https://masarajames.github.io/posts/evilginx/"><i class="fas fa-chevron-right"></i></a>
+                <a class="grayed-out" href="javascript:void()"><i class="fas fa-chevron-right"></i></a>
             
         </div>
     </div>

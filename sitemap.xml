@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://masarajames.github.io/posts/evilginx/</loc>
+    <lastmod>2024-10-13T23:01:05+03:00</lastmod>
+  </url><url>
     <loc>https://masarajames.github.io/</loc>
-    <lastmod>2024-04-10T14:26:37+03:00</lastmod>
+    <lastmod>2024-10-13T23:01:05+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/posts/</loc>
-    <lastmod>2024-04-10T14:26:37+03:00</lastmod>
+    <lastmod>2024-10-13T23:01:05+03:00</lastmod>
   </url><url>
     <loc>https://masarajames.github.io/posts/simple/</loc>
     <lastmod>2024-04-10T14:26:37+03:00</lastmod>
