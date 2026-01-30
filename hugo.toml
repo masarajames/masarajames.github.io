@@ -1,0 +1,47 @@
+baseURL = "https://masarajames.github.io/"
+defaultContentLanguage = "en"
+theme = "nomad-tech"
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  [languages.en]
+    languageCode = "en-US"
+    title = "Masarajames Blog"
+    weight = 1
+
+[params]
+  author = "Masarajames"
+  logo = "MASARAJAMES"
+  subtitle = "Tech Blog & Portfolio"
+  description = "Personal blog about technology, development, and more"
+
+  # Social Media Links
+  [[params.social]]
+    name = "GitHub"
+    class = "github"
+    icon = "🐙"
+    description = "My projects on GitHub"
+    url = "https://github.com/masarajames"
+    button_text = "Visit GitHub"
+
+  # Portfolio Items
+  [[params.portfolio]]
+    title = "This Blog"
+    type = "Website"
+    icon = "📝"
+    description = "Personal blog built with Hugo and GitHub Pages"
+    tags = ["Hugo", "GitHub Pages", "Blogging"]
+    project_url = "https://masarajames.github.io"
+
+  # Contact Information
+  [[params.contact]]
+    icon = "📧"
+    name = "email"
+    value = "your.email@example.com"
+
