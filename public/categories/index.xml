@@ -2,10 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on This is Masara</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://masarajames.github.io/categories/</link>
     <description>Recent content in Categories on This is Masara</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://masarajames.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>https://masarajames.github.io/categories/tech/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://masarajames.github.io/categories/tutorial/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lifestyle</title>
+      <link>https://masarajames.github.io/categories/lifestyle/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/lifestyle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nomad</title>
+      <link>https://masarajames.github.io/categories/nomad/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/nomad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://masarajames.github.io/categories/hugo/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Themes</title>
+      <link>https://masarajames.github.io/categories/themes/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://masarajames.github.io/categories/themes/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

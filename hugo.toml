@@ -14,11 +14,12 @@ theme = "nomad-tech"
     languageCode = "en-US"
     title = "This is Masara"
     weight = 1
+
 [params]
-  author = "Masarajames"
+  author = "Masara"
   logo = "MASARA"
-  subtitle = "Tech Blog & Portfolio"
-  description = "Personal blog about technology, development, and more"
+  subtitle = "Experiments, mistakes, and lessons learned."
+  description = "I try things. Sometimes they work"
 
   # Social Media Links
   [[params.social]]
