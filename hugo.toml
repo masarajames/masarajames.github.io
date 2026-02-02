@@ -12,9 +12,8 @@ theme = "nomad-tech"
 [languages]
   [languages.en]
     languageCode = "en-US"
-    title = "Masarajames Blog"
+    title = "This is Masara"
     weight = 1
-
 [params]
   author = "Masarajames"
   logo = "MASARA"
