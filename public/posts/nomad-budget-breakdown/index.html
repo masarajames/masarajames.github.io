@@ -53,28 +53,121 @@ Monthly Expenses Accommodation ($600-800) …">
 <body>
     <div class="particles" id="particles"></div>
     <nav role="navigation" aria-label="Main navigation">
-    <div class="container">
-        <div class="nav-container">
-            <a href="https://masarajames.github.io/" class="logo" aria-label="This is Masara - Home">Masara</a>
-            <ul class="nav-links" id="nav-menu">
-                <li><a href="https://masarajames.github.io/" aria-current="false">Home</a></li>
-                <li><a href="https://masarajames.github.io/social/" aria-current="false">Social Media</a></li>
-                <li><a href="https://masarajames.github.io/posts/" aria-current="false">Blog</a></li>
-                <li><a href="https://masarajames.github.io/portfolio/" aria-current="false">Portfolio</a></li>
-                <li><a href="https://masarajames.github.io/about/" aria-current="false">About</a></li>
-                <li><a href="https://masarajames.github.io/travel/" aria-current="false">Travel</a></li>
-            </ul>
-            <div class="lang-switcher" role="group" aria-label="Language selection">
-                
-                <a href="https://masarajames.github.io/en/" 
-                   class="lang-link active" 
-                   aria-label="Switch to " 
-                   aria-current="true">EN</a>
-                
-            </div>
-            <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
-        </div>
+  <style>
+     
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;           
+      flex-grow: 1;                      
+      gap: 2.5rem;                       
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #41acdd;                       
+      font-size: 1.1rem;
+      font-weight: 700;                  
+      padding: 0.6rem 1rem;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+     
+    .nav-links li a:hover {
+      background-color: #da6ad0;         
+      color: #1565c0;                    
+    }
+
+     
+    .nav-links li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #42a5f5;
+      transition: width 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .nav-links li a:hover::after {
+      width: 60%;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #333;
+    }
+
+     
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-container {
+        justify-content: space-between;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="nav-container">
+      
+      <a href="https://masarajames.github.io/" class="logo" aria-label="This is Masara - Home">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_o2c1xSfBaEUwMy3i4srRTRS0BTDMZaWh3w&s" 
+             alt="This is Masara logo"
+             width="120" height="auto">
+      </a>
+
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="https://masarajames.github.io/" aria-current="false">Home</a></li>
+        
+        <li><a href="https://masarajames.github.io/posts/" aria-current="false">Blog</a></li>
+        
+        <li><a href="https://masarajames.github.io/about/" aria-current="false">About</a></li>
+        
+      </ul>
+
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
     </div>
+  </div>
 </nav>
     <main id="main" role="main">
         
