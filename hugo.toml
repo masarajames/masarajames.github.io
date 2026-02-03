@@ -17,7 +17,7 @@ theme = "nomad-tech"
 
 [params]
   author = "Masara"
-  logo = "mm"
+  logo = "Masara"
   subtitle = "Experiments, mistakes, and lessons learned."
   description = "I try things. Sometimes they work"
 
