@@ -41,7 +41,26 @@ theme = "nomad-tech"
 
   # Contact Information
   [[params.contact]]
-    icon = "📧"
-    name = "email"
-    value = "your.email@example.com"
+icon = "📧"
+name = "Email"
+value = "masarajames02@gmail.com"
+link = "mailto:masarajames02@gmail.com"
+
+[[params.contact]]
+icon = "💼"
+name = "LinkedIn"
+value = "linkedin.com/in/masarajames"
+link = "https://www.linkedin.com/in/masarajames/"
+
+[[params.contact]]
+icon = "🐙"
+name = "GitHub"
+value = "github.com/masarajames"
+link = "https://github.com/masarajames"
+
+[[params.contact]]
+icon = "𝕏"
+name = "X"
+value = "x.com/MasaraJames1"
+link = "https://x.com/MasaraJames1"
 

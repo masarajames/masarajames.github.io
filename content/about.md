@@ -1,26 +1,41 @@
 ---
 title: "About Me"
-description: "Digital nomad, tech enthusiast, and life explorer"
+description: "Curious mind. Builder of things. Breaker of others (for learning)."
 ---
 
 # About Me
 
-Hi! I'm a digital nomad and tech professional passionate about exploring the world while building amazing digital experiences.
+Hey👋 , I’m **James Angwenyi** alias **Masara**  
+I like figuring out how things work — and sometimes how they *don’t*.
 
-## My Journey
+Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.
 
-Started my nomad journey in 2024, combining my love for technology with wanderlust. I've been exploring different cultures, working with amazing teams remotely, and documenting my experiences along the way.
+I learn by doing: break things safely, fix them, then write it down so future-me remembers.
 
-## What I Do
+## My Story
 
-- **Frontend Development**: Building modern, responsive web applications
-- **Content Creation**: Sharing insights about nomad life and tech trends
-- **Community Building**: Connecting with fellow nomads and tech enthusiasts
+I learned by experimenting, asking questions, making mistakes, and digging deeper when something didn’t make sense.
 
-## Current Focus
+I’ve worked with teams, trained others, built challenges, and investigated odd behavior. 
 
-Currently based in Bali, working on exciting projects while enjoying the perfect blend of work and surf lifestyle.
+This site is part journal, part playground, part note-to-self.
 
-## Let's Connect
+## What You’ll Find Here
 
-Feel free to reach out if you want to collaborate, share nomad tips, or just chat about tech and travel!
+- Things I’m learning (and unlearning)  
+- Experiments, write-ups, and walkthroughs  
+- Real-world tech notes and side projects
+- Random thought too
+
+Nothing too polished. Nothing too corporate. Just curiosity.
+
+## How I Think
+
+- Hands-on learning beats theory  
+- Good questions matter more than fast answers  
+- Documentation is underrated  
+
+## Say Hi
+
+If something here helps, confuses, or sparks an idea — that’s enough.  
+Welcome to my corner of the web 🙂

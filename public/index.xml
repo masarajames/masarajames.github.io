@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to My Digital Nomad Blog on This is Masara</title>
-    <link>https://masarajames.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Welcome to My Digital Nomad Blog on This is Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modern JavaScript Async Patterns</title>
-      <link>https://masarajames.github.io/posts/javascript-async-patterns/</link>
+      <link>http://localhost:1313/posts/javascript-async-patterns/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/javascript-async-patterns/</guid>
+      <guid>http://localhost:1313/posts/javascript-async-patterns/</guid>
       <description>&lt;h1 id=&#34;modern-javascript-async-patterns&#34;&gt;Modern JavaScript Async Patterns&lt;/h1&gt;
 &lt;p&gt;Exploring the evolution from callbacks to async/await and beyond.&lt;/p&gt;
 &lt;h2 id=&#34;promise-chains-vs-asyncawait&#34;&gt;Promise Chains vs Async/Await&lt;/h2&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>Building a Hugo Theme from Scratch</title>
-      <link>https://masarajames.github.io/posts/hugo-theme-development/</link>
+      <link>http://localhost:1313/posts/hugo-theme-development/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/hugo-theme-development/</guid>
+      <guid>http://localhost:1313/posts/hugo-theme-development/</guid>
       <description>&lt;h1 id=&#34;building-a-hugo-theme-from-scratch&#34;&gt;Building a Hugo Theme from Scratch&lt;/h1&gt;
 &lt;p&gt;Creating a custom Hugo theme has been an exciting journey! Here&amp;rsquo;s what I learned while building the nomad-tech theme.&lt;/p&gt;
 &lt;h2 id=&#34;key-concepts&#34;&gt;Key Concepts&lt;/h2&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>Digital Nomad Visa Guide 2024</title>
-      <link>https://masarajames.github.io/posts/nomad-visa-guide/</link>
+      <link>http://localhost:1313/posts/nomad-visa-guide/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/nomad-visa-guide/</guid>
+      <guid>http://localhost:1313/posts/nomad-visa-guide/</guid>
       <description>&lt;h1 id=&#34;digital-nomad-visa-guide-2024&#34;&gt;Digital Nomad Visa Guide 2024&lt;/h1&gt;
 &lt;p&gt;Complete guide to digital nomad visas and remote work permits.&lt;/p&gt;
 &lt;h2 id=&#34;top-nomad-friendly-countries&#34;&gt;Top Nomad-Friendly Countries&lt;/h2&gt;
@@ -86,10 +86,10 @@
     
     <item>
       <title>Digital Nomad Life in Bali: 3 Months In</title>
-      <link>https://masarajames.github.io/posts/nomad-life-bali/</link>
+      <link>http://localhost:1313/posts/nomad-life-bali/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/nomad-life-bali/</guid>
+      <guid>http://localhost:1313/posts/nomad-life-bali/</guid>
       <description>&lt;h1 id=&#34;digital-nomad-life-in-bali-3-months-in&#34;&gt;Digital Nomad Life in Bali: 3 Months In&lt;/h1&gt;
 &lt;p&gt;Three months into my Bali adventure, and I&amp;rsquo;m still amazed by how this island balances productivity with paradise.&lt;/p&gt;
 &lt;h2 id=&#34;the-good&#34;&gt;The Good&lt;/h2&gt;
@@ -116,10 +116,10 @@
     
     <item>
       <title>CSS Grid vs Flexbox: When to Use What</title>
-      <link>https://masarajames.github.io/posts/css-grid-flexbox/</link>
+      <link>http://localhost:1313/posts/css-grid-flexbox/</link>
       <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/css-grid-flexbox/</guid>
+      <guid>http://localhost:1313/posts/css-grid-flexbox/</guid>
       <description>&lt;h1 id=&#34;css-grid-vs-flexbox-when-to-use-what&#34;&gt;CSS Grid vs Flexbox: When to Use What&lt;/h1&gt;
 &lt;p&gt;Understanding the differences between CSS Grid and Flexbox for modern layouts.&lt;/p&gt;
 &lt;h2 id=&#34;use-flexbox-for&#34;&gt;Use Flexbox For:&lt;/h2&gt;
@@ -154,10 +154,10 @@
     
     <item>
       <title>Best Coworking Spaces in Thailand</title>
-      <link>https://masarajames.github.io/posts/thailand-coworking-spaces/</link>
+      <link>http://localhost:1313/posts/thailand-coworking-spaces/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/thailand-coworking-spaces/</guid>
+      <guid>http://localhost:1313/posts/thailand-coworking-spaces/</guid>
       <description>&lt;h1 id=&#34;best-coworking-spaces-in-thailand&#34;&gt;Best Coworking Spaces in Thailand&lt;/h1&gt;
 &lt;p&gt;My experience working from Thailand&amp;rsquo;s top coworking spaces.&lt;/p&gt;
 &lt;h2 id=&#34;bangkok&#34;&gt;Bangkok&lt;/h2&gt;
@@ -190,10 +190,10 @@
     
     <item>
       <title>Docker Development Workflow for Hugo Themes</title>
-      <link>https://masarajames.github.io/posts/docker-development-workflow/</link>
+      <link>http://localhost:1313/posts/docker-development-workflow/</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/docker-development-workflow/</guid>
+      <guid>http://localhost:1313/posts/docker-development-workflow/</guid>
       <description>&lt;h1 id=&#34;docker-development-workflow-for-hugo-themes&#34;&gt;Docker Development Workflow for Hugo Themes&lt;/h1&gt;
 &lt;p&gt;Setting up a consistent development environment across different machines is crucial for theme development. Here&amp;rsquo;s my Docker-based workflow.&lt;/p&gt;
 &lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
@@ -230,10 +230,10 @@
     
     <item>
       <title>React Hooks Complete Guide</title>
-      <link>https://masarajames.github.io/posts/react-hooks-guide/</link>
+      <link>http://localhost:1313/posts/react-hooks-guide/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/react-hooks-guide/</guid>
+      <guid>http://localhost:1313/posts/react-hooks-guide/</guid>
       <description>&lt;h1 id=&#34;react-hooks-complete-guide&#34;&gt;React Hooks Complete Guide&lt;/h1&gt;
 &lt;p&gt;Master React Hooks with practical examples and best practices.&lt;/p&gt;
 &lt;h2 id=&#34;essential-hooks&#34;&gt;Essential Hooks&lt;/h2&gt;
@@ -263,10 +263,10 @@
     
     <item>
       <title>Digital Nomad Budget Breakdown: $2000/Month</title>
-      <link>https://masarajames.github.io/posts/nomad-budget-breakdown/</link>
+      <link>http://localhost:1313/posts/nomad-budget-breakdown/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/nomad-budget-breakdown/</guid>
+      <guid>http://localhost:1313/posts/nomad-budget-breakdown/</guid>
       <description>&lt;h1 id=&#34;digital-nomad-budget-breakdown-2000month&#34;&gt;Digital Nomad Budget Breakdown: $2000/Month&lt;/h1&gt;
 &lt;p&gt;How I manage to live comfortably on $2000/month as a digital nomad.&lt;/p&gt;
 &lt;h2 id=&#34;monthly-expenses&#34;&gt;Monthly Expenses&lt;/h2&gt;
@@ -312,10 +312,10 @@
     
     <item>
       <title>TypeScript Best Practices 2024</title>
-      <link>https://masarajames.github.io/posts/typescript-best-practices/</link>
+      <link>http://localhost:1313/posts/typescript-best-practices/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/typescript-best-practices/</guid>
+      <guid>http://localhost:1313/posts/typescript-best-practices/</guid>
       <description>&lt;h1 id=&#34;typescript-best-practices-2024&#34;&gt;TypeScript Best Practices 2024&lt;/h1&gt;
 &lt;p&gt;Essential TypeScript patterns and practices for better code quality.&lt;/p&gt;
 &lt;h2 id=&#34;type-definitions&#34;&gt;Type Definitions&lt;/h2&gt;
@@ -358,10 +358,10 @@
     
     <item>
       <title>Essential Remote Work Tools for Developers in 2024</title>
-      <link>https://masarajames.github.io/posts/remote-work-tools-2024/</link>
+      <link>http://localhost:1313/posts/remote-work-tools-2024/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/remote-work-tools-2024/</guid>
+      <guid>http://localhost:1313/posts/remote-work-tools-2024/</guid>
       <description>&lt;h1 id=&#34;essential-remote-work-tools-for-developers-in-2024&#34;&gt;Essential Remote Work Tools for Developers in 2024&lt;/h1&gt;
 &lt;p&gt;After working remotely from 15+ countries, here are the tools that keep me productive anywhere.&lt;/p&gt;
 &lt;h2 id=&#34;communication--collaboration&#34;&gt;Communication &amp;amp; Collaboration&lt;/h2&gt;
@@ -404,10 +404,10 @@
     
     <item>
       <title>Welcome to Nomad Tech Theme</title>
-      <link>https://masarajames.github.io/posts/example-post/</link>
+      <link>http://localhost:1313/posts/example-post/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/posts/example-post/</guid>
+      <guid>http://localhost:1313/posts/example-post/</guid>
       <description>&lt;p&gt;This is an example post to demonstrate the Nomad Tech Theme features.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
@@ -421,39 +421,34 @@
     
     <item>
       <title>About Me</title>
-      <link>https://masarajames.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
-&lt;p&gt;Hi! I&amp;rsquo;m a digital nomad and tech professional passionate about exploring the world while building amazing digital experiences.&lt;/p&gt;
-&lt;h2 id=&#34;my-journey&#34;&gt;My Journey&lt;/h2&gt;
-&lt;p&gt;Started my nomad journey in 2024, combining my love for technology with wanderlust. I&amp;rsquo;ve been exploring different cultures, working with amazing teams remotely, and documenting my experiences along the way.&lt;/p&gt;
-&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Frontend Development&lt;/strong&gt;: Building modern, responsive web applications&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Content Creation&lt;/strong&gt;: Sharing insights about nomad life and tech trends&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Community Building&lt;/strong&gt;: Connecting with fellow nomads and tech enthusiasts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;current-focus&#34;&gt;Current Focus&lt;/h2&gt;
-&lt;p&gt;Currently based in Bali, working on exciting projects while enjoying the perfect blend of work and surf lifestyle.&lt;/p&gt;</description>
+&lt;p&gt;Hey👋 , I’m &lt;strong&gt;James Angwenyi&lt;/strong&gt; alias &lt;strong&gt;Masara&lt;/strong&gt;&lt;br&gt;
+I like figuring out how things work — and sometimes how they &lt;em&gt;don’t&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.&lt;/p&gt;
+&lt;p&gt;I learn by doing: break things safely, fix them, then write it down so future-me remembers.&lt;/p&gt;
+&lt;h2 id=&#34;my-story&#34;&gt;My Story&lt;/h2&gt;
+&lt;p&gt;I learned by experimenting, asking questions, making mistakes, and digging deeper when something didn’t make sense.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Portfolio</title>
-      <link>https://masarajames.github.io/portfolio/</link>
+      <link>http://localhost:1313/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/portfolio/</guid>
+      <guid>http://localhost:1313/portfolio/</guid>
       <description>&lt;p&gt;A collection of projects I&amp;rsquo;ve built during my journey as a digital nomad and tech professional.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Social Media</title>
-      <link>https://masarajames.github.io/social/</link>
+      <link>http://localhost:1313/social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/social/</guid>
+      <guid>http://localhost:1313/social/</guid>
       <description>&lt;h1 id=&#34;follow-my-journey&#34;&gt;Follow My Journey&lt;/h1&gt;
 &lt;p&gt;Stay updated with my latest adventures, tech insights, and nomad life experiences across different social media platforms.&lt;/p&gt;
 &lt;h2 id=&#34;where-to-find-me&#34;&gt;Where to Find Me&lt;/h2&gt;
@@ -462,10 +457,10 @@
     
     <item>
       <title>Travel Timeline</title>
-      <link>https://masarajames.github.io/travel/</link>
+      <link>http://localhost:1313/travel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://masarajames.github.io/travel/</guid>
+      <guid>http://localhost:1313/travel/</guid>
       <description>&lt;p&gt;Follow my adventures as a digital nomad, exploring different cities and cultures while building amazing projects.&lt;/p&gt;</description>
     </item>
     
