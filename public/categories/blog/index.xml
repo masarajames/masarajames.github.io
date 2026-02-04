@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on This is Masara</title>
+    <link>http://localhost:1313/categories/blog/</link>
+    <description>Recent content in Blog on This is Masara</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built This Blog (And Why It Was Easier Than I Expected)</title>
+      <link>http://localhost:1313/posts/first-hugo/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-hugo/</guid>
+      <description>&lt;p&gt;Hey! 👋&lt;br&gt;&#xA;If you’re reading this, my blog actually works — which still feels a bit magical.&lt;/p&gt;&#xA;&lt;p&gt;I wanted my first post to explain &lt;em&gt;how&lt;/em&gt; this site came to life, partly to document my journey and partly to help anyone who’s been thinking:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“I should probably start a blog… someday.”&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Today was that &lt;em&gt;someday&lt;/em&gt; for me.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-hugo--github-pages&#34;&gt;Why Hugo + GitHub Pages?&lt;/h2&gt;&#xA;&lt;p&gt;Simple reasons:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;💸 &lt;strong&gt;Free&lt;/strong&gt; hosting&lt;/li&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;Fast&lt;/strong&gt; (static sites are speedy)&lt;/li&gt;&#xA;&lt;li&gt;🧠 &lt;strong&gt;No database headaches&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;📝 Write in &lt;strong&gt;Markdown&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🔄 Everything tracked with &lt;strong&gt;Git&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Also: fewer things to break. I like that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

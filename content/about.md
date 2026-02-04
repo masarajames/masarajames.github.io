@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 description: "Curious mind. Builder of things. Breaker of others (for learning)."
+tags: ["github", "hugo", "development"]
 ---
 
 # About Me

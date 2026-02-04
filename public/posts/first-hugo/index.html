@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+<title>How I Built This Blog (Step by Step, With Real Commands) | This is Masara</title>
+<meta name="description" content="Hey 👋
+If you’re reading this, my blog actually works — which still feels a little unreal.
+I wanted my first post to document exactly how I built this site. Not …">
+
+
+<meta property="og:title" content="How I Built This Blog (Step by Step, With Real Commands) | This is Masara">
+<meta property="og:description" content="Hey 👋
+If you’re reading this, my blog actually works — which still feels a little unreal.
+I wanted my first post to document exactly how I built this site. Not …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://masarajames.github.io/posts/first-hugo/">
+<meta property="og:site_name" content="This is Masara">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How I Built This Blog (Step by Step, With Real Commands) | This is Masara">
+<meta name="twitter:description" content="Hey 👋
+If you’re reading this, my blog actually works — which still feels a little unreal.
+I wanted my first post to document exactly how I built this site. Not …">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "name": "How I Built This Blog (Step by Step, With Real Commands) | This is Masara",
+  "url": "https:\/\/masarajames.github.io\/posts\/first-hugo\/",
+  
+  "headline": "How I Built This Blog (Step by Step, With Real Commands)",
+  "datePublished": "2024-01-15T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Masara"
+  }
+  
+}
+</script>
+    
+
+<link rel="stylesheet" href="/scss/main.min.9827e961b9e5493436df96aaa98eb1d93573904a9423337a7bb3f56e57980af3.css" integrity="sha256-mCfpYbnlSTQ235aqqY6x2TVzkEqUIzN6e7P1bleYCvM=">
+
+
+
+<script src="/js/main.min.1dc48d277f58c447b08394eeabd1a9c2ee6bacc162b90044cc98b07898af3d86.js" integrity="sha256-HcSNJ39YxEewg5Tuq9Gpwu5rrMFiuQBEzJiweJivPYY=" defer></script>
+    
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <nav role="navigation" aria-label="Main navigation">
+  <style>
+     
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;           
+      flex-grow: 1;                      
+      gap: 2.5rem;                       
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #41acdd;                       
+      font-size: 1.1rem;
+      font-weight: 700;                  
+      padding: 0.6rem 1rem;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+     
+    .nav-links li a:hover {
+      background-color: #da6ad0;         
+      color: #1565c0;                    
+    }
+
+     
+    .nav-links li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #42a5f5;
+      transition: width 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .nav-links li a:hover::after {
+      width: 60%;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #333;
+    }
+
+     
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-container {
+        justify-content: space-between;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="nav-container">
+      
+      <a href="https://masarajames.github.io/" class="logo" aria-label="This is Masara - Home">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_o2c1xSfBaEUwMy3i4srRTRS0BTDMZaWh3w&s" 
+             alt="This is Masara logo"
+             width="120" height="auto">
+      </a>
+
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="https://masarajames.github.io/" aria-current="false">Home</a></li>
+        
+        <li><a href="https://masarajames.github.io/posts/" aria-current="false">Blog</a></li>
+        
+        <li><a href="https://masarajames.github.io/about/" aria-current="false">About</a></li>
+        <li><a href="https://rxresu.me/masarajames02/masara" aria-current="false">My CV</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </div>
+</nav>
+    <main id="main" role="main">
+        
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">How I Built This Blog (Step by Step, With Real Commands).md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">cat how i built this blog (step by step, with real commands).md</span>
+            </div>
+            <div class="content">
+                <p>Hey 👋<br>
+If you’re reading this, my blog actually works — which still feels a little unreal.</p>
+<p>I wanted my first post to document <em>exactly</em> how I built this site. Not just the idea, but the <strong>actual commands</strong>, mistakes, and workflow that got everything live.</p>
+<p>This is the post I wish I had when I started.</p>
+<hr>
+<h2 id="why-hugo--github-pages">Why Hugo + GitHub Pages?</h2>
+<p>I wanted a setup that was:</p>
+<ul>
+<li>💸 <strong>Free</strong></li>
+<li>⚡ <strong>Fast</strong></li>
+<li>🧠 <strong>Simple</strong></li>
+<li>📝 <strong>Markdown-based</strong></li>
+<li>🔄 <strong>Fully version controlled</strong></li>
+<li>🗄️ <strong>No database to maintain</strong></li>
+</ul>
+<p>Hugo and GitHub Pages checked every box.</p>
+<hr>
+<h2 id="the-tech-stack">The Tech Stack</h2>
+<ul>
+<li><strong>Hugo</strong> – static site generator written in Go</li>
+<li><strong>Theme</strong> – PaperMod (clean, minimal, dark mode)</li>
+<li><strong>GitHub Pages</strong> – free static hosting</li>
+<li><strong>GitHub Actions</strong> – automatic build &amp; deploy</li>
+</ul>
+<p>Once everything is wired up, publishing is literally:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push
+</span></span></code></pre></div><h2 id="step-1-installing-hugo">Step 1: Installing Hugo</h2>
+<p>First, I installed Hugo locally so I could build and preview the site.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install hugo
+</span></span></code></pre></div><p>Verify the installation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><h2 id="step-2-creating-the-site">Step 2: Creating the Site</h2>
+<p>Creating a new Hugo site is straightforward:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site masarajames.github.io
+</span></span><span style="display:flex;"><span>cd masarajames.github.io
+</span></span></code></pre></div><p>Initialize Git (important):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Hugo generates this structure:</p>
+<p>content/    # Blog posts
+layouts/    # Custom templates
+static/     # Images, CSS, JS
+themes/     # Themes (submodules)
+hugo.toml   # Main configuration</p>
+<h2 id="step-3-adding-a-theme-git-submodule">Step 3: Adding a Theme (Git Submodule)</h2>
+<p>Instead of copying theme files, I added the theme as a submodule:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+</span></span></code></pre></div><p>This keeps the theme clean, separate, and updateable.</p>
+<h2 id="step-4-configuring-hugo">Step 4: Configuring Hugo</h2>
+<p>Most of the configuration lives in hugo.toml:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://masarajames.github.io/&#34;</span>
+</span></span><span style="display:flex;"><span>languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
+</span></span><span style="display:flex;"><span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;James Masara&#39;s Digital Garden&#34;</span>
+</span></span><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PaperMod&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>params<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My corner of the internet&#34;</span>
+</span></span><span style="display:flex;"><span>  defaultTheme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>  ShowToc <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>  ShowReadingTime <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">[[</span>params.socialIcons<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;github&#34;</span>
+</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/masarajames&#34;</span>
+</span></span></code></pre></div><p>Once this was set, the site finally had styling.</p>
+<h2 id="step-5-creating-my-first-post">Step 5: Creating My First Post</h2>
+<p>Hugo generates posts with front matter automatically:</p>
+<p>hugo new posts/my-first-blog-post.md
+This creates a file like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: <span style="color:#e6db74">&#34;My First Blog Post&#34;</span>
+</span></span><span style="display:flex;"><span>date: 2024-01-15T10:00:00Z
+</span></span><span style="display:flex;"><span>draft: true
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>I write everything in Markdown — no CMS, no editor lock-in.
+</span></span></code></pre></div><h2 id="step-6-previewing-locally">Step 6: Previewing Locally</h2>
+<p>Before deploying anything, I preview locally:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>Then open:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>http://localhost:1313
+</span></span></code></pre></div><p>The -D flag shows draft posts.</p>
+<h2 id="step-7-automating-deployment-github-actions">Step 7: Automating Deployment (GitHub Actions)</h2>
+<p>I wanted zero manual deployment, so I set up GitHub Actions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.github/workflows/hugo.yml:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name: Deploy Hugo site to Pages
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>on:
+</span></span><span style="display:flex;"><span>  push:
+</span></span><span style="display:flex;"><span>    branches: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;main&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jobs:
+</span></span><span style="display:flex;"><span>  build:
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      - uses: actions/checkout@v4
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          submodules: true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - uses: peaceiris/actions-hugo@v2
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          hugo-version: <span style="color:#e6db74">&#39;latest&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - run: hugo --minify
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - uses: actions/upload-pages-artifact@v3
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          path: ./public
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  deploy:
+</span></span><span style="display:flex;"><span>    needs: build
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>    permissions:
+</span></span><span style="display:flex;"><span>      pages: write
+</span></span><span style="display:flex;"><span>      id-token: write
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      - uses: actions/deploy-pages@v4
+</span></span></code></pre></div><p>Now every push automatically builds and deploys the site.</p>
+<h2 id="step-8-publishing">Step 8: Publishing</h2>
+<p>When the post was ready:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add first blog post&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><p>GitHub Actions took over from there.</p>
+<p>How It All Works (Behind the Scenes)</p>
+<ul>
+<li>I write Markdown</li>
+<li>Hugo converts it to HTML</li>
+<li>GitHub Actions builds the site</li>
+<li>GitHub Pages serves it</li>
+<li>Markdown → Hugo → GitHub → Live website</li>
+</ul>
+<h2 id="issues-i-ran-into-and-fixes">Issues I Ran Into (And Fixes)</h2>
+<p>Theme not showing
+→ Forgot theme = &ldquo;PaperMod&rdquo;</p>
+<p>Images broken
+→ Images must live in static/</p>
+<p>404 after deploy
+→ Wait a minute and check GitHub Actions logs</p>
+<p>If you want next, I can:</p>
+<ul>
+<li>tune this to be <strong>more playful or more technical</strong></li>
+<li>add <strong>architecture diagrams</strong></li>
+<li>optimize it for <strong>SEO</strong></li>
+<li>split it into a <strong>multi-part series</strong></li>
+</ul>
+<p>Just tell me 👍</p>
+
+            </div>
+            
+        </div>
+    </article>
+</div>
+
+
+
+    </main>
+    <footer style="background: rgba(0, 0, 0, 0.3); padding: 2rem 0; margin-top: 4rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container">
+        <p style="color: #888; margin: 0;">
+             2026 • Made by Masara
+            <script data-goatcounter="https://masara.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

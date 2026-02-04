@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -13,7 +13,7 @@
 <meta property="og:title" content="Hugo | This is Masara">
 <meta property="og:description" content="I try things. Sometimes they work">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:1313/tags/hugo/">
+<meta property="og:url" content="https://masarajames.github.io/tags/hugo/">
 <meta property="og:site_name" content="This is Masara">
 
 
@@ -27,7 +27,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Hugo | This is Masara",
-  "url": "http:\/\/localhost:1313\/tags\/hugo\/",
+  "url": "https:\/\/masarajames.github.io\/tags\/hugo\/",
   
 }
 </script>
@@ -139,7 +139,7 @@
   <div class="container">
     <div class="nav-container">
       
-      <a href="http://localhost:1313/" class="logo" aria-label="This is Masara - Home">
+      <a href="https://masarajames.github.io/" class="logo" aria-label="This is Masara - Home">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_o2c1xSfBaEUwMy3i4srRTRS0BTDMZaWh3w&s" 
              alt="This is Masara logo"
              width="120" height="auto">
@@ -147,11 +147,11 @@
 
       
       <ul class="nav-links" id="nav-menu">
-        <li><a href="http://localhost:1313/" aria-current="false">Home</a></li>
+        <li><a href="https://masarajames.github.io/" aria-current="false">Home</a></li>
         
-        <li><a href="http://localhost:1313/posts/" aria-current="false">Blog</a></li>
+        <li><a href="https://masarajames.github.io/posts/" aria-current="false">Blog</a></li>
         
-        <li><a href="http://localhost:1313/about/" aria-current="false">About</a></li>
+        <li><a href="https://masarajames.github.io/about/" aria-current="false">About</a></li>
         <li><a href="https://rxresu.me/masarajames02/masara" aria-current="false">My CV</a></li>
       </ul>
 
@@ -166,65 +166,38 @@
     <div class="blog-posts">
         
         <article class="blog-post">
-            <h3>Building a Hugo Theme from Scratch</h3>
-            <div class="blog-meta">August 2024</div>
-            <p><h1 id="building-a-hugo-theme-from-scratch">Building a Hugo Theme from Scratch</h1>
-<p>Creating a custom Hugo theme has been an exciting journey! Here&rsquo;s what I learned while building the nomad-tech theme.</p>
-<h2 id="key-concepts">Key Concepts</h2>
-<p>Hugo&rsquo;s template lookup order is crucial for theme development:</p>
-<pre tabindex="0"><code>layouts/
-├── _default/
-│   ├── baseof.html
-│   ├── list.html
-│   └── single.html
-├── partials/
-└── section-name/
-    └── list.html
-</code></pre><h2 id="hugo-pipes-for-assets">Hugo Pipes for Assets</h2>
-<p>Modern Hugo themes should use Hugo Pipes for asset processing:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">scss</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Get</span> <span style="color:#e6db74">&#34;scss/main.scss&#34;</span> }}
-</span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">css</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">scss</span> | <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">ToCSS</span> | <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Minify</span> | <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Fingerprint</span> }}
-</span></span></code></pre></div><h2 id="multilingual-support">Multilingual Support</h2>
-<p>Hugo&rsquo;s i18n system makes multilingual themes straightforward:</p></p>
-            <a href="http://localhost:1313/posts/hugo-theme-development/" class="btn btn-secondary">Read More</a>
+            <h3>How I Built This Blog (Step by Step, With Real Commands)</h3>
+            <div class="blog-meta">January 2024</div>
+            <p><p>Hey 👋<br>
+If you’re reading this, my blog actually works — which still feels a little unreal.</p>
+<p>I wanted my first post to document <em>exactly</em> how I built this site. Not just the idea, but the <strong>actual commands</strong>, mistakes, and workflow that got everything live.</p>
+<p>This is the post I wish I had when I started.</p>
+<hr>
+<h2 id="why-hugo--github-pages">Why Hugo + GitHub Pages?</h2>
+<p>I wanted a setup that was:</p>
+<ul>
+<li>💸 <strong>Free</strong></li>
+<li>⚡ <strong>Fast</strong></li>
+<li>🧠 <strong>Simple</strong></li>
+<li>📝 <strong>Markdown-based</strong></li>
+<li>🔄 <strong>Fully version controlled</strong></li>
+<li>🗄️ <strong>No database to maintain</strong></li>
+</ul>
+<p>Hugo and GitHub Pages checked every box.</p></p>
+            <a href="https://masarajames.github.io/posts/first-hugo/" class="btn btn-secondary">Read More</a>
         </article>
         
         <article class="blog-post">
-            <h3>Docker Development Workflow for Hugo Themes</h3>
-            <div class="blog-meta">July 2024</div>
-            <p><h1 id="docker-development-workflow-for-hugo-themes">Docker Development Workflow for Hugo Themes</h1>
-<p>Setting up a consistent development environment across different machines is crucial for theme development. Here&rsquo;s my Docker-based workflow.</p>
-<h2 id="the-setup">The Setup</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> hugomods/hugo:exts-0.120.4</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /src</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /src/themes/nomad-tech/<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;hugo&#34;</span>, <span style="color:#e6db74">&#34;server&#34;</span>, <span style="color:#e6db74">&#34;--bind&#34;</span>, <span style="color:#e6db74">&#34;0.0.0.0&#34;</span>, <span style="color:#e6db74">&#34;--buildDrafts&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><h2 id="docker-compose-configuration">Docker Compose Configuration</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hugo</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;./exampleSite:/src&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;1313:1313&#34;</span>
-</span></span></code></pre></div><h2 id="benefits">Benefits</h2>
-<ul>
-<li><strong>Consistency</strong>: Same Hugo version everywhere</li>
-<li><strong>Security</strong>: Pinned, official images only</li>
-<li><strong>Isolation</strong>: No local Hugo installation needed</li>
-<li><strong>Portability</strong>: Works on any machine with Docker</li>
-</ul>
-<h2 id="development-commands">Development Commands</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Start development server</span>
-</span></span><span style="display:flex;"><span>docker-compose up
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build for production</span>
-</span></span><span style="display:flex;"><span>docker-compose run hugo hugo --minify
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Clean up</span>
-</span></span><span style="display:flex;"><span>docker-compose down
-</span></span></code></pre></div><p>This workflow has saved me countless hours of environment setup!</p></p>
-            <a href="http://localhost:1313/posts/docker-development-workflow/" class="btn btn-secondary">Read More</a>
+            <h3>About Me</h3>
+            <div class="blog-meta">January 0001</div>
+            <p><h1 id="about-me">About Me</h1>
+<p>Hey👋 , I’m <strong>James Angwenyi</strong> alias <strong>Masara</strong><br>
+I like figuring out how things work — and sometimes how they <em>don’t</em>.</p>
+<p>Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.</p>
+<p>I learn by doing: break things safely, fix them, then write it down so future-me remembers.</p>
+<h2 id="my-story">My Story</h2>
+<p>I learned by experimenting, asking questions, making mistakes, and digging deeper when something didn’t make sense.</p></p>
+            <a href="https://masarajames.github.io/about/" class="btn btn-secondary">Read More</a>
         </article>
         
     </div>
@@ -234,8 +207,8 @@
     <footer style="background: rgba(0, 0, 0, 0.3); padding: 2rem 0; margin-top: 4rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
     <div class="container">
         <p style="color: #888; margin: 0;">
-             2026 • 
-            Made by Masara
+             2026 • Made by Masara
+            <script data-goatcounter="https://masara.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
         </p>
     </div>
 </footer>
