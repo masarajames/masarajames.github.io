@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on This is Masara</title>
-    <link>https://masarajames.github.io/tags/development/</link>
+    <link>http://localhost:1313/tags/development/</link>
     <description>Recent content in Development on This is Masara</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://masarajames.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://masarajames.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://masarajames.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;Hey👋 , I’m &lt;strong&gt;James Angwenyi&lt;/strong&gt; alias &lt;strong&gt;Masara&lt;/strong&gt;&lt;br&gt;&#xA;I like figuring out how things work — and sometimes how they &lt;em&gt;don’t&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.&lt;/p&gt;&#xA;&lt;p&gt;I learn by doing: break things safely, fix them, then write it down so future-me remembers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-story&#34;&gt;My Story&lt;/h2&gt;&#xA;&lt;p&gt;I learned by experimenting, asking questions, making mistakes, and digging deeper when something didn’t make sense.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,9 +1,9 @@
 [home]
-other = "Home"
+other = "Start Here"
 [social]
 other = "Social Media"
 [blog]
-other = "Blog"
+other = "Brain Dump"
 [portfolio]
 other = "Portfolio"
 [contact]
@@ -23,15 +23,15 @@ other = "January 2006"
 [date_format_full]
 other = "January 2, 2006"
 [about]
-other = "About"
+other = "Who Am I"
 [travel]
-other = "My CV"
+other = "Resume-ish"
 [hero_greeting]
 other = "Hi, I'm"
 [follow_social]
-other = "Check out my blogs"
+other = "Things I Write"
 [learn_more]
-other = "Learn More"
+other = "Get to Know Me"
 [social_description]
 other = "Sharing insights and experiences across platforms, welcome to connect"
 [portfolio_title]

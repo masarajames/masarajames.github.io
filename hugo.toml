@@ -20,6 +20,8 @@ theme = "nomad-tech"
   logo = "Masara"
   subtitle = "Experiments, mistakes, and lessons learned."
   description = "I try things. Sometimes they work"
+  ogimage = "og-default.png"
+
 
   # Social Media Links
   [[params.social]]
