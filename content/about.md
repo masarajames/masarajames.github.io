@@ -7,9 +7,12 @@ tags: ["github", "hugo", "development"]
 # About Me
 
 Hey👋 , I’m **James Angwenyi** alias **Masara**  
+
 I like figuring out how things work — and sometimes how they *don’t*.
 
 Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.
+
+Somewhere in there, I work in cybersecurity — basically learning how things break so I can help keep them safe.
 
 I learn by doing: break things safely, fix them, then write it down so future-me remembers.
 
@@ -17,7 +20,7 @@ I learn by doing: break things safely, fix them, then write it down so future-me
 
 I learned by experimenting, asking questions, making mistakes, and digging deeper when something didn’t make sense.
 
-I’ve worked with teams, trained others, built challenges, and investigated odd behavior. 
+I’ve worked with teams, trained others, built challenges, and investigated odd behavior.
 
 This site is part journal, part playground, part note-to-self.
 
@@ -40,3 +43,8 @@ Nothing too polished. Nothing too corporate. Just curiosity.
 
 If something here helps, confuses, or sparks an idea — that’s enough.  
 Welcome to my corner of the web 🙂
+
+- 🔗 [LinkedIn](linkedin.com/in/masarajames)
+- 🐙 [GitHub](https://github.com/masarajames)
+- 🐦 [X (Twitter)](https://x.com/Masarajames1)
+- 📧 [Email](mailto:masarajames02@gmail.com)

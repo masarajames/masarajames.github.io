@@ -3,7 +3,7 @@ title: "How I Built This Blog (Step by Step, With Real Commands)"
 date: 2024-01-15
 draft: false
 tags: ["hugo", "github-pages", "blog"]
-categories: ["setup", "tutorial"]
+categories: ["github", "tutorial"]
 ---
 
 Hey 👋  
