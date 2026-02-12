@@ -16,7 +16,6 @@ But I figured maybe trying this out might help me think clearer.
 
 Lately I’ve been thinking about **stress**.
 
-Not dramatic, movie-type stress 🎬  
 Just normal life stress.  
 Deadlines. Expectations. Things breaking at the worst time.  
 Life doing what life does.

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to My Digital Nomad Blog on This is Masara</title>
-    <link>http://localhost:1313/</link>
+    <link>https://masarajames.github.io/</link>
     <description>Recent content in Welcome to My Digital Nomad Blog on This is Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://masarajames.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Built This Blog (Step by Step, With Real Commands)</title>
-      <link>http://localhost:1313/posts/first-hugo/</link>
+      <link>https://masarajames.github.io/posts/first-hugo/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/first-hugo/</guid>
+      <guid>https://masarajames.github.io/posts/first-hugo/</guid>
       <description>&lt;p&gt;Hey 👋&lt;br&gt;
 If you’re reading this, my blog actually works — which still feels a little unreal.&lt;/p&gt;
 &lt;p&gt;I wanted my first post to document &lt;em&gt;exactly&lt;/em&gt; how I built this site. Not just the idea, but the &lt;strong&gt;actual commands&lt;/strong&gt;, mistakes, and workflow that got everything live.&lt;/p&gt;
@@ -33,10 +33,10 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://masarajames.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://masarajames.github.io/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
 &lt;p&gt;Hey👋 , I’m &lt;strong&gt;James Angwenyi&lt;/strong&gt; alias &lt;strong&gt;Masara&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I like figuring out how things work — and sometimes how they &lt;em&gt;don’t&lt;/em&gt;.&lt;/p&gt;
@@ -47,19 +47,19 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>Portfolio</title>
-      <link>http://localhost:1313/portfolio/</link>
+      <link>https://masarajames.github.io/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/</guid>
+      <guid>https://masarajames.github.io/portfolio/</guid>
       <description>&lt;p&gt;A collection of projects I&amp;rsquo;ve built during my journey as a digital nomad and tech professional.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Social Media</title>
-      <link>http://localhost:1313/social/</link>
+      <link>https://masarajames.github.io/social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/social/</guid>
+      <guid>https://masarajames.github.io/social/</guid>
       <description>&lt;h1 id=&#34;follow-my-journey&#34;&gt;Follow My Journey&lt;/h1&gt;
 &lt;p&gt;Stay updated with my latest adventures, tech insights, and nomad life experiences across different social media platforms.&lt;/p&gt;
 &lt;h2 id=&#34;where-to-find-me&#34;&gt;Where to Find Me&lt;/h2&gt;
@@ -68,10 +68,10 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>The Art of Not Panicking</title>
-      <link>http://localhost:1313/posts/stress-mindset/</link>
+      <link>https://masarajames.github.io/posts/stress-mindset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/stress-mindset/</guid>
+      <guid>https://masarajames.github.io/posts/stress-mindset/</guid>
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;the-art-of-not-panicking-&#34;&gt;The Art of Not Panicking 🧘🏽‍♂️&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -81,18 +81,17 @@ Okay relax — we’re &lt;strong&gt;not&lt;/strong&gt; about to get philosophic
 I don’t journal.&lt;br&gt;
 But I figured maybe trying this out might help me think clearer.&lt;/p&gt;
 &lt;p&gt;Lately I’ve been thinking about &lt;strong&gt;stress&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Not dramatic, movie-type stress 🎬&lt;br&gt;
-Just normal life stress.&lt;br&gt;
+&lt;p&gt;Just normal life stress.&lt;br&gt;
 Deadlines. Expectations. Things breaking at the worst time.&lt;br&gt;
 Life doing what life does.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Travel Timeline</title>
-      <link>http://localhost:1313/travel/</link>
+      <link>https://masarajames.github.io/travel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/travel/</guid>
+      <guid>https://masarajames.github.io/travel/</guid>
       <description>&lt;p&gt;Follow my adventures as a digital nomad, exploring different cities and cultures while building amazing projects.&lt;/p&gt;</description>
     </item>
     

@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/blog/</loc>
+    <loc>https://masarajames.github.io/tags/blog/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://masarajames.github.io/categories/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/github/</loc>
+    <loc>https://masarajames.github.io/categories/github/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/github-pages/</loc>
+    <loc>https://masarajames.github.io/tags/github-pages/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first-hugo/</loc>
+    <loc>https://masarajames.github.io/posts/first-hugo/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://masarajames.github.io/tags/hugo/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://masarajames.github.io/posts/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://masarajames.github.io/tags/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tutorial/</loc>
+    <loc>https://masarajames.github.io/categories/tutorial/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://masarajames.github.io/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://masarajames.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/development/</loc>
+    <loc>https://masarajames.github.io/tags/development/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
+    <loc>https://masarajames.github.io/tags/github/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/life/</loc>
+    <loc>https://masarajames.github.io/categories/life/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/mindset/</loc>
+    <loc>https://masarajames.github.io/categories/mindset/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/notes/</loc>
+    <loc>https://masarajames.github.io/categories/notes/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>https://masarajames.github.io/portfolio/</loc>
   </url><url>
-    <loc>http://localhost:1313/social/</loc>
+    <loc>https://masarajames.github.io/social/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/stress-mindset/</loc>
+    <loc>https://masarajames.github.io/posts/stress-mindset/</loc>
   </url><url>
-    <loc>http://localhost:1313/travel/</loc>
+    <loc>https://masarajames.github.io/travel/</loc>
   </url>
 </urlset>
