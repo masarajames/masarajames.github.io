@@ -44,7 +44,7 @@ Nothing too polished. Nothing too corporate. Just curiosity.
 If something here helps, confuses, or sparks an idea — that’s enough.  
 Welcome to my corner of the web 🙂
 
-- 🔗 [LinkedIn](linkedin.com/in/masarajames)
+- 🔗 [LinkedIn](https://wwww.linkedin.com/in/masarajames)
 - 🐙 [GitHub](https://github.com/masarajames)
 - 🐦 [X (Twitter)](https://x.com/Masarajames1)
 - 📧 [Email](mailto:masarajames02@gmail.com)
