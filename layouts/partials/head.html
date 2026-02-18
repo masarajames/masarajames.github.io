@@ -1,0 +1,10 @@
+<link rel="icon" type="image/png" href="/og-default.png">
+
+
+{{ $scss := resources.Get "scss/main.scss" }}
+{{ $css := $scss | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $js := resources.Get "js/main.js" }}
+{{ $jsMin := $js | resources.Minify | resources.Fingerprint }}
+<script src="{{ $jsMin.RelPermalink }}" integrity="{{ $jsMin.Data.Integrity }}" defer></script>
