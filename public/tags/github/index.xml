@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on This is Masara</title>
-    <link>https://masarajames.github.io/tags/github/</link>
+    <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on This is Masara</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://masarajames.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://masarajames.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://masarajames.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;Hey👋 , I’m &lt;strong&gt;James Angwenyi&lt;/strong&gt; alias &lt;strong&gt;Masara&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;I like figuring out how things work — and sometimes how they &lt;em&gt;don’t&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Most days I’m exploring systems, ideas, and the internet’s weird corners, usually with a terminal open and too many tabs.&lt;/p&gt;&#xA;&lt;p&gt;Somewhere in there, I work in cybersecurity — basically learning how things break so I can help keep them safe.&lt;/p&gt;&#xA;&lt;p&gt;I learn by doing: break things safely, fix them, then write it down so future-me remembers.&lt;/p&gt;</description>
     </item>
   </channel>
