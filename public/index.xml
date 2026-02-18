@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to My Digital Nomad Blog on This is Masara</title>
+    <title>Hey, I&#39;m Masara and this my digital space on This is Masara</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to My Digital Nomad Blog on This is Masara</description>
+    <description>Recent content in Hey, I&#39;m Masara and this my digital space on This is Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
