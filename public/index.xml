@@ -2,34 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hey, I&#39;m Masara and this my digital space on This is Masara</title>
-    <link>http://localhost:1313/</link>
+    <link>https://masara.site/</link>
     <description>Recent content in Hey, I&#39;m Masara and this my digital space on This is Masara</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://masara.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Turn 24 Today</title>
-      <link>http://localhost:1313/posts/i_turn_24/</link>
+      <link>https://masara.site/posts/i_turn_24/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/posts/i_turn_24/</guid>
+      <guid>https://masara.site/posts/i_turn_24/</guid>
       <description>&lt;h2 id=&#34;i-turn-24-today&#34;&gt;I Turn 24 Today&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/birthday24.png&#34; alt=&#34;Turning 24&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://masara.site/images/birthday24.png&#34; alt=&#34;Turning 24&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Today is my birthday. I’m turning &lt;strong&gt;24&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I don’t really know how I’m supposed to feel about it&lt;/p&gt;
 &lt;p&gt;— or whether I’m supposed to feel anything special at all.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;24 doesn’t sound like a particularly significant age&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Numbers like 25, 30, or 35 feel like bigger milestones. You know?&lt;/p&gt;
+&lt;p&gt;Numbers like 25, 30, or 35 feel like bigger milestones.&lt;/p&gt;
 &lt;p&gt;But still… I’m excited.&lt;/p&gt;
-&lt;p&gt;I think I should be satisfied with where I am right now&lt;/p&gt;</description>
+&lt;p&gt;As turn 24, today&amp;hellip;..&lt;/p&gt;
+&lt;p&gt;I probably  am grateful and happy  with where I am right now&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How I Built This Blog (Step by Step, With Real Commands)</title>
-      <link>http://localhost:1313/posts/first-hugo/</link>
+      <link>https://masara.site/posts/first-hugo/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/posts/first-hugo/</guid>
+      <guid>https://masara.site/posts/first-hugo/</guid>
       <description>&lt;h2 id=&#34;why-hugo--github-pages&#34;&gt;Why Hugo + GitHub Pages?&lt;/h2&gt;
 &lt;p&gt;Hey 👋&lt;br&gt;
 If you’re reading this, my blog actually works — which still feels a little unreal.&lt;/p&gt;
@@ -50,10 +51,10 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://masara.site/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://masara.site/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
 &lt;p&gt;Hey👋 , I’m &lt;strong&gt;James Angwenyi&lt;/strong&gt; alias &lt;strong&gt;Masara&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I like figuring out how things work — and sometimes how they &lt;em&gt;don’t&lt;/em&gt;.&lt;/p&gt;
@@ -64,19 +65,19 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>Portfolio</title>
-      <link>http://localhost:1313/portfolio/</link>
+      <link>https://masara.site/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/portfolio/</guid>
+      <guid>https://masara.site/portfolio/</guid>
       <description>&lt;p&gt;A collection of projects I&amp;rsquo;ve built during my journey as a digital nomad and tech professional.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Social Media</title>
-      <link>http://localhost:1313/social/</link>
+      <link>https://masara.site/social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/social/</guid>
+      <guid>https://masara.site/social/</guid>
       <description>&lt;h1 id=&#34;follow-my-journey&#34;&gt;Follow My Journey&lt;/h1&gt;
 &lt;p&gt;Stay updated with my latest adventures, tech insights, and nomad life experiences across different social media platforms.&lt;/p&gt;
 &lt;h2 id=&#34;where-to-find-me&#34;&gt;Where to Find Me&lt;/h2&gt;
@@ -85,10 +86,10 @@ If you’re reading this, my blog actually works — which still feels a little 
     
     <item>
       <title>The Art of Not Panicking</title>
-      <link>http://localhost:1313/posts/stress-mindset/</link>
+      <link>https://masara.site/posts/stress-mindset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/posts/stress-mindset/</guid>
+      <guid>https://masara.site/posts/stress-mindset/</guid>
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;the-art-of-not-panicking-&#34;&gt;The Art of Not Panicking 🧘🏽‍♂️&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -105,10 +106,10 @@ Life doing what life does.&lt;/p&gt;</description>
     
     <item>
       <title>Travel Timeline</title>
-      <link>http://localhost:1313/travel/</link>
+      <link>https://masara.site/travel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
        
-      <guid>http://localhost:1313/travel/</guid>
+      <guid>https://masara.site/travel/</guid>
       <description>&lt;p&gt;Follow my adventures as a digital nomad, exploring different cities and cultures while building amazing projects.&lt;/p&gt;</description>
     </item>
     

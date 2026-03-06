@@ -17,13 +17,15 @@ I don’t really know how I’m supposed to feel about it
 
 **24 doesn’t sound like a particularly significant age**.
 
-Numbers like 25, 30, or 35 feel like bigger milestones. You know?
+Numbers like 25, 30, or 35 feel like bigger milestones.
 
 But still… I’m excited.
 
-I think I should be satisfied with where I am right now
+As turn 24, today.....
 
-Just everything in general.
+I probably  am grateful and happy  with where I am right now
+
+And with everything around me
 
 I think I’m doing fine.
 
