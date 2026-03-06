@@ -1,9 +1,8 @@
 ---
-title: "How I Built This Blog (Step by Step, With Real Commands)"
-date: 2024-01-15
-draft: false
+title: "How I Built This Blog"
+date: 2026-02-01
 tags: ["hugo", "github-pages", "blog"]
-categories: ["github", "tutorial"]
+categories: ["tutorial"]
 ---
 
 

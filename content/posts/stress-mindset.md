@@ -1,7 +1,8 @@
 ---
 title: "The Art of Not Panicking"
+date: 2026-02-16
 description: "On stress, calm thinking, and learning to solve things without spiraling."
-categories: ["mindset", "life", "notes"]
+categories: ["life", "notes"]
 ---
 ---
 

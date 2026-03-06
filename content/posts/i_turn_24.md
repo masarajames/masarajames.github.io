@@ -1,7 +1,8 @@
 ---
 title: "I Turn 24 Today"
-date: 2026-03-06
+date: 2026-03-07
 description: "Today is my birthday. I’m turning 24"
+categories: ["life", "notes"]
 image : "images/birthday24"
 ---
 

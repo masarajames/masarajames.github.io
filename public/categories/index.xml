@@ -6,41 +6,27 @@
     <description>Recent content in Categories on This is Masara</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://masara.site/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Github</title>
-      <link>https://masara.site/categories/github/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://masara.site/categories/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorial</title>
-      <link>https://masara.site/categories/tutorial/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://masara.site/categories/tutorial/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Life</title>
       <link>https://masara.site/categories/life/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://masara.site/categories/life/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mindset</title>
-      <link>https://masara.site/categories/mindset/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://masara.site/categories/mindset/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
       <link>https://masara.site/categories/notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://masara.site/categories/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://masara.site/categories/tutorial/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://masara.site/categories/tutorial/</guid>
       <description></description>
     </item>
   </channel>
