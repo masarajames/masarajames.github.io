@@ -4,7 +4,8 @@ date: 2026-02-16
 description: "On stress, calm thinking, and learning to solve things without spiraling."
 categories: ["life", "notes"]
 ---
----
+
+----
 
 ## The Art of Not Panicking 🧘🏽‍♂️
 
