@@ -1,7 +1,8 @@
 ---
 title: "I Turn 24 Today"
 date: 2026-03-06
-description: "A small reflection on turning 24."
+description: "Today is my birthday. I’m turning 24"
+image : "images/birthday24"
 ---
 
 ## I Turn 24 Today
