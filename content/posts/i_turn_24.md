@@ -4,9 +4,9 @@ date: 2026-03-06
 description: "A small reflection on turning 24."
 ---
 
-# I Turn 24 Today
+## I Turn 24 Today
 
-![image](og-default.png)
+![Turning 24](/images/birthday24.png)
 
 Today is my birthday. I’m turning **24**.
 

@@ -6,6 +6,9 @@ tags: ["hugo", "github-pages", "blog"]
 categories: ["github", "tutorial"]
 ---
 
+
+## Why Hugo + GitHub Pages?
+
 Hey 👋  
 If you’re reading this, my blog actually works — which still feels a little unreal.
 
@@ -14,8 +17,6 @@ I wanted my first post to document *exactly* how I built this site. Not just the
 This is the post I wish I had when I started.
 
 ---
-
-## Why Hugo + GitHub Pages?
 
 I wanted a setup that was:
 
@@ -189,9 +190,10 @@ jobs:
 Now every push automatically builds and deploys the site.
 
 ## Step 8: Publishing
+
 When the post was ready:
 
-```bash 
+```bash
 git add .
 git commit -m "Add first blog post"
 git push origin main
