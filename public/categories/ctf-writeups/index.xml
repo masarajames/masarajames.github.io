@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ctf-Writeups on This is Masara</title>
+    <link>http://localhost:1313/categories/ctf-writeups/</link>
+    <description>Recent content in Ctf-Writeups on This is Masara</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/ctf-writeups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>picoCTF: Sudo Make Me a Sandwich Writeup</title>
+      <link>http://localhost:1313/posts/sandwich/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sandwich/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;picoctf--challenge-overview&#34;&gt;PicoCTF : Challenge Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hey 👋&lt;/p&gt;&#xA;&lt;p&gt;In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first glance, it looked simple, but it required abusing a misconfigured sudo permission.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-connecting-to-the-machine&#34;&gt;🔌 Connecting to the Machine&lt;/h3&gt;&#xA;&lt;p&gt;I started by connecting to the server using SSH:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -p &lt;span style=&#34;color:#ae81ff&#34;&gt;54547&lt;/span&gt; ctf-player@green-hill.picoctf.net&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When prompted, I entered the password:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    d1a1ff7a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initial-enumeration&#34;&gt;Initial Enumeration&lt;/h3&gt;&#xA;&lt;p&gt;Once logged in, I listed the files,&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

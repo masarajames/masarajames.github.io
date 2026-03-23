@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+<title>picoCTF: Sudo Make Me a Sandwich Writeup | This is Masara</title>
+<meta name="description" content=" PicoCTF : Challenge Overview Hey 👋
+In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first …">
+
+
+<meta property="og:title" content="picoCTF: Sudo Make Me a Sandwich Writeup | This is Masara">
+<meta property="og:description" content=" PicoCTF : Challenge Overview Hey 👋
+In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/posts/sandwich/">
+<meta property="og:site_name" content="This is Masara">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="picoCTF: Sudo Make Me a Sandwich Writeup | This is Masara">
+<meta name="twitter:description" content=" PicoCTF : Challenge Overview Hey 👋
+In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first …">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "name": "picoCTF: Sudo Make Me a Sandwich Writeup | This is Masara",
+  "url": "http:\/\/localhost:1313\/posts\/sandwich\/",
+  
+  "headline": "picoCTF: Sudo Make Me a Sandwich Writeup",
+  "datePublished": "2026-03-23T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Masara"
+  }
+  
+}
+</script>
+    <link rel="icon" type="image/png" href="/og-default.png">
+
+
+
+
+<link rel="stylesheet" href="/scss/main.min.9827e961b9e5493436df96aaa98eb1d93573904a9423337a7bb3f56e57980af3.css" integrity="sha256-mCfpYbnlSTQ235aqqY6x2TVzkEqUIzN6e7P1bleYCvM=">
+
+
+
+<script src="/js/main.min.1dc48d277f58c447b08394eeabd1a9c2ee6bacc162b90044cc98b07898af3d86.js" integrity="sha256-HcSNJ39YxEewg5Tuq9Gpwu5rrMFiuQBEzJiweJivPYY=" defer></script>
+    
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <nav role="navigation" aria-label="Main navigation">
+  <style>
+     
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;           
+      flex-grow: 1;                      
+      gap: 2.5rem;                       
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #41acdd;                       
+      font-size: 1.1rem;
+      font-weight: 700;                  
+      padding: 0.6rem 1rem;
+      transition: all 0.3s ease;
+      border-radius: 6px;
+    }
+
+     
+    .nav-links li a:hover {
+      background-color: #da6ad0;         
+      color: #1565c0;                    
+    }
+
+     
+    .nav-links li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #42a5f5;
+      transition: width 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .nav-links li a:hover::after {
+      width: 60%;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #333;
+    }
+
+     
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-container {
+        justify-content: space-between;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="nav-container">
+      
+      <a href="http://localhost:1313/" class="logo" aria-label="This is Masara - Home">
+        <img src="/images/nav.png" 
+             alt="This is Masara logo"
+             width="70" height="100">
+      </a>
+
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="http://localhost:1313/" aria-current="false">Where We Begin</a></li>
+        
+        <li><a href="http://localhost:1313/posts/" aria-current="false">Brain Dump</a></li>
+        
+        <li><a href="http://localhost:1313/about/" aria-current="false">Who Am I</a></li>
+        <li><a href="https://rxresu.me/masarajames02/masara" aria-current="false">Resume-ish</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu" style="color: #1565c0;">☰</button>
+    </div>
+  </div>
+</nav>
+    <main id="main" role="main">
+        
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">picoCTF: Sudo Make Me a Sandwich Writeup.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">cat picoctf: sudo make me a sandwich writeup.md</span>
+            </div>
+            <div class="content">
+                <hr>
+<h2 id="picoctf--challenge-overview">PicoCTF : Challenge Overview</h2>
+<p>Hey 👋</p>
+<p>In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first glance, it looked simple, but it required abusing a misconfigured sudo permission.</p>
+<hr>
+<h3 id="-connecting-to-the-machine">🔌 Connecting to the Machine</h3>
+<p>I started by connecting to the server using SSH:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p <span style="color:#ae81ff">54547</span> ctf-player@green-hill.picoctf.net
+</span></span></code></pre></div><p>When prompted, I entered the password:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    d1a1ff7a
+</span></span></code></pre></div><h3 id="initial-enumeration">Initial Enumeration</h3>
+<p>Once logged in, I listed the files,</p>
+<p>I found:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls
+</span></span><span style="display:flex;"><span>flag.txt
+</span></span></code></pre></div><p>I tried to read it,</p>
+<p>But I got:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat flag.txt
+</span></span><span style="display:flex;"><span>cat: flag.txt: Permission denied
+</span></span></code></pre></div><hr>
+<h3 id="trying-basic-sudo-commands">Trying Basic Sudo Commands</h3>
+<p>I first tried running the file with sudo:</p>
+<p>But I was denied:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cat flag.txt
+</span></span><span style="display:flex;"><span>Sorry, user ctf-player is not allowed to execute <span style="color:#e6db74">&#39;/usr/bin/cat flag.txt&#39;</span> as root on challenge.
+</span></span></code></pre></div><hr>
+<h3 id="checking-sudo-permissions">Checking Sudo Permissions</h3>
+<p>Next, I checked what I was allowed to run with sudo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Matching Defaults entries <span style="color:#66d9ef">for</span> ctf-player on challenge: 
+</span></span><span style="display:flex;"><span>    env_reset, mail_badpass, secure_path<span style="color:#f92672">=</span>/usr/local/sbin<span style="color:#ae81ff">\:</span>/usr/local/bin<span style="color:#ae81ff">\:</span>/usr/sbin<span style="color:#ae81ff">\:</span>/usr/bin<span style="color:#ae81ff">\:</span>/sbin<span style="color:#ae81ff">\:</span>/bin<span style="color:#ae81ff">\:</span>/snap/bin 
+</span></span><span style="display:flex;"><span>User ctf-player may run the following commands on challenge: 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: /bin/emacs
+</span></span></code></pre></div><p>This meant I could run Emacs as root without a password.</p>
+<hr>
+<h3 id="exploitation-getting-root-shell">Exploitation (Getting Root Shell)</h3>
+<p>I launched Emacs using sudo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo /bin/emacs
+</span></span></code></pre></div><p>Inside Emacs, I did the following:</p>
+<blockquote>
+<ul>
+<li>Pressed Alt + x</li>
+<li>Typed <em>shell</em></li>
+<li>Pressed Enter</li>
+</ul></blockquote>
+<p>This opened a shell running as root.</p>
+<p><img src="/images/sandwhich.png" alt="sandwhich"></p>
+<h3 id="getting-the-flag">Getting the Flag</h3>
+<p>Now that I had root access, I read the flag:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat flag.txt
+</span></span><span style="display:flex;"><span>picoCTF<span style="color:#f92672">{</span>ju57_5ud0_17_0cdfe631<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p><img src="/images/sandwhich2.png" alt="sandwhich"></p>
+<p>This challenge showed how dangerous misconfigured sudo permissions can be.</p>
+<p>Even though Emacs is just a text editor, it can execute commands and spawn a shell. If it is allowed in sudo, it can lead to full system compromise.</p>
+<p>Always check:</p>
+<p>sudo -l</p>
+<p>and look for binaries that can be abused for privilege escalation.</p>
+
+            </div>
+            
+        </div>
+    </article>
+</div>
+
+
+
+    </main>
+    <footer style="background: rgba(0, 0, 0, 0.3); padding: 2rem 0; margin-top: 4rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container">
+        <p style="color: #888; margin: 0;">
+             2026 • Made by Masara
+            <script data-goatcounter="https://masara.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

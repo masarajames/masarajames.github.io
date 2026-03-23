@@ -30,7 +30,7 @@
   "url": "http:\/\/localhost:1313\/posts\/",
   
   "headline": "Posts",
-  "datePublished": "2026-03-07T00:00:00Z",
+  "datePublished": "2026-03-23T00:00:00Z",
   "author": {
     "@type": "Person",
     "name": "Masara"
@@ -178,6 +178,8 @@
         <div class="blog-categories" style="text-align: center; margin-bottom: 2rem;">
             <a href="/posts/" class="category-btn active">All</a>
             
+            <a href="http://localhost:1313/categories/ctf-writeups/" class="category-btn">Ctf-Writeups</a>
+            
             <a href="http://localhost:1313/categories/journal/" class="category-btn">Journal</a>
             
             <a href="http://localhost:1313/categories/tutorial/" class="category-btn">Tutorial</a>
@@ -186,6 +188,31 @@
         
         <div class="blog-posts">
             
+            
+            <article class="blog-post">
+                <h3><a href="http://localhost:1313/posts/sandwich/">picoCTF: Sudo Make Me a Sandwich Writeup</a></h3>
+                <div class="blog-meta">
+                    <time datetime="2026-03-23">2026-03-23</time>
+                    
+                    <span class="category-tag">ctf-writeups</span>
+                    
+                </div>
+                <p><hr>
+<h2 id="picoctf--challenge-overview">PicoCTF : Challenge Overview</h2>
+<p>Hey 👋</p>
+<p>In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first glance, it looked simple, but it required abusing a misconfigured sudo permission.</p>
+<hr>
+<h3 id="-connecting-to-the-machine">🔌 Connecting to the Machine</h3>
+<p>I started by connecting to the server using SSH:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p <span style="color:#ae81ff">54547</span> ctf-player@green-hill.picoctf.net
+</span></span></code></pre></div><p>When prompted, I entered the password:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    d1a1ff7a
+</span></span></code></pre></div><h3 id="initial-enumeration">Initial Enumeration</h3>
+<p>Once logged in, I listed the files,</p></p>
+                <div class="read-more-container">
+                    <a href="http://localhost:1313/posts/sandwich/" class="btn btn-secondary">Read More</a>
+                </div>
+            </article>
             
             <article class="blog-post">
                 <h3><a href="http://localhost:1313/posts/i_turn_24/">I Turn 24 Today</a></h3>
@@ -245,7 +272,7 @@ Life doing what life does.</p></p>
                     
                 </div>
                 <p><hr>
-<h2 id="why-hugo--github-pages">Why Hugo + GitHub Pages?</h2>
+<h3 id="why-hugo--github-pages">Why Hugo + GitHub Pages?</h3>
 <p>Hey 👋<br>
 If you’re reading this, my blog actually works — which still feels a little unreal.</p>
 <p>I wanted my first post to document <em>exactly</em> how I built this site. Not just the idea, but the <strong>actual commands</strong>, mistakes, and workflow that got everything live.</p>

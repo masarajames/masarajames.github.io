@@ -6,19 +6,19 @@
     
 
 
-<title>Categories | This is Masara</title>
+<title>Linux | This is Masara</title>
 <meta name="description" content="I try things. Sometimes they work">
 
 
-<meta property="og:title" content="Categories | This is Masara">
+<meta property="og:title" content="Linux | This is Masara">
 <meta property="og:description" content="I try things. Sometimes they work">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:1313/categories/">
+<meta property="og:url" content="http://localhost:1313/tags/linux/">
 <meta property="og:site_name" content="This is Masara">
 
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Categories | This is Masara">
+<meta name="twitter:title" content="Linux | This is Masara">
 <meta name="twitter:description" content="I try things. Sometimes they work">
 
 
@@ -26,8 +26,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Categories | This is Masara",
-  "url": "http:\/\/localhost:1313\/categories\/",
+  "name": "Linux | This is Masara",
+  "url": "http:\/\/localhost:1313\/tags\/linux\/",
   
 }
 </script>
@@ -164,55 +164,30 @@
 </nav>
     <main id="main" role="main">
         
-<section class="content-section" style="display: block; margin-top: 3rem;">
-    <div class="container">
-        <h2>Categories</h2>
-        <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem;">3 posts</p>
+<div style="margin-top: 5rem; padding: 2rem; background: rgba(255, 255, 255, 0.02); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+    <h1 style="color: #00d4ff; margin-bottom: 2rem; text-align: center;">Linux</h1>
+    <div class="blog-posts">
         
-        <div class="blog-posts">
-            
-            
-            <article class="blog-post">
-                <h3><a href="http://localhost:1313/categories/ctf-writeups/">Ctf-Writeups</a></h3>
-                <div class="blog-meta">
-                    <time datetime="2026-03-23">2026-03-23</time>
-                    
-                </div>
-                <p></p>
-                <div class="read-more-container">
-                    <a href="http://localhost:1313/categories/ctf-writeups/" class="btn btn-secondary">Read More</a>
-                </div>
-            </article>
-            
-            <article class="blog-post">
-                <h3><a href="http://localhost:1313/categories/journal/">Journal</a></h3>
-                <div class="blog-meta">
-                    <time datetime="2026-03-07">2026-03-07</time>
-                    
-                </div>
-                <p></p>
-                <div class="read-more-container">
-                    <a href="http://localhost:1313/categories/journal/" class="btn btn-secondary">Read More</a>
-                </div>
-            </article>
-            
-            <article class="blog-post">
-                <h3><a href="http://localhost:1313/categories/tutorial/">Tutorial</a></h3>
-                <div class="blog-meta">
-                    <time datetime="2026-02-01">2026-02-01</time>
-                    
-                </div>
-                <p></p>
-                <div class="read-more-container">
-                    <a href="http://localhost:1313/categories/tutorial/" class="btn btn-secondary">Read More</a>
-                </div>
-            </article>
-            
-        </div>
-        
+        <article class="blog-post">
+            <h3>picoCTF: Sudo Make Me a Sandwich Writeup</h3>
+            <div class="blog-meta">March 2026</div>
+            <p><hr>
+<h2 id="picoctf--challenge-overview">PicoCTF : Challenge Overview</h2>
+<p>Hey 👋</p>
+<p>In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first glance, it looked simple, but it required abusing a misconfigured sudo permission.</p>
+<hr>
+<h3 id="-connecting-to-the-machine">🔌 Connecting to the Machine</h3>
+<p>I started by connecting to the server using SSH:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p <span style="color:#ae81ff">54547</span> ctf-player@green-hill.picoctf.net
+</span></span></code></pre></div><p>When prompted, I entered the password:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    d1a1ff7a
+</span></span></code></pre></div><h3 id="initial-enumeration">Initial Enumeration</h3>
+<p>Once logged in, I listed the files,</p></p>
+            <a href="http://localhost:1313/posts/sandwich/" class="btn btn-secondary">Read More</a>
+        </article>
         
     </div>
-</section>
+</div>
 
     </main>
     <footer style="background: rgba(0, 0, 0, 0.3); padding: 2rem 0; margin-top: 4rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">

@@ -7,7 +7,7 @@ categories: ["tutorial"]
 
 ---
 
-## Why Hugo + GitHub Pages?
+### Why Hugo + GitHub Pages?
 
 Hey 👋  
 If you’re reading this, my blog actually works — which still feels a little unreal.

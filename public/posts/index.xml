@@ -6,8 +6,15 @@
     <description>Recent content in Posts on This is Masara</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>picoCTF: Sudo Make Me a Sandwich Writeup</title>
+      <link>http://localhost:1313/posts/sandwich/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sandwich/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;picoctf--challenge-overview&#34;&gt;PicoCTF : Challenge Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hey 👋&lt;/p&gt;&#xA;&lt;p&gt;In this medium level challenge, I was given SSH access to a machine and needed to read a protected flag file. At first glance, it looked simple, but it required abusing a misconfigured sudo permission.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-connecting-to-the-machine&#34;&gt;🔌 Connecting to the Machine&lt;/h3&gt;&#xA;&lt;p&gt;I started by connecting to the server using SSH:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -p &lt;span style=&#34;color:#ae81ff&#34;&gt;54547&lt;/span&gt; ctf-player@green-hill.picoctf.net&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When prompted, I entered the password:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    d1a1ff7a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initial-enumeration&#34;&gt;Initial Enumeration&lt;/h3&gt;&#xA;&lt;p&gt;Once logged in, I listed the files,&lt;/p&gt;</description>
+    </item>
     <item>
       <title>I Turn 24 Today</title>
       <link>http://localhost:1313/posts/i_turn_24/</link>
@@ -27,7 +34,7 @@
       <link>http://localhost:1313/posts/first-hugo/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/first-hugo/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-hugo--github-pages&#34;&gt;Why Hugo + GitHub Pages?&lt;/h2&gt;&#xA;&lt;p&gt;Hey 👋&lt;br&gt;&#xA;If you’re reading this, my blog actually works — which still feels a little unreal.&lt;/p&gt;&#xA;&lt;p&gt;I wanted my first post to document &lt;em&gt;exactly&lt;/em&gt; how I built this site. Not just the idea, but the &lt;strong&gt;actual commands&lt;/strong&gt;, mistakes, and workflow that got everything live.&lt;/p&gt;&#xA;&lt;p&gt;This is the post I wish I had when I started.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I wanted a setup that was:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;💸 &lt;strong&gt;Free&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;Fast&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🧠 &lt;strong&gt;Simple&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;📝 &lt;strong&gt;Markdown-based&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🔄 &lt;strong&gt;Fully version controlled&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🗄️ &lt;strong&gt;No database to maintain&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo and GitHub Pages checked every box.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;why-hugo--github-pages&#34;&gt;Why Hugo + GitHub Pages?&lt;/h3&gt;&#xA;&lt;p&gt;Hey 👋&lt;br&gt;&#xA;If you’re reading this, my blog actually works — which still feels a little unreal.&lt;/p&gt;&#xA;&lt;p&gt;I wanted my first post to document &lt;em&gt;exactly&lt;/em&gt; how I built this site. Not just the idea, but the &lt;strong&gt;actual commands&lt;/strong&gt;, mistakes, and workflow that got everything live.&lt;/p&gt;&#xA;&lt;p&gt;This is the post I wish I had when I started.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I wanted a setup that was:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;💸 &lt;strong&gt;Free&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;Fast&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🧠 &lt;strong&gt;Simple&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;📝 &lt;strong&gt;Markdown-based&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🔄 &lt;strong&gt;Fully version controlled&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;🗄️ &lt;strong&gt;No database to maintain&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo and GitHub Pages checked every box.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
