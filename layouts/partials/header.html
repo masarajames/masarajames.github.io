@@ -64,6 +64,12 @@
       color: #333;
     }
 
+    /* No grey/white flash when tapping on phones */
+    .mobile-menu-btn,
+    .nav-links li a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
     /* Mobile responsive behavior */
     @media (max-width: 768px) {
       .nav-links {
@@ -73,9 +79,9 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: rgba(26, 26, 46, 0.98);   /* Same dark navy as the nav bar */
         padding: 1rem;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
       }
 
       .nav-links.active {

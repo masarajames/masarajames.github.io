@@ -3,7 +3,7 @@ title: "I Let an AI Into My Terminal"
 date: 2026-09-29
 description: "Trying Claude Code in my terminal. Fascinated. Also a little scared."
 tags: ["ai", "claude", "linux", "terminal"]
-categories: ["journal"]
+categories: ["cybersecurity"]
 ---
 
 ---

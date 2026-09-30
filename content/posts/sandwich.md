@@ -2,7 +2,7 @@
 title: "picoCTF: Sudo Make Me a Sandwich Writeup"
 date: 2026-03-23
 tags: ["ctf", "privilege-escalation", "linux"]
-categories: ["ctf-writeups"]
+categories: ["cybersecurity"]
 ---
 
 ---
