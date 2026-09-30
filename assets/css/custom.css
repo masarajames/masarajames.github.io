@@ -1,0 +1,148 @@
+/* Site-specific fixes on top of the nomad-tech theme */
+
+:root {
+  --nav-h: 104px;       /* keep in sync with the nav in layouts/partials/header.html */
+  color-scheme: dark;   /* dark scrollbars and form controls */
+}
+
+/* Content starts right below the fixed nav instead of under it */
+main {
+  margin-top: var(--nav-h);
+}
+
+.post-container {
+  margin-top: 1.5rem;
+}
+
+/* Images never spill out of the post box */
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* Code blocks: drop the inline-code pill styling inside <pre> */
+.content pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
+pre {
+  scrollbar-color: rgba(0, 212, 255, 0.35) transparent;
+}
+
+/* ---------- Post footer navigation ---------- */
+
+.post-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.post-nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.post-nav-links a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.post-nav-links a:hover {
+  border-color: #00d4ff;
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.post-nav-links .label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.post-nav-links .next {
+  grid-column: 2;
+  text-align: right;
+}
+
+.back-to-posts {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .post-nav-links {
+    grid-template-columns: 1fr;
+  }
+  .post-nav-links .next {
+    grid-column: 1;
+  }
+}
+
+/* ---------- Post lists (Posts page + category pages) ---------- */
+
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.blog-categories .category-btn {
+  margin: 0;
+  text-decoration: none;
+}
+
+.blog-meta .category-tag {
+  text-decoration: none;
+}
+
+/* ---------- Homepage ---------- */
+
+/* Theme gives every <section> a full screen of height; size the intro to its content */
+.home-intro {
+  min-height: auto;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+
+.home-intro .content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #1a1a2e;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.home-intro .content img {
+  max-height: 260px;
+  width: auto;
+  margin-top: 0;   /* nav.png already has transparent space on top */
+}
+
+.home-intro .content ul {
+  padding-left: 1.5rem;
+}
+
+/* Profile photo above "Hi, I'm Masara" */
+.hero-avatar {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0 auto 1rem;
+}

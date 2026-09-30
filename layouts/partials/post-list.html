@@ -1,0 +1,35 @@
+{{/* Post cards with category filter buttons. Used by the Posts page and every category page. */}}
+{{ $current := .RelPermalink }}
+<section class="content-section" style="display: block; margin-top: 3rem;">
+    <div class="container">
+        <h2>{{ .Title }}</h2>
+
+        <div class="blog-categories" style="margin-bottom: 2rem;">
+            <a href="{{ "posts/" | relURL }}" class="category-btn {{ if eq .Kind "section" }}active{{ end }}">{{ i18n "all_posts" }}</a>
+            {{ range .Site.Taxonomies.categories }}
+            <a href="{{ .Page.RelPermalink }}" class="category-btn {{ if eq .Page.RelPermalink $current }}active{{ end }}">{{ .Page.Title }}</a>
+            {{ end }}
+        </div>
+
+        <div class="blog-posts">
+            {{ $paginator := .Paginate .Pages 6 }}
+            {{ range $paginator.Pages }}
+            {{ partial "post-card.html" . }}
+            {{ end }}
+        </div>
+
+        {{ if gt $paginator.TotalPages 1 }}
+        <div class="pagination" style="text-align: center; margin-top: 2rem;">
+            {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn-secondary">{{ i18n "prev_page" }}</a>
+            {{ end }}
+            {{ range $paginator.Pagers }}
+            <a href="{{ .URL }}" class="btn {{ if eq . $paginator }}btn-primary{{ else }}btn-secondary{{ end }}">{{ .PageNumber }}</a>
+            {{ end }}
+            {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="btn btn-secondary">{{ i18n "next_page" }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>

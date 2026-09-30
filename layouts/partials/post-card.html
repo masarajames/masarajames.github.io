@@ -1,0 +1,13 @@
+<article class="blog-post">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <div class="blog-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ range .Params.categories }}
+        <a href="{{ "categories/" | relURL }}{{ . | urlize }}/" class="category-tag">{{ . }}</a>
+        {{ end }}
+    </div>
+    <p>{{ .Summary }}</p>
+    <div class="read-more-container">
+        <a href="{{ .RelPermalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
+    </div>
+</article>

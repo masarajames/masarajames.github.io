@@ -5,13 +5,19 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 0;
+      padding: 0.25rem 0;               /* Keep total nav height = --nav-h in assets/css/custom.css */
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .logo {
       flex-shrink: 0;
+    }
+
+    .logo img {
+      display: block;
+      height: 64px;
+      width: auto;
     }
 
     .nav-links {
@@ -104,7 +110,7 @@
       <a href="{{ .Site.BaseURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">
         <img src="/images/nav.png" 
              alt="{{ .Site.Title }} logo"
-             width="70" height="100">
+             width="43" height="64">
       </a>
 
       <!-- Centered menu items -->

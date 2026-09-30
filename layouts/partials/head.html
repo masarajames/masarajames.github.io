@@ -1,9 +1,12 @@
-<link rel="icon" type="image/png" href="/og-default.png">
+<link rel="icon" type="image/png" href="{{ "images/nav.png" | relURL }}">
 
 
 {{ $scss := resources.Get "scss/main.scss" }}
 {{ $css := $scss | css.Sass | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $custom := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}">
 
 {{ $js := resources.Get "js/main.js" }}
 {{ $jsMin := $js | resources.Minify | resources.Fingerprint }}
