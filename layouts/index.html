@@ -2,23 +2,18 @@
 <section class="hero">
     <div class="hero-content">
         <img src="{{ "images/nav.png" | relURL }}" alt="{{ .Site.Params.author }}" class="hero-avatar" width="120" height="180">
-        <h1>{{ i18n "hero_greeting" }} {{ .Site.Params.author | default "m03315" }}</h1>
-        <p>{{ .Site.Params.subtitle | default "数字游民 • 科技探索者 • 生活记录者" }}</p>
-        <p>{{ .Site.Params.description | default "分享科技前沿见解，记录数字游民生活，提供实用攻略指南" }}</p>
+        <h1>{{ i18n "hero_greeting" }} {{ .Site.Params.author }}</h1>
+        <p>{{ .Site.Params.subtitle }}</p>
+        <p>{{ .Site.Params.description }}</p>
         <div class="cta-buttons">
-            <a href="{{ .Site.BaseURL }}posts/" class="btn btn-primary">{{ i18n "follow_social" }}</a>
-            <a href="{{ .Site.BaseURL }}about/" class="btn btn-secondary">{{ i18n "learn_more" }}</a>
+            <a href="{{ "posts/" | relURL }}" class="btn btn-primary">{{ i18n "follow_social" }}</a>
+            <a href="{{ "about/" | relURL }}" class="btn btn-secondary">{{ i18n "learn_more" }}</a>
         </div>
+        {{/* Contact links come from [[params.contact]] in hugo.toml */}}
         <div class="social-icons">
-            <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:your@email.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
+            {{ range .Site.Params.contact }}
+            <a href="{{ .link }}" aria-label="{{ .name }}" title="{{ .name }}"{{ if hasPrefix .link "http" }} target="_blank" rel="noopener"{{ end }}>{{ .icon }}</a>
+            {{ end }}
         </div>
 
     </div>

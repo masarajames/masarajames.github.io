@@ -3,11 +3,8 @@ title: "The Art of Not Panicking"
 date: 2026-02-16
 description: "I'm not really a writer, but lately I've been thinking about stress. Stress is emotional, problems are logical, and panic never solved anything. What a calm friend taught me about caring just enough to act."
 categories: ["journal"]
+tags: ["mindset", "stress", "reflection"]
 ---
-
-----
-
-## The Art of Not Panicking 🧘🏽‍♂️
 
 > *“You can’t solve a problem with the same mind that created it.”*  
 Okay relax — we’re **not** about to get philosophical 😅

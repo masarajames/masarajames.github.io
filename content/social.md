@@ -1,12 +1,12 @@
 ---
 title: "Social Media"
-description: "Connect with me across different platforms"
+description: "Where to find me online"
+# Hidden from the menu and not published yet. Delete this block to turn the page on.
+build:
+  render: never
+  list: never
 ---
 
-# Follow My Journey
+# Where to Find Me
 
-Stay updated with my latest adventures, tech insights, and nomad life experiences across different social media platforms.
-
-## Where to Find Me
-
-Connect with me on various platforms where I share different aspects of my journey - from tech tutorials to travel vlogs and daily life updates.
+I share write-ups, experiments, and the occasional random thought. Say hi on any of these.

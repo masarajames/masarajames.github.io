@@ -6,9 +6,7 @@ tags: ["hugo", "github-pages", "blog"]
 categories: ["tutorial"]
 ---
 
----
-
-### Why Hugo + GitHub Pages?
+## Why Hugo + GitHub Pages?
 
 Hey 👋  
 If you’re reading this, my blog actually works — which still feels a little unreal.
@@ -34,10 +32,11 @@ Hugo and GitHub Pages checked every box.
 
 ## The Tech Stack
 
-- **Hugo** – static site generator written in Go  
-- **Theme** – PaperMod (clean, minimal, dark mode)  
+- **Hugo (extended)** – static site generator written in Go  
+- **Theme** – [nomad-tech](https://github.com/m03315/nomad-tech) (dark, techy, easy to customize)  
 - **GitHub Pages** – free static hosting  
 - **GitHub Actions** – automatic build & deploy  
+- **Custom domain** – [masara.site](https://masara.site)
 
 Once everything is wired up, publishing is literally:
 
@@ -49,11 +48,16 @@ git push
 
 First, I installed Hugo locally so I could build and preview the site.
 
+⚠️ Don't just run `sudo apt install hugo`. On Debian/Kali that often gives you an **old, non-extended** version, and themes that use SCSS (like mine) won't build.
+
+Grab the **extended** build from the [Hugo releases page](https://github.com/gohugoio/hugo/releases) instead:
+
 ```bash
-sudo apt install hugo
+wget https://github.com/gohugoio/hugo/releases/download/v0.167.0/hugo_extended_0.167.0_linux-amd64.deb
+sudo dpkg -i hugo_extended_0.167.0_linux-amd64.deb
 ```
 
-Verify the installation:
+Verify the installation (look for `+extended`):
 
 ```bash
 hugo version
@@ -76,41 +80,41 @@ git init
 
 Hugo generates this structure:
 
+```text
 content/    # Blog posts
 layouts/    # Custom templates
 static/     # Images, CSS, JS
 themes/     # Themes (submodules)
 hugo.toml   # Main configuration
+```
 
 ## Step 3: Adding a Theme (Git Submodule)
 
 Instead of copying theme files, I added the theme as a submodule:
 
 ```bash
-git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+git submodule add https://github.com/m03315/nomad-tech.git themes/nomad-tech
 ```
 
-This keeps the theme clean, separate, and updateable.
+This keeps the theme clean, separate, and updateable. Anything I want to change goes in my own `layouts/` folder, which overrides the theme without touching it.
 
 ## Step 4: Configuring Hugo
 
-Most of the configuration lives in hugo.toml:
+Most of the configuration lives in `hugo.toml`:
 
-```bash
-baseURL = "https://masarajames.github.io/"
-languageCode = "en-us"
-title = "James Masara's Digital Garden"
-theme = "PaperMod"
+```toml
+baseURL = "https://masara.site"
+defaultContentLanguage = "en"
+theme = "nomad-tech"
+
+[languages.en]
+  languageCode = "en-US"
+  title = "This is Masara"
 
 [params]
-  description = "My corner of the internet"
-  defaultTheme = "auto"
-  ShowToc = true
-  ShowReadingTime = true
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/masarajames"
+  author = "Masara"
+  subtitle = "Experiments, mistakes, and lessons learned."
+  description = "I try things. Sometimes they work"
 ```
 
 Once this was set, the site finally had styling.
@@ -119,15 +123,19 @@ Once this was set, the site finally had styling.
 
 Hugo generates posts with front matter automatically:
 
+```bash
 hugo new posts/my-first-blog-post.md
+```
+
 This creates a file like:
 
-```bash
+```markdown
 ---
 title: "My First Blog Post"
-date: 2024-01-15T10:00:00Z
+date: 2026-02-01
 draft: true
 ---
+
 I write everything in Markdown — no CMS, no editor lock-in.
 ```
 
@@ -141,39 +149,44 @@ hugo server -D
 
 Then open:
 
-```bash
+```text
 http://localhost:1313
 ```
 
-The -D flag shows draft posts.
+The `-D` flag shows draft posts.
 
 ## Step 7: Automating Deployment (GitHub Actions)
 
-I wanted zero manual deployment, so I set up GitHub Actions.
+I wanted zero manual deployment, so I set up GitHub Actions. This is a trimmed version of my `.github/workflows/hugo.yml`:
 
-```bash
-.github/workflows/hugo.yml:
-
+```yaml
 name: Deploy Hugo site to Pages
 
 on:
   push:
     branches: ["main"]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.167.0
     steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - uses: actions/checkout@v4
         with:
-          submodules: true
-
-      - uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-
-      - run: hugo --minify
-
+          submodules: recursive
+      - id: pages
+        uses: actions/configure-pages@v5
+      - run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
@@ -181,12 +194,13 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    environment:
+      name: github-pages
     steps:
       - uses: actions/deploy-pages@v4
 ```
+
+In the repo settings, under **Pages → Source**, pick **GitHub Actions**.
 
 Now every push automatically builds and deploys the site.
 
@@ -202,21 +216,25 @@ git push origin main
 
 GitHub Actions took over from there.
 
-How It All Works (Behind the Scenes)
+## How It All Works (Behind the Scenes)
 
 - I write Markdown
 - Hugo converts it to HTML
 - GitHub Actions builds the site
 - GitHub Pages serves it
-- Markdown → Hugo → GitHub → Live website
+
+**Markdown → Hugo → GitHub → Live website**
 
 ## Issues I Ran Into (And Fixes)
 
-Theme not showing
-→ Forgot theme = "PaperMod"
+**Theme not showing**  
+→ Forgot `theme = "nomad-tech"`, or cloned without `--recurse-submodules`
 
-Images broken
-→ Images must live in static/
+**SCSS / "TOCSS" build errors**  
+→ Needed Hugo **extended**, not the apt version
 
-404 after deploy
-→ Wait a minute and check GitHub Actions logs
+**Images broken**  
+→ Images must live in `static/` and be linked as `/images/name.png`
+
+**404 after deploy**  
+→ Wait a minute and check the GitHub Actions logs

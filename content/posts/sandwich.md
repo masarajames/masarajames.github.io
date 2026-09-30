@@ -6,9 +6,7 @@ tags: ["ctf", "privilege-escalation", "linux"]
 categories: ["cybersecurity"]
 ---
 
----
-
-## PicoCTF : Challenge Overview
+## Challenge Overview
 
 Hey 👋  
 
@@ -55,9 +53,7 @@ cat: flag.txt: Permission denied
 
 ### Trying Basic Sudo Commands
 
-I first tried running the file with sudo:
-
-But I was denied:
+I first tried reading the file with sudo, but I was denied:
 
 ```bash
 sudo cat flag.txt
@@ -71,6 +67,7 @@ Sorry, user ctf-player is not allowed to execute '/usr/bin/cat flag.txt' as root
 Next, I checked what I was allowed to run with sudo:
 
 ```bash
+sudo -l
 Matching Defaults entries for ctf-player on challenge: 
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin 
 User ctf-player may run the following commands on challenge: 
@@ -97,18 +94,18 @@ Inside Emacs, I did the following:
 
 This opened a shell running as root.
 
-![sandwhich](/images/sandwhich.png)
+![Emacs shell running as root](/images/sandwich.png)
 
 ### Getting the Flag
 
-Now that I had root access, I read the flag:
+Now that I had root access, I read the flag (redacted here, go solve it yourself 😉):
 
 ```bash
 cat flag.txt
-picoCTF{ju57_5ud0_17_0cdfe631}
+picoCTF{REDACTED}
 
 ```
-![sandwhich](/images/sandwhich2.png)
+![Reading flag.txt from the root shell](/images/sandwich2.png)
 
 This challenge showed how dangerous misconfigured sudo permissions can be.
 
@@ -116,6 +113,8 @@ Even though Emacs is just a text editor, it can execute commands and spawn a she
 
 Always check:
 
+```bash
 sudo -l
+```
 
 and look for binaries that can be abused for privilege escalation.

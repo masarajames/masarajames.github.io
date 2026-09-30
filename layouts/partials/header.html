@@ -32,7 +32,7 @@
 
     .nav-links li a {
       text-decoration: none;
-      color: #41acdd;                      /* Change to match your site's text color */
+      color: #41acdd;                   /* Light blue */
       font-size: 1.1rem;
       font-weight: 700;                 /* Bolder text */
       padding: 0.6rem 1rem;
@@ -40,24 +40,27 @@
       border-radius: 6px;
     }
 
-    /* Light blue highlight on hover */
-    .nav-links li a:hover {
-      background-color: #da6ad0;        /* Very light blue */
-      color: #1565c0;                   /* Darker blue text for contrast */
+    /* Cyan glow on hover and for the current page, matching the site's accent */
+    .nav-links li a:hover,
+    .nav-links li a[aria-current="page"] {
+      background-color: rgba(0, 212, 255, 0.12);   /* Faint cyan tint */
+      color: #00d4ff;                               /* Site accent cyan */
+      text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);  /* Soft terminal glow */
     }
 
-    /* Optional modern underline effect on hover */
+    /* Underline grows in on hover */
     .nav-links li a::after {
       content: '';
       display: block;
       width: 0;
       height: 3px;
-      background: #42a5f5;
+      background: #00d4ff;
       transition: width 0.3s ease;
       margin: 0 auto;
     }
 
-    .nav-links li a:hover::after {
+    .nav-links li a:hover::after,
+    .nav-links li a[aria-current="page"]::after {
       width: 60%;
     }
 
@@ -67,7 +70,7 @@
       border: none;
       font-size: 1.8rem;
       cursor: pointer;
-      color: #333;
+      color: #41acdd;
     }
 
     /* No grey/white flash when tapping on phones */
@@ -107,23 +110,23 @@
   <div class="container">
     <div class="nav-container">
       <!-- Logo on the left -->
-      <a href="{{ .Site.BaseURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">
-        <img src="/images/nav.png" 
+      <a href="{{ "/" | relURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">
+        <img src="{{ "images/nav.png" | relURL }}"
              alt="{{ .Site.Title }} logo"
              width="43" height="64">
       </a>
 
       <!-- Centered menu items -->
+      {{/* aria-current marks the section you are on, which also highlights it */}}
+      {{ $section := .Section }}
       <ul class="nav-links" id="nav-menu">
-        <li><a href="{{ .Site.BaseURL }}" aria-current="false">{{ i18n "home" }}</a></li>
-        <!-- <li><a href="{{ .Site.BaseURL }}social/" aria-current="false">{{ i18n "social" }}</a></li> -->
-        <li><a href="{{ .Site.BaseURL }}posts/" aria-current="false">{{ i18n "blog" }}</a></li>
-        <!-- <li><a href="{{ .Site.BaseURL }}portfolio/" aria-current="false">{{ i18n "portfolio" }}</a></li> -->
-        <li><a href="{{ .Site.BaseURL }}about/" aria-current="false">{{ i18n "about" }}</a></li>
-        <li><a href="https://rxresu.me/masarajames02/masara" aria-current="false">{{ i18n "travel" }}</a></li>
+        <li><a href="{{ "/" | relURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>{{ i18n "home" }}</a></li>
+        <li><a href="{{ "posts/" | relURL }}"{{ if or (eq $section "posts") (eq $section "categories") (eq $section "tags") }} aria-current="page"{{ end }}>{{ i18n "blog" }}</a></li>
+        <li><a href="{{ "about/" | relURL }}"{{ if eq .RelPermalink ("about/" | relURL) }} aria-current="page"{{ end }}>{{ i18n "about" }}</a></li>
+        <li><a href="https://rxresu.me/masarajames02/masara" target="_blank" rel="noopener">{{ i18n "resume" }}</a></li>
       </ul>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu" style="color: #1565c0;">☰</button>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
     </div>
   </div>
 </nav>

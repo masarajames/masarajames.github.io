@@ -3,12 +3,8 @@ title: "I Let an AI Into My Terminal"
 date: 2026-09-29
 description: "I opened my terminal, typed claude, and let an AI into my blog folder. It read everything, found broken images, ran my site, and wrote this post. Fascinated by how it works. A little scared."
 tags: ["ai", "claude", "linux", "terminal"]
-categories: ["cybersecurity"]
+categories: ["tech"]
 ---
-
----
-
-## I Let an AI Into My Terminal 🤖
 
 ![Claude](/images/claude-logo.png)
 

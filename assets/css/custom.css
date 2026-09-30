@@ -162,3 +162,100 @@ pre {
   height: auto;
   margin: 0 auto 1rem;
 }
+
+/* Contact links under the hero */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Single post header ---------- */
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 1rem 0 0.75rem;
+  color: #f0f0f0;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.post-tags .tag {
+  color: #888;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.post-tags .tag:hover {
+  color: #00d4ff;
+}
+
+@media (max-width: 600px) {
+  .post-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer p {
+  color: #888;
+  margin: 0;
+}
+
+/* ---------- Screenshot shortcode ---------- */
+
+.screenshot {
+  margin: 1.5rem 0;
+}
+
+.screenshot figcaption {
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
+}
+
+.screenshot-todo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 2px dashed rgba(245, 166, 35, 0.6);
+  border-radius: 10px;
+  background: rgba(245, 166, 35, 0.06);
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.screenshot-todo-label {
+  color: #f5a623;
+  font-weight: 700;
+}
+

@@ -11,7 +11,7 @@ theme = "nomad-tech"
 
 [languages]
   [languages.en]
-    languageCode = "en-US"
+    locale = "en-US"
     title = "This is Masara"
     weight = 1
 
@@ -39,30 +39,29 @@ theme = "nomad-tech"
     icon = "📝"
     description = "Personal blog built with Hugo and GitHub Pages"
     tags = ["Hugo", "GitHub Pages", "Blogging"]
-    project_url = "https://masarajames.github.io"
+    project_url = "https://masara.site"
 
   # Contact Information
   [[params.contact]]
-icon = "📧"
-name = "Email"
-value = "masarajames02@gmail.com"
-link = "mailto:masarajames02@gmail.com"
+    icon = "📧"
+    name = "Email"
+    value = "masarajames02@gmail.com"
+    link = "mailto:masarajames02@gmail.com"
 
-[[params.contact]]
-icon = "💼"
-name = "LinkedIn"
-value = "linkedin.com/in/masarajames"
-link = "https://www.linkedin.com/in/masarajames/"
+  [[params.contact]]
+    icon = "💼"
+    name = "LinkedIn"
+    value = "linkedin.com/in/masarajames"
+    link = "https://www.linkedin.com/in/masarajames/"
 
-[[params.contact]]
-icon = "🐙"
-name = "GitHub"
-value = "github.com/masarajames"
-link = "https://github.com/masarajames"
+  [[params.contact]]
+    icon = "🐙"
+    name = "GitHub"
+    value = "github.com/masarajames"
+    link = "https://github.com/masarajames"
 
-[[params.contact]]
-icon = "𝕏"
-name = "X"
-value = "x.com/MasaraJames1"
-link = "https://x.com/MasaraJames1"
-
+  [[params.contact]]
+    icon = "𝕏"
+    name = "X"
+    value = "x.com/MasaraJames1"
+    link = "https://x.com/MasaraJames1"

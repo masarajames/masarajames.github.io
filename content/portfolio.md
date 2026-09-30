@@ -1,7 +1,11 @@
 ---
 title: "Portfolio"
-description: "Showcasing my projects and achievements"
+description: "Things I've built and worked on"
 layout: "portfolio"
+# Hidden from the menu and not published yet. Delete this block to turn the page on.
+build:
+  render: never
+  list: never
 ---
 
-A collection of projects I've built during my journey as a digital nomad and tech professional.
+A collection of things I've built, broken, and learned from.

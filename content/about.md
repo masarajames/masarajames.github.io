@@ -4,8 +4,6 @@ description: "Curious mind. Builder of things. Breaker of others (for learning).
 tags: ["github", "hugo", "development"]
 ---
 
-# About Me
-
 Hey👋 , I’m **James Angwenyi** alias **Masara**  
 
 I like figuring out how things work — and sometimes how they *don’t*.

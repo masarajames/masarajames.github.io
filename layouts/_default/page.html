@@ -13,6 +13,7 @@
                 <span class="prompt">$</span>
                 <span class="command">cat "{{ .Title }}.md"</span>
             </div>
+            <h1 class="post-title">{{ .Title }}</h1>
             <div class="post-meta">
                 {{ if not .Date.IsZero }}
                 <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
@@ -21,6 +22,13 @@
                 <div class="post-categories">
                     {{ range .Params.categories }}
                     <a href="{{ "categories/" | relURL }}{{ . | urlize }}/" class="category-tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with .GetTerms "tags" }}
+                <div class="post-tags">
+                    {{ range . }}
+                    <a href="{{ .RelPermalink }}" class="tag">#{{ .Data.Term }}</a>
                     {{ end }}
                 </div>
                 {{ end }}

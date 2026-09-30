@@ -1,2 +1,6 @@
 # Hugo build output (GitHub Actions builds it fresh on every push)
 public/
+
+# Hugo caches and lock file, regenerated on every build
+resources/_gen/
+.hugo_build.lock

@@ -3,12 +3,9 @@ title: "I Turn 24 Today"
 date: 2026-03-07
 description: "Today I turn 24. Not a milestone like 25 or 30, but I'm excited and grateful for where I am. A billion things I wish were better, and a note to my younger self: relax."
 categories: ["journal"]
-image : "images/birthday24"
+tags: ["birthday", "reflection"]
+image: "images/birthday24.png"
 ---
-
----
-
-## I Turn 24 Today
 
 ![Turning 24](/images/birthday24.png)
 
@@ -24,11 +21,11 @@ Numbers like 25, 30, or 35 feel like bigger milestones.
 
 But still… I’m excited.
 
-As turn 24, today.....
+As I turn 24 today…
 
-I probably  am grateful and happy  with where I am right now
+I’m probably grateful and happy with where I am right now,
 
-And with everything around me
+and with everything around me.
 
 I think I’m doing fine.
 
@@ -54,7 +51,7 @@ Life isn’t as simple as it looks when you’re younger.
 
 There are many things your younger self simply can’t understand yet.
 
-so maybe it’s not fair for them to judge who you become later.
+So maybe it’s not fair for them to judge who you become later.
 
 ---
 

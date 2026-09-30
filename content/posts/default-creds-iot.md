@@ -6,9 +6,7 @@ tags: ["iot", "default-credentials", "assessment"]
 categories: ["cybersecurity"]
 ---
 
----
-
-## The Basics Nobody Implements 🔐
+> *This was an authorized internal assessment. I’ve left out vendor names, device models, and anything that identifies where these devices live, on purpose.*
 
 Recently I ran an internal assessment on the **IoT devices** across my organization.
 

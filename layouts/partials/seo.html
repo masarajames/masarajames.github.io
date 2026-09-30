@@ -1,46 +1,42 @@
 {{ $title := .Title }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ else }}{{ $title = printf "%s | %s" .Title .Site.Title }}{{ end }}
+{{ $desc := .Site.Params.description }}
+{{ with .Description }}{{ $desc = . }}{{ else }}{{ with .Summary }}{{ $desc = . | plainify | truncate 160 }}{{ end }}{{ end }}
+{{ $isPost := and .IsPage (eq .Section "posts") }}
 
 <title>{{ $title }}</title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="description" content="{{ $desc }}">
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ $title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
+{{/* A post can set its own share image with `image:` in front matter; otherwise use the site default */}}
 {{ $ogimage := .Site.Params.ogimage | absURL }}
+{{ with .Params.image }}{{ $ogimage = . | absURL }}{{ end }}
 <meta property="og:image" content="{{ $ogimage }}">
+{{ if not .Params.image }}
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{{ .Site.Title }}">
+{{ end }}
+<meta property="og:image:alt" content="{{ $title }}">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ $ogimage }}">
 <meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
 
 <!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{ if .IsHome }}WebSite{{ else if eq .Type "posts" }}BlogPosting{{ else }}WebPage{{ end }}",
-  "name": "{{ $title }}",
-  "url": "{{ .Permalink }}",
-  {{ if .IsHome }}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
-  }
-  {{ else if eq .Type "posts" }}
-  "headline": "{{ .Title }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
-  }
-  {{ end }}
-}
-</script>
+{{ $author := dict "@type" "Person" "name" .Site.Params.author }}
+{{ $ld := dict "@context" "https://schema.org" "name" $title "url" .Permalink }}
+{{ if .IsHome }}
+  {{ $ld = merge $ld (dict "@type" "WebSite" "author" $author) }}
+{{ else if $isPost }}
+  {{ $ld = merge $ld (dict "@type" "BlogPosting" "headline" .Title "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "author" $author "image" $ogimage "description" $desc) }}
+{{ else }}
+  {{ $ld = merge $ld (dict "@type" "WebPage") }}
+{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
