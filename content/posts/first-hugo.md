@@ -220,12 +220,3 @@ Images broken
 
 404 after deploy
 → Wait a minute and check GitHub Actions logs
-
-If you want next, I can:
-
-- tune this to be **more playful or more technical**
-- add **architecture diagrams**
-- optimize it for **SEO**
-- split it into a **multi-part series**
-
-Just tell me 👍
