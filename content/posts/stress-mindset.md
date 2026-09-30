@@ -1,7 +1,7 @@
 ---
 title: "The Art of Not Panicking"
 date: 2026-02-16
-description: "On stress, calm thinking, and learning to solve things without spiraling."
+description: "I'm not really a writer, but lately I've been thinking about stress. Stress is emotional, problems are logical, and panic never solved anything. What a calm friend taught me about caring just enough to act."
 categories: ["journal"]
 ---
 

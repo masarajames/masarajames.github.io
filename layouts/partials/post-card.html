@@ -6,7 +6,11 @@
         <a href="{{ "categories/" | relURL }}{{ . | urlize }}/" class="category-tag">{{ . }}</a>
         {{ end }}
     </div>
-    <p>{{ .Summary }}</p>
+    {{/* Cards show only the post's description, capped at 35 words so they stay even */}}
+    {{ with .Description }}
+    {{ $words := split (trim (replaceRE `\s+` " " .) " ") " " }}
+    <p class="card-summary">{{ delimit (first 35 $words) " " }}{{ if gt (len $words) 35 }}…{{ end }}</p>
+    {{ end }}
     <div class="read-more-container">
         <a href="{{ .RelPermalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
     </div>

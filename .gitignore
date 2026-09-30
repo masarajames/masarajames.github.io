@@ -1,0 +1,2 @@
+# Hugo build output (GitHub Actions builds it fresh on every push)
+public/

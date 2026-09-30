@@ -1,7 +1,7 @@
 ---
 title: "I Turn 24 Today"
 date: 2026-03-07
-description: "Today is my birthday. I’m turning 24"
+description: "Today I turn 24. Not a milestone like 25 or 30, but I'm excited and grateful for where I am. A billion things I wish were better, and a note to my younger self: relax."
 categories: ["journal"]
 image : "images/birthday24"
 ---

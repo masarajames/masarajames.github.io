@@ -1,6 +1,7 @@
 ---
 title: "picoCTF: Sudo Make Me a Sandwich Writeup"
 date: 2026-03-23
+description: "A picoCTF privilege escalation challenge. I had SSH access but couldn't read flag.txt. Checking sudo rights showed I could launch Emacs as root. I opened a root shell inside it and finally grabbed the flag."
 tags: ["ctf", "privilege-escalation", "linux"]
 categories: ["cybersecurity"]
 ---

@@ -109,6 +109,22 @@ pre {
   text-decoration: none;
 }
 
+/* Even cards: summary fills the space, Read More sits at the bottom */
+.blog-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post .card-summary {
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.blog-post .read-more-container {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 /* ---------- Homepage ---------- */
 
 /* Theme gives every <section> a full screen of height; size the intro to its content */

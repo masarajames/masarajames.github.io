@@ -1,6 +1,7 @@
 ---
 title: "How I Built This Blog"
 date: 2026-02-01
+description: "Step by step, how I built this blog with Hugo and GitHub Pages. Installing Hugo, adding a theme as a submodule, previewing locally, and letting GitHub Actions deploy every push. Plus the mistakes I hit."
 tags: ["hugo", "github-pages", "blog"]
 categories: ["tutorial"]
 ---
