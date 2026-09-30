@@ -6,7 +6,7 @@ draft: false
 
 # 🌍 Hey, I’m Masara
 
-![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_o2c1xSfBaEUwMy3i4srRTRS0BTDMZaWh3w&s)
+![image](/images/home.jpg)
 
 Welcome to my digital space — a place for experiments, learning in public, and documenting the journey as I build, break, and figure things out.
 
