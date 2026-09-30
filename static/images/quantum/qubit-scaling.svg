@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+  <rect width="1000" height="400" rx="16" fill="#12121f"/>
+  <text x="500" y="42" text-anchor="middle" font-size="22" fill="#f0f0f0" font-weight="bold">Every extra qubit doubles the space</text>
+  <text x="500" y="68" text-anchor="middle" font-size="14" fill="#888">n qubits describe 2ⁿ possibilities at once</text>
+
+  <g font-size="15">
+    <text x="40" y="118" fill="#00d4ff">1 qubit</text>
+    <rect x="200" y="102" width="12" height="22" rx="3" fill="#00d4ff"/>
+    <text x="230" y="119" fill="#ccc">2 states</text>
+
+    <text x="40" y="163" fill="#00d4ff">3 qubits</text>
+    <rect x="200" y="147" width="48" height="22" rx="3" fill="#00d4ff"/>
+    <text x="266" y="164" fill="#ccc">8 states</text>
+
+    <text x="40" y="208" fill="#00d4ff">10 qubits</text>
+    <rect x="200" y="192" width="180" height="22" rx="3" fill="#00d4ff"/>
+    <text x="398" y="209" fill="#ccc">1,024 states</text>
+
+    <text x="40" y="253" fill="#00d4ff">50 qubits</text>
+    <rect x="200" y="237" width="480" height="22" rx="3" fill="#f5a623"/>
+    <text x="698" y="254" fill="#ccc">~10¹⁵ · too big for a laptop</text>
+
+    <text x="40" y="298" fill="#00d4ff">300 qubits</text>
+    <rect x="200" y="282" width="740" height="22" rx="3" fill="#ff5c5c"/>
+    <text x="210" y="299" fill="#12121f" font-weight="bold">~10⁹⁰ · more than atoms in the universe (~10⁸⁰)</text>
+  </g>
+
+  <text x="500" y="350" text-anchor="middle" font-size="14" fill="#ccc">Bars are on a log scale. The catch: you only get ONE answer out when you measure,</text>
+  <text x="500" y="373" text-anchor="middle" font-size="14" fill="#ccc">so the algorithm must make the right answer the likely one. That is the hard part.</text>
+</svg>

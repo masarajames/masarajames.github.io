@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+  <defs>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ff5c5c"/></marker>
+  </defs>
+  <rect width="1000" height="330" rx="16" fill="#12121f"/>
+  <text x="500" y="42" text-anchor="middle" font-size="22" fill="#f0f0f0" font-weight="bold">"Harvest now, decrypt later"</text>
+
+  <!-- timeline -->
+  <line x1="60" y1="200" x2="940" y2="200" stroke="#555" stroke-width="3"/>
+  <text x="60" y="235" font-size="14" fill="#888">TODAY</text>
+  <text x="940" y="235" text-anchor="end" font-size="14" fill="#888">Q-DAY (someday)</text>
+
+  <g font-size="14">
+    <!-- step 1 -->
+    <rect x="60" y="80" width="250" height="90" rx="10" fill="#1a1a2e" stroke="#00d4ff"/>
+    <text x="185" y="110" text-anchor="middle" fill="#00d4ff">1 · You send data</text>
+    <text x="185" y="135" text-anchor="middle" fill="#ccc">encrypted with RSA/ECC</text>
+    <text x="185" y="155" text-anchor="middle" fill="#ccc">🔒 safe… for now</text>
+
+    <!-- step 2 -->
+    <rect x="375" y="80" width="250" height="90" rx="10" fill="#1a1a2e" stroke="#f5a623"/>
+    <text x="500" y="110" text-anchor="middle" fill="#f5a623">2 · Attacker records it</text>
+    <text x="500" y="135" text-anchor="middle" fill="#ccc">can't read it yet,</text>
+    <text x="500" y="155" text-anchor="middle" fill="#ccc">stores it anyway 💾</text>
+
+    <!-- step 3 -->
+    <rect x="690" y="80" width="250" height="90" rx="10" fill="#2a1418" stroke="#ff5c5c"/>
+    <text x="815" y="110" text-anchor="middle" fill="#ff5c5c">3 · Quantum arrives</text>
+    <text x="815" y="135" text-anchor="middle" fill="#ccc">old recordings get</text>
+    <text x="815" y="155" text-anchor="middle" fill="#ccc">decrypted 🔓</text>
+  </g>
+  <circle cx="185" cy="200" r="8" fill="#00d4ff"/>
+  <circle cx="500" cy="200" r="8" fill="#f5a623"/>
+  <circle cx="815" cy="200" r="8" fill="#ff5c5c"/>
+  <path d="M520,200 L790,200" stroke="#ff5c5c" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#r)"/>
+
+  <text x="500" y="280" text-anchor="middle" font-size="15" fill="#ccc">If your data must stay secret for 10+ years (health, state, finance, IP),</text>
+  <text x="500" y="305" text-anchor="middle" font-size="15" fill="#f5a623">the threat already started. The attack is just delayed.</text>
+</svg>

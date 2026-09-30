@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#00d4ff"/></marker>
+  </defs>
+  <rect width="1000" height="400" rx="16" fill="#12121f"/>
+  <text x="500" y="38" text-anchor="middle" font-size="22" fill="#f0f0f0" font-weight="bold">The journey of one failed SSH login</text>
+
+  <g font-size="13">
+    <!-- 1 -->
+    <rect x="20" y="70" width="175" height="150" rx="10" fill="#1a1a2e" stroke="#00d4ff"/>
+    <text x="107" y="95" text-anchor="middle" fill="#00d4ff" font-size="15">1 · LOG LINE</text>
+    <text x="32" y="125" fill="#ccc">sshd: Failed</text>
+    <text x="32" y="145" fill="#ccc">password for</text>
+    <text x="32" y="165" fill="#ccc">root from</text>
+    <text x="32" y="185" fill="#ccc">203.0.113.7</text>
+    <text x="32" y="207" fill="#888" font-size="11">/var/log/auth.log</text>
+
+    <!-- 2 -->
+    <rect x="215" y="70" width="175" height="150" rx="10" fill="#1a1a2e" stroke="#00d4ff"/>
+    <text x="302" y="95" text-anchor="middle" fill="#00d4ff" font-size="15">2 · AGENT</text>
+    <text x="227" y="125" fill="#ccc">reads the file</text>
+    <text x="227" y="145" fill="#ccc">(logcollector)</text>
+    <text x="227" y="165" fill="#ccc">encrypts it,</text>
+    <text x="227" y="185" fill="#ccc">sends to server</text>
+    <text x="227" y="207" fill="#888" font-size="11">→ 1514/tcp</text>
+
+    <!-- 3 -->
+    <rect x="410" y="70" width="175" height="150" rx="10" fill="#1a1a2e" stroke="#00d4ff"/>
+    <text x="497" y="95" text-anchor="middle" fill="#00d4ff" font-size="15">3 · MANAGER</text>
+    <text x="422" y="125" fill="#ccc">decoder: sshd</text>
+    <text x="422" y="145" fill="#ccc">srcip, user</text>
+    <text x="422" y="165" fill="#ccc">rule 5760</text>
+    <text x="422" y="185" fill="#ccc">level 5 alert</text>
+    <text x="422" y="207" fill="#888" font-size="11">MITRE T1110</text>
+
+    <!-- 4 -->
+    <rect x="605" y="70" width="175" height="150" rx="10" fill="#1a1a2e" stroke="#f5a623"/>
+    <text x="692" y="95" text-anchor="middle" fill="#f5a623" font-size="15">4 · LOGSTASH</text>
+    <text x="617" y="125" fill="#ccc">tails</text>
+    <text x="617" y="145" fill="#ccc">alerts.json</text>
+    <text x="617" y="165" fill="#ccc">parses JSON,</text>
+    <text x="617" y="185" fill="#ccc">ships over TLS</text>
+    <text x="617" y="207" fill="#888" font-size="11">→ :9200</text>
+
+    <!-- 5 -->
+    <rect x="800" y="70" width="180" height="150" rx="10" fill="#1a1a2e" stroke="#f5a623"/>
+    <text x="890" y="95" text-anchor="middle" fill="#f5a623" font-size="15">5 · ES + KIBANA</text>
+    <text x="812" y="125" fill="#ccc">indexed in</text>
+    <text x="812" y="145" fill="#ccc">wazuh-alerts-</text>
+    <text x="812" y="165" fill="#ccc">4.x-2026.09.30</text>
+    <text x="812" y="185" fill="#ccc">→ dashboard tile</text>
+    <text x="812" y="207" fill="#888" font-size="11">seconds later</text>
+  </g>
+
+  <g stroke="#00d4ff" stroke-width="2" marker-end="url(#a)">
+    <line x1="195" y1="145" x2="212" y2="145"/>
+    <line x1="390" y1="145" x2="407" y2="145"/>
+    <line x1="585" y1="145" x2="602" y2="145"/>
+    <line x1="780" y1="145" x2="797" y2="145"/>
+  </g>
+
+  <!-- alert JSON excerpt -->
+  <rect x="20" y="245" width="960" height="135" rx="10" fill="#0b0b14" stroke="#333"/>
+  <text x="35" y="270" font-size="13" fill="#888">What lands in alerts.json (trimmed):</text>
+  <g font-size="13">
+    <text x="35" y="295" fill="#a6e3a1">{ "timestamp": "2026-09-30T10:14:02.117+0000",</text>
+    <text x="35" y="315" fill="#a6e3a1">  "rule": { "id": "5760", "level": 5, "description": "sshd: authentication failed.",</text>
+    <text x="35" y="335" fill="#a6e3a1">            "mitre": { "id": ["T1110.001"], "tactic": ["Credential Access"] } },</text>
+    <text x="35" y="355" fill="#a6e3a1">  "agent": { "id": "003", "name": "web-01" }, "data": { "srcip": "203.0.113.7", "dstuser": "root" } }</text>
+  </g>
+</svg>

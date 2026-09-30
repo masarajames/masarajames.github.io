@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+  <rect width="1000" height="440" rx="16" fill="#12121f"/>
+  <text x="500" y="40" text-anchor="middle" font-size="22" fill="#f0f0f0" font-weight="bold">How far are we? Qubits we have vs. qubits RSA-2048 needs</text>
+  <text x="500" y="64" text-anchor="middle" font-size="13" fill="#888">physical qubits, log scale · estimates assume good, error-corrected hardware running for days</text>
+
+  <!-- axis -->
+  <g font-size="12" fill="#666">
+    <line x1="370" y1="95" x2="370" y2="370" stroke="#333"/>
+    <line x1="510" y1="95" x2="510" y2="370" stroke="#333"/>
+    <line x1="650" y1="95" x2="650" y2="370" stroke="#333"/>
+    <line x1="790" y1="95" x2="790" y2="370" stroke="#333"/>
+    <line x1="930" y1="95" x2="930" y2="370" stroke="#333"/>
+    <text x="370" y="390" text-anchor="middle">100</text>
+    <text x="510" y="390" text-anchor="middle">1k</text>
+    <text x="650" y="390" text-anchor="middle">10k</text>
+    <text x="790" y="390" text-anchor="middle">100k</text>
+    <text x="930" y="390" text-anchor="middle">1M</text>
+    <text x="230" y="390" text-anchor="middle">10</text>
+    <line x1="230" y1="95" x2="230" y2="370" stroke="#333"/>
+  </g>
+
+  <g font-size="14">
+    <!-- log10(x): 10 ->230, 100->370 : 140 per decade -->
+    <text x="20" y="118" fill="#ccc">Google Willow</text>
+    <text x="20" y="134" fill="#888" font-size="11">2024 · 105 physical</text>
+    <rect x="230" y="108" width="143" height="26" rx="4" fill="#00d4ff"/>
+
+    <text x="20" y="168" fill="#ccc">Quantinuum Helios</text>
+    <text x="20" y="184" fill="#888" font-size="11">2025 · 98 physical</text>
+    <rect x="230" y="158" width="139" height="26" rx="4" fill="#00d4ff"/>
+
+    <text x="20" y="218" fill="#ccc">Biggest chips</text>
+    <text x="20" y="234" fill="#888" font-size="11">~1,000+ physical, noisy</text>
+    <rect x="230" y="208" width="285" height="26" rx="4" fill="#00d4ff" opacity="0.6"/>
+
+    <text x="20" y="278" fill="#ccc">RSA-2048 (2026</text>
+    <text x="20" y="294" fill="#888" font-size="11">preprint, optimistic)</text>
+    <rect x="230" y="268" width="560" height="26" rx="4" fill="#f5a623"/>
+    <text x="800" y="287" fill="#f5a623">~100k</text>
+
+    <text x="20" y="338" fill="#ccc">RSA-2048</text>
+    <text x="20" y="354" fill="#888" font-size="11">Gidney 2025</text>
+    <rect x="230" y="328" width="700" height="26" rx="4" fill="#ff5c5c"/>
+    <text x="940" y="347" fill="#ff5c5c">~1M</text>
+  </g>
+
+  <text x="500" y="420" text-anchor="middle" font-size="14" fill="#ccc">Gap today: roughly 100× to 1,000× more qubits, and far fewer errors per qubit.</text>
+</svg>

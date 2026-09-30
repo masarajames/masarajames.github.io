@@ -1,0 +1,15 @@
+{{/* Usage: {{< screenshot src="/images/wazuh-elk/step-01.png" caption="What the reader sees" >}}
+     Leave src empty to show a placeholder box describing the screenshot still to add. */}}
+{{ $src := .Get "src" }}
+{{ $caption := .Get "caption" }}
+{{ if $src }}
+<figure class="screenshot">
+    <img src="{{ $src | relURL }}" alt="{{ $caption }}" loading="lazy">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{ else }}
+<div class="screenshot-todo" role="note">
+    <span class="screenshot-todo-label">📸 Screenshot to add</span>
+    <span>{{ $caption }}</span>
+</div>
+{{ end }}

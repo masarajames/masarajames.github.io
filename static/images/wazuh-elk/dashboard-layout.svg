@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+  <rect width="1000" height="640" rx="16" fill="#12121f"/>
+  <text x="500" y="36" text-anchor="middle" font-size="20" fill="#f0f0f0" font-weight="bold">SOC Overview: the dashboard layout I built</text>
+  <text x="500" y="58" text-anchor="middle" font-size="12" fill="#888">layout plan · every panel below is explained step by step in the post</text>
+
+  <!-- filter bar -->
+  <rect x="20" y="75" width="960" height="34" rx="6" fill="#1a1a2e" stroke="#333"/>
+  <text x="35" y="97" font-size="13" fill="#aaa">🔎 rule.level &gt;= 3   ·   agent.name: *   ·   Last 24 hours   ·   ↻ 30s</text>
+
+  <!-- KPI row -->
+  <g font-size="13">
+    <rect x="20" y="122" width="228" height="90" rx="8" fill="#1a1a2e" stroke="#00d4ff"/>
+    <text x="134" y="150" text-anchor="middle" fill="#aaa">Total alerts</text>
+    <text x="134" y="190" text-anchor="middle" fill="#00d4ff" font-size="24" font-weight="bold">1 · Metric</text>
+
+    <rect x="264" y="122" width="228" height="90" rx="8" fill="#1a1a2e" stroke="#ff5c5c"/>
+    <text x="378" y="150" text-anchor="middle" fill="#aaa">Critical (level ≥ 12)</text>
+    <text x="378" y="190" text-anchor="middle" fill="#ff5c5c" font-size="24" font-weight="bold">2 · Metric</text>
+
+    <rect x="508" y="122" width="228" height="90" rx="8" fill="#1a1a2e" stroke="#f5a623"/>
+    <text x="622" y="150" text-anchor="middle" fill="#aaa">Auth failures</text>
+    <text x="622" y="190" text-anchor="middle" fill="#f5a623" font-size="24" font-weight="bold">3 · Metric</text>
+
+    <rect x="752" y="122" width="228" height="90" rx="8" fill="#1a1a2e" stroke="#a6e3a1"/>
+    <text x="866" y="150" text-anchor="middle" fill="#aaa">Active agents</text>
+    <text x="866" y="190" text-anchor="middle" fill="#a6e3a1" font-size="24" font-weight="bold">4 · Metric</text>
+  </g>
+
+  <!-- timeline -->
+  <rect x="20" y="226" width="960" height="140" rx="8" fill="#1a1a2e" stroke="#333"/>
+  <text x="35" y="248" font-size="13" fill="#ccc">5 · Alerts over time, stacked by severity band</text>
+  <g fill="#00d4ff" opacity="0.8">
+    <rect x="50" y="320" width="22" height="30"/><rect x="80" y="300" width="22" height="50"/><rect x="110" y="310" width="22" height="40"/><rect x="140" y="290" width="22" height="60"/><rect x="170" y="315" width="22" height="35"/><rect x="200" y="305" width="22" height="45"/><rect x="230" y="280" width="22" height="70"/><rect x="260" y="300" width="22" height="50"/><rect x="290" y="310" width="22" height="40"/><rect x="320" y="295" width="22" height="55"/><rect x="350" y="318" width="22" height="32"/><rect x="380" y="306" width="22" height="44"/><rect x="410" y="296" width="22" height="54"/><rect x="440" y="312" width="22" height="38"/><rect x="470" y="300" width="22" height="50"/><rect x="500" y="288" width="22" height="62"/><rect x="530" y="308" width="22" height="42"/><rect x="560" y="316" width="22" height="34"/><rect x="590" y="302" width="22" height="48"/><rect x="620" y="294" width="22" height="56"/><rect x="650" y="310" width="22" height="40"/><rect x="680" y="300" width="22" height="50"/><rect x="710" y="315" width="22" height="35"/><rect x="740" y="305" width="22" height="45"/><rect x="770" y="298" width="22" height="52"/><rect x="800" y="312" width="22" height="38"/><rect x="830" y="304" width="22" height="46"/><rect x="860" y="309" width="22" height="41"/><rect x="890" y="300" width="22" height="50"/><rect x="920" y="316" width="22" height="34"/>
+  </g>
+  <g fill="#ff5c5c">
+    <rect x="230" y="265" width="22" height="15"/><rect x="500" y="276" width="22" height="12"/>
+  </g>
+
+  <!-- middle row -->
+  <g font-size="13">
+    <rect x="20" y="380" width="310" height="240" rx="8" fill="#1a1a2e" stroke="#333"/>
+    <text x="35" y="402" fill="#ccc">6 · Top 10 rules</text>
+    <g fill="#00d4ff"><rect x="40" y="420" width="250" height="14"/><rect x="40" y="444" width="200" height="14"/><rect x="40" y="468" width="170" height="14"/><rect x="40" y="492" width="130" height="14"/><rect x="40" y="516" width="100" height="14"/><rect x="40" y="540" width="80" height="14"/><rect x="40" y="564" width="60" height="14"/></g>
+
+    <rect x="345" y="380" width="310" height="240" rx="8" fill="#1a1a2e" stroke="#333"/>
+    <text x="360" y="402" fill="#ccc">7 · MITRE ATT&amp;CK tactics</text>
+    <circle cx="500" cy="510" r="80" fill="none" stroke="#00d4ff" stroke-width="34" stroke-dasharray="200 303"/>
+    <circle cx="500" cy="510" r="80" fill="none" stroke="#f5a623" stroke-width="34" stroke-dasharray="120 383" stroke-dashoffset="-200"/>
+    <circle cx="500" cy="510" r="80" fill="none" stroke="#a6e3a1" stroke-width="34" stroke-dasharray="100 403" stroke-dashoffset="-320"/>
+    <circle cx="500" cy="510" r="80" fill="none" stroke="#ff5c5c" stroke-width="34" stroke-dasharray="83 420" stroke-dashoffset="-420"/>
+
+    <rect x="670" y="380" width="310" height="112" rx="8" fill="#1a1a2e" stroke="#333"/>
+    <text x="685" y="402" fill="#ccc">8 · Top agents by alerts</text>
+    <text x="685" y="428" fill="#888">web-01 ............ ████</text>
+    <text x="685" y="450" fill="#888">dc-01 ............. ███</text>
+    <text x="685" y="472" fill="#888">db-01 ............. ██</text>
+
+    <rect x="670" y="505" width="310" height="115" rx="8" fill="#1a1a2e" stroke="#333"/>
+    <text x="685" y="527" fill="#ccc">9 · Top source IPs (auth fails)</text>
+    <text x="685" y="553" fill="#888">203.0.113.7 ....... 412</text>
+    <text x="685" y="575" fill="#888">198.51.100.23 ..... 188</text>
+    <text x="685" y="597" fill="#888">+ 10 · Latest critical (table)</text>
+  </g>
+</svg>
